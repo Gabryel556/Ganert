@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="artist_name">Ganert</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <nav class="sidebar">
+        <h1 class="artist-name" data-lang="artist_name">Ganert</h1>
+        <ul class="nav-links">
+            <li><a href="#" data-page="gallery-hub" class="nav-link"><i class="fa-solid fa-palette"></i> <span data-lang="nav_gallery">Galeria</span></a></li>
+            <li><a href="#" data-page="websites-hub" class="nav-link"><i class="fa-solid fa-globe"></i> <span data-lang="nav_websites">Sites</span></a></li>
+            <li><a href="#" data-page="about" class="nav-link"><i class="fa-solid fa-address-card"></i> <span data-lang="nav_about">Sobre Mim</span></a></li>
+            <li><a href="#" data-page="contact" class="nav-link"><i class="fa-solid fa-envelope"></i> <span data-lang="nav_contact">Contato</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p data-lang="copyright">© 2025 AG Studio</p>
+            <select id="lang-selector">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="fr">Francês</option>
+                <option value="es">Espanhol</option>
+                <option value="ru">Russo</option>
+                <option value="ja">Japonês</option>
+                <option value="zh">Chinês</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div id="gallery-hub" class="page">
+            <div class="hub-nav-container">
+                <div class="hub-nav-level1">
+                    <button class="hub-tab-button" data-hub-target="hub-categorias" data-lang="hub_tab_categories">Categorias de Arte</button>
+                    <button class="hub-tab-button" data-hub-target="hub-info" data-lang="hub_tab_info">Informações</button>
+                </div>
+                <div class="hub-nav-level2">
+                    <div id="hub-categorias" class="hub-content-tab">
+                        <button class="hub-content-button" data-content-id="headshot" data-lang="cat_headshot">Headshot</button>
+                        <button class="hub-content-button" data-content-id="halfbody" data-lang="cat_halfbody">Halfbody</button>
+                        <button class="hub-content-button" data-content-id="kneeup" data-lang="cat_kneeup">KneeUp</button>
+                        <button class="hub-content-button" data-content-id="fullbody" data-lang="cat_fullbody">FullBody</button>
+                        <button class="hub-content-button" data-content-id="refsheet" data-lang="cat_refsheet">ReferenceSheet</button>
+                        <button class="hub-content-button" data-content-id="semirealism" data-lang="cat_semirealism">Semi-Realismo</button>
+                        <button class="hub-content-button" data-content-id="vtuber" data-lang="cat_vtuber">Vtuber</button>
+                        <button class="hub-content-button" data-content-id="nsfw" data-lang="cat_nsfw">NSFW</button>
+                        </div>
+                    <div id="hub-info" class="hub-content-tab">
+                        <button class="hub-content-button" data-content-id="commissions" data-lang="nav_commissions">Comissões</button>
+                        <button class="hub-content-button" data-content-id="queue" data-lang="nav_queue">Fila de Trabalho</button>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery-hub-content-display" class="hub-content-display"></div>
+        </div>
+
+        <div id="websites-hub" class="page">
+            <div class="hub-nav-container">
+                <div class="hub-nav-level1">
+                    <button class="hub-tab-button" data-hub-target="my-sites" data-lang="hub_tab_my_sites">Meus Sites</button>
+                    <button class="hub-tab-button" data-hub-target="sites-commissions" data-lang="nav_commissions">Comissões</button>
+                    <button class="hub-tab-button" data-hub-target="sites-queue" data-lang="nav_queue">Fila de Trabalho</button>
+                </div>
+                <div class="hub-nav-level2">
+                    <div id="websites-hub-commissions" class="hub-content-tab"></div>
+                    <div id="websites-hub-queue" class="hub-content-tab"></div>
+                </div>
+            </div>
+            <div id="websites-hub-content-display" class="hub-content-display"></div>
+        </div>
+
+        <div id="about" class="page">
+            <h2 class="page-title" data-lang="about_title">Sobre Mim</h2>
+            <div class="info-container about-flex">
+                <img src="Artist/FotoSite.png" alt="Foto do Artista" class="profile-pic">
+                <div class="about-text">
+                    <p data-lang="about_p1"></p>
+                    <p data-lang="about_p2"></p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="page">
+            <h2 class="page-title" data-lang="contact_title">Contato</h2>   
+            <div class="info-container contact-container">
+                <p class="contact-text" data-lang="contact_text"></p>
+                <div class="contact-buttons">
+                    <a href="https://www.reddit.com/user/Gabryel556/" target="_blank" class="contact-btn reddit"><i class="fab fa-reddit"></i> Reddit</a>
+                    <a href="https://discord.gg/390797221404344323" target="_blank" class="contact-btn discord"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="https://www.instagram.com/gabryel_lobo/" target="_blank" class="contact-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="content-storage" class="hidden-storage">
+        <div id="headshot" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_headshot">Headshot</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="halfbody" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_halfbody">Halfbody</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="kneeup" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_kneeup">Knee-Up</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="Fullbody" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_fullbody">Fullbody</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="refsheet" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_refsheet">Ref. Sheet</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="semirealism" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_semirealism">Semi Realismo</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="vtuber" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_vtuber">VTuber Model</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="nsfw" class="gallery">
+            <h2 class="page-title" data-lang="gallery_title_nsfw">NSFW</h2>
+            <div class="slider-wrapper">
+                <div class="slider-container"></div>
+                <div class="slide-counter"></div>
+             </div>
+             <div class="thumbnail-navigation"></div>
+        </div>
+        <div id="commissions" class="content-item">
+            <h2 class="page-title" data-lang="commissions_title"></h2>
+            <div class="info-container">
+                <h3 data-lang="commissions_prices_subtitle"></h3>
+                <table class="price-table"><tbody id="price-table-body"></tbody></table>
+                <h3 data-lang="commissions_tos_subtitle"></h3>
+                <ul id="tos-list" class="terms-list"></ul>
+            </div>
+        </div>
+        <div id="queue" class="content-item">
+            <h2 class="page-title" data-lang="queue_title"></h2>
+            <div class="queue-container">
+                <div class="queue-column"><h3 data-lang="queue_col_not_started"><i class="fas fa-clock"></i></h3><ul id="queue-not-started"></ul></div>
+                <div class="queue-column"><h3 data-lang="queue_col_in_progress"><i class="fas fa-pencil-alt"></i></h3><ul id="queue-in-progress"></ul></div>
+                <div class="queue-column"><h3 data-lang="queue_col_completed"><i class="fas fa-check-circle"></i></h3><ul id="queue-completed"></ul></div>
+            </div>
+        </div>
+
+        <div id="sites-commissions" class="content-item">
+            <h2 class="page-title" data-lang="commissions_title"></h2>
+            <div class="info-container">
+                <h3 data-lang="commissions_prices_subtitle"></h3>
+                <table class="price-table"><tbody id="sites-price-table-body"></tbody></table>
+                <h3 data-lang="commissions_tos_subtitle"></h3>
+                <ul id="sites-tos-list" class="terms-list"></ul>
+            </div>
+        </div>
+        <div id="sites-queue" class="content-item">
+            <h2 class="page-title" data-lang="queue_title"></h2>
+            <div class="queue-container">
+                <div class="queue-column"><h3 data-lang="queue_col_not_started"><i class="fas fa-clock"></i></h3><ul id="sites-queue-not-started"></ul></div>
+                <div class="queue-column"><h3 data-lang="queue_col_in_progress"><i class="fas fa-pencil-alt"></i></h3><ul id="sites-queue-in-progress"></ul></div>
+                <div class="queue-column"><h3 data-lang="queue_col_completed"><i class="fas fa-check-circle"></i></h3><ul id="sites-queue-completed"></ul></div>
+            </div>
+        </div>
+        <div id="my-sites" class="content-item">
+            <h2 class="page-title" data-lang="hub_tab_my_sites"></h2>
+            <div class="sites-grid">
+                <div class="site-card">
+                    <img src="Sites/banner-site-1.png" alt="Banner do Site 1" class="site-banner">
+                    <div class="site-card-content">
+                        <h3>AG Studio</h3>
+                        <a href="https://gabryel556.github.io/AGStudio/" target="_blank" class="site-visit-button" data-lang="site_visit_button">Visitar Site</a>
+                    </div>
+                </div>
+
+                <div class="site-card">
+                    <img src="Sites/banner-site-2.png" alt="Banner do Site 2" class="site-banner">
+                    <div class="site-card-content">
+                        <h3>Cosmic Fantasy Online</h3>
+                        <a href="https://cosmicfantasyonline.com" target="_blank" class="site-visit-button" data-lang="site_visit_button">Visitar Site</a>
+                    </div>
+                </div>
+
+                <div class="site-card">
+                    <img src="Sites/banner-site-2.png" alt="Banner do Site 2" class="site-banner">
+                    <div class="site-card-content">
+                        <h3>Relogio Pisca</h3>
+                        <a href="https://relogiopisca.com.br" target="_blank" class="site-visit-button" data-lang="site_visit_button">Visitar Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" src="">
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
