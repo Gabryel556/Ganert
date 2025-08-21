@@ -145,9 +145,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const thumb = document.createElement('img');
                 thumb.src = slide.src;
                 thumb.className = 'thumbnail-img';
-                thumb.addEventListener('click', () => showSlide(index));
+                thumb.addEventListener('mouseover', () => showSlide(index));
                 thumbnailNav.appendChild(thumb);
-                slide.addEventListener('click', () => {
+                slide.addEventListener('mouseover', () => {
                     lightboxImg.src = slide.src;
                     lightbox.classList.add('active');
                 });
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('mouseover', (e) => {
             e.preventDefault();
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
@@ -234,14 +234,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
 
             if (pageId.includes('-hub')) {
-                document.querySelector(`#${pageId} .hub-tab-button`)?.click();
+                document.querySelector(`#${pageId} .hub-tab-button`)?.mouseover();
             }
         });
     });
 
     // Lógica para o Hub de Galeria
     hubs.gallery.tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('mouseover', () => {
             hubs.gallery.tabButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             const targetId = button.dataset.hubTarget;
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     hubs.gallery.contentButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('mouseover', () => {
             hubs.gallery.contentButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             moveContent(button.dataset.contentId, hubs.gallery.displayArea);
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Lógica para o Hub de Sites
     
     hubs.websites.tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('mouseover', () => {
             hubs.websites.tabButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
             const contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
