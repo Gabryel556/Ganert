@@ -437,6 +437,10 @@ body {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
+.contact-btn.twitch {
+    background-color: #9146FF;
+}
+
 .sites-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
