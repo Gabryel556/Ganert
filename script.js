@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = lightbox.querySelector('.lightbox-content');
     const lightboxClose = lightbox.querySelector('.lightbox-close');
+    const lightboxPrev = lightbox.querySelector('.lightbox-nav.prev');
+    const lightboxNext = lightbox.querySelector('.lightbox-nav.next');
 
     const hubs = {
         gallery: {
@@ -27,15 +29,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     let galleriesData = {};
     let translations = {};
     let currentLang = 'pt';
+    let currentLightboxGallerySlides = [];
+    let currentLightboxIndex = 0;
 
     const applyTranslations = () => {
         const lang = currentLang;
         if (!translations[lang]) return;
         document.documentElement.lang = lang;
         if(langSelector) langSelector.value = lang;
-
         populateInfoPages();
-
         document.querySelectorAll('[data-lang]').forEach(element => {
             const key = element.dataset.lang;
             if (translations[lang] && translations[lang][key] !== undefined) {
@@ -53,7 +55,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lang = currentLang;
     if (!translations[lang]) return;
 
-    // Preenche a Tabela de Preços de ARTE
     const priceTableBodyArt = document.querySelector('#content-storage #price-table-body');
     if (priceTableBodyArt && translations[lang].price_table) {
         priceTableBodyArt.innerHTML = '';
@@ -64,7 +65,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Preenche a Lista de Termos de ARTE
     const tosListArt = document.querySelector('#content-storage #tos-list');
     if (tosListArt && translations[lang].tos_list) {
         tosListArt.innerHTML = '';
@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
     
-    // Preenche a Tabela de Preços de SITES
     const priceTableBodySites = document.querySelector('#content-storage #sites-price-table-body');
     if (priceTableBodySites && translations[lang].sites_price_table) {
         priceTableBodySites.innerHTML = '';
@@ -86,7 +85,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Preenche a Lista de Termos de SITES
     const tosListSites = document.querySelector('#content-storage #sites-tos-list');
     if (tosListSites && translations[lang].sites_tos_list) {
         tosListSites.innerHTML = '';
@@ -126,12 +124,30 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     };
+
+    const updateLightboxImage = () => {
+        if (currentLightboxGallerySlides.length > 0) {
+            lightboxImg.src = currentLightboxGallerySlides[currentLightboxIndex].src;
+        }
+    };
     
     const setupSlider = (galleryElement) => {
+        const sliderContainer = galleryElement.querySelector('.slider-container');
         const slides = Array.from(galleryElement.querySelectorAll('.slide'));
         const thumbnailNav = galleryElement.querySelector('.thumbnail-navigation');
         const counter = galleryElement.querySelector('.slide-counter');
         if (slides.length === 0) return;
+
+        sliderContainer.addEventListener('click', (event) => {
+            if (event.target.classList.contains('slide') && event.target.classList.contains('active')) {
+                const clickedSlide = event.target;
+                currentLightboxGallerySlides = slides;
+                currentLightboxIndex = slides.findIndex(s => s === clickedSlide);
+                updateLightboxImage();
+                lightbox.classList.add('active');
+            }
+        });
+
         let currentIndex = 0;
         const showSlide = (index) => {
             currentIndex = index;
@@ -139,23 +155,53 @@ document.addEventListener('DOMContentLoaded', async () => {
             if(thumbnailNav) thumbnailNav.querySelectorAll('.thumbnail-img').forEach((thumb, i) => thumb.classList.toggle('active', i === index));
             if(counter) counter.textContent = `${index + 1} / ${slides.length}`;
         };
+
         if(thumbnailNav) {
             thumbnailNav.innerHTML = '';
             slides.forEach((slide, index) => {
                 const thumb = document.createElement('img');
                 thumb.src = slide.src;
                 thumb.className = 'thumbnail-img';
-                thumb.addEventListener('mouseover', () => showSlide(index));
+                // Use CLICK para as miniaturas para ser consistente
+                thumb.addEventListener('click', () => showSlide(index));
                 thumbnailNav.appendChild(thumb);
-                slide.addEventListener('mouseover', () => {
-                    lightboxImg.src = slide.src;
-                    lightbox.classList.add('active');
-                });
             });
         }
+        
+        // Listener unificado para o contêiner do slider
+        if (sliderContainer) {
+            sliderContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('slide') && event.target.classList.contains('active')) {
+                    const clickedSlide = event.target;
+                    currentLightboxGallerySlides = slides;
+                    currentLightboxIndex = slides.findIndex(s => s === clickedSlide);
+                    updateLightboxImage();
+                    lightbox.classList.add('active');
+                }
+            });
+        }
+        
         galleryElement.querySelector('.prev')?.addEventListener('click', () => showSlide((currentIndex - 1 + slides.length) % slides.length));
         galleryElement.querySelector('.next')?.addEventListener('click', () => showSlide((currentIndex + 1) % slides.length));
         showSlide(0);
+    };
+
+    const buildGalleries = () => {
+        for (const galleryId in galleriesData) {
+            const galleryElement = contentStorage.querySelector(`#${galleryId}`);
+            const sliderContainer = galleryElement?.querySelector('.slider-container');
+            if (sliderContainer) {
+                sliderContainer.innerHTML = '';
+                const imagePaths = galleriesData[galleryId];
+                imagePaths.forEach((path, index) => {
+                    const img = document.createElement('img');
+                    img.src = path;
+                    img.alt = `${galleryId} image ${index + 1}`;
+                    img.classList.add('slide');
+                    sliderContainer.appendChild(img);
+                });
+            }
+        }
     };
 
     function showPage(pageId) {
@@ -170,48 +216,30 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (contentId === 'queue') loadWorkQueue(displayArea, 'work');
             if (contentId === 'sites-queue') loadWorkQueue(displayArea, 'WorkSites');
             const gallery = displayArea.querySelector('.gallery');
-            if (gallery) setupSlider(gallery);
-        }
-    };
-
-    const buildGalleries = () => {
-        for (const galleryId in galleriesData) {
-            const galleryElement = contentStorage.querySelector(`#${galleryId}`);
-            const sliderContainer = galleryElement?.querySelector('.slider-container');
-            if (sliderContainer) {
-                sliderContainer.innerHTML = ''; // Limpa o container
-                const imagePaths = galleriesData[galleryId];
-                imagePaths.forEach((path, index) => {
-                    const img = document.createElement('img');
-                    img.src = path;
-                    img.alt = `${galleryId} image ${index + 1}`;
-                    img.classList.add('slide');
-                    sliderContainer.appendChild(img);
-                });
+            if (gallery && !gallery.dataset.initialized) {
+                setupSlider(gallery);
+                gallery.dataset.initialized = 'true';
             }
         }
     };
 
     // --- 3. INICIALIZAÇÃO E EVENTOS ---
     try {
-        // Carrega os dois arquivos JSON em paralelo
         const [translationsRes, galleriesRes] = await Promise.all([
             fetch('languages.json'),
             fetch('galleries.json')
         ]);
         translations = await translationsRes.json();
         galleriesData = await galleriesRes.json();
-
     } catch (error) { 
         console.error("ERRO: Falha ao carregar arquivos de configuração (JSON).", error); 
     }
     
-    // Constrói as galerias com os dados carregados
     buildGalleries();
-    
-    
     currentLang = localStorage.getItem('language') || 'pt';
     applyTranslations();
+    contentStorage.querySelectorAll('.gallery').forEach(setupSlider);
+
 
     langSelector.addEventListener('change', () => {
         currentLang = langSelector.value;
@@ -222,7 +250,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('mouseover', (e) => {
+        link.addEventListener('mouseover', (e) => { // MUDADO PARA CLICK
             e.preventDefault();
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
@@ -234,40 +262,42 @@ document.addEventListener('DOMContentLoaded', async () => {
             });
 
             if (pageId.includes('-hub')) {
-                document.querySelector(`#${pageId} .hub-tab-button`)?.mouseover();
+                document.querySelector(`#${pageId} .hub-tab-button`)?.click();
             }
         });
     });
 
-    // Lógica para o Hub de Galeria
-    hubs.gallery.tabButtons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            hubs.gallery.tabButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            const targetId = button.dataset.hubTarget;
-            hubs.gallery.contentTabs.forEach(tab => tab.classList.toggle('active', tab.id === targetId));
-            if (hubs.gallery.displayArea.firstChild) contentStorage.appendChild(hubs.gallery.displayArea.firstChild);
-            hubs.gallery.contentButtons.forEach(btn => btn.classList.remove('active'));
-        });
-    });
+    Object.values(hubs).forEach(hub => {
+        hub.tabButtons.forEach(button => {
+            button.addEventListener('mouseover', () => { // MUDADO PARA CLICK
+                hub.tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-    hubs.gallery.contentButtons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            hubs.gallery.contentButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            moveContent(button.dataset.contentId, hubs.gallery.displayArea);
+                if (hub.contentTabs) {
+                    const targetId = button.dataset.hubTarget;
+                    hub.contentTabs.forEach(tab => tab.classList.toggle('active', tab.id === targetId));
+                }
+                
+                if (hub.displayArea.firstChild) contentStorage.appendChild(hub.displayArea.firstChild);
+                
+                if (hub.contentButtons) {
+                    hub.contentButtons.forEach(btn => btn.classList.remove('active'));
+                } else { // Para o hub de sites que carrega direto
+                    const contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
+                    moveContent(contentId, hub.displayArea);
+                }
+            });
         });
-    });
-    
-    // Lógica para o Hub de Sites
-    
-    hubs.websites.tabButtons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            hubs.websites.tabButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            const contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
-            moveContent(contentId, hubs.websites.displayArea);
-        });
+
+        if (hub.contentButtons) {
+            hub.contentButtons.forEach(button => {
+                button.addEventListener('mouseover', () => { // MUDADO PARA CLICK
+                    hub.contentButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    moveContent(button.dataset.contentId, hub.displayArea);
+                });
+            });
+        }
     });
     
     contentStorage.querySelectorAll('.gallery').forEach(setupSlider);
@@ -323,9 +353,28 @@ tsParticles.load("tsparticles", {
 
     if (lightbox) {
         const closeLightbox = () => lightbox.classList.remove('active');
+        
         lightboxClose.addEventListener('click', closeLightbox);
         lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation(); // Impede o clique de fechar o lightbox
+            currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxGallerySlides.length;
+            updateLightboxImage();
+        });
+
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation(); // Impede o clique de fechar o lightbox
+            currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxGallerySlides.length) % currentLightboxGallerySlides.length;
+            updateLightboxImage();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') lightboxNext.click();
+            if (e.key === 'ArrowLeft') lightboxPrev.click();
+        });
     }
 
     if (navLinks.length > 0) {

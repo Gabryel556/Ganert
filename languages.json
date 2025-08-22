@@ -21,6 +21,7 @@
       { "type": "FullBody", "preço": "$" },
       { "type": "Ref. Sheet", "preço": "$" }, 
       { "type": "VTuber", "preço": "$" },
+      { "type": "VTuber Rig", "preço": "$" },
       { "type": "Semi-Realista", "preço": "$" },
       { "type": "NSFW", "preço": "$" }
     ],
