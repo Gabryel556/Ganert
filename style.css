@@ -124,7 +124,7 @@ body {
 .hub-nav-container { 
     width: 100%; 
     max-width: 900px; 
-    margin-bottom: 1rem; 
+    margin-bottom: 1.5rem; 
     flex-shrink: 0; 
 }
 .hub-nav-level1 { 
@@ -132,15 +132,15 @@ body {
     justify-content: center; 
     flex-wrap: wrap; 
     gap: 1rem; 
-    border-bottom: 2px solid var(--border-color); 
-    padding-bottom: 1rem; 
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem 
 }
 .hub-tab-button { 
     background: none; 
     border: none; 
-    padding: 0.5rem 1rem; 
+    padding: 0.4rem 0.8rem; 
     font-family: 'Poppins', sans-serif; 
-    font-size: 1rem; 
+    font-size: 0.9rem; 
     color: var(--text-color); 
     cursor: pointer; 
     border-bottom: 3px solid transparent; 
@@ -157,9 +157,9 @@ body {
     display: flex; 
     justify-content: center; 
     flex-wrap: wrap; 
-    gap: 1rem; 
-    padding: 1rem 0; 
-    min-height: 50px; 
+    gap: 0.8rem;
+    padding: 1rem 0;
+    min-height: 40px;
 }
 .hub-content-tab { 
     display: none; 
@@ -173,12 +173,12 @@ body {
 .hub-content-button { 
     background-color: var(--info-container-bg); 
     color: var(--sidebar-text); 
-    border: 2px solid var(--border-color); 
-    padding: 0.6rem 1.2rem; 
-    border-radius: 50px; 
-    font-size: 0.9rem; 
-    cursor: pointer; 
-    transition: all 0.2s ease; 
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 .hub-content-button:hover { 
     border-color: var(--link-active-bg); 
