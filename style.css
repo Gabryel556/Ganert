@@ -542,8 +542,68 @@ line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-    body { flex-direction: column; } 
-    .sidebar { width: 100%; height: auto; position: relative; } 
-    .main-content { margin-left: 0; width: 100%; } 
-}
 
+    body {
+        /* Permite que a página inteira role, em vez de apenas o conteúdo */
+        overflow-y: auto;
+        display: block; /* Desativa o layout de duas colunas */
+    }
+
+    .sidebar {
+        width: 100%;       /* Ocupa a largura total */
+        height: auto;      /* A altura se ajusta ao conteúdo */
+        position: relative;  /* Deixa de ser fixa na lateral */
+        z-index: 100;
+        border-right: none; /* Remove a borda direita */
+        border-bottom: 1px solid var(--border-color); /* Adiciona uma borda inferior */
+    }
+
+    .main-content {
+        margin-left: 0;   /* Remove a margem da esquerda */
+        width: 100%;      /* Ocupa a largura total */
+        height: auto;     /* A altura se ajusta ao conteúdo */
+        min-height: 100vh;
+    }
+
+    .page {
+        padding: 1.5rem; /* Diminui o espaçamento interno das páginas */
+        justify-content: flex-start; /* Alinha o conteúdo no topo */
+    }
+
+    .page-title {
+        font-size: 2rem; /* Diminui o tamanho dos títulos principais */
+        margin-bottom: 1.5rem;
+    }
+
+    .info-container {
+        padding: 1.5rem; /* Diminui o espaçamento dos contêineres de informação */
+    }
+    
+    .hub-nav-level1 {
+        gap: 0.5rem; /* Diminui o espaço entre os botões do hub */
+    }
+    
+    .hub-tab-button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .hub-content-button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .queue-container {
+        grid-template-columns: 1fr; /* Força a fila de trabalho a ter apenas uma coluna */
+    }
+
+    .about-flex {
+        flex-direction: column; /* Empilha a foto e o texto na página "Sobre Mim" */
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 1rem;
+    }
+}
