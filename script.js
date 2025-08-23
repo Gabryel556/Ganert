@@ -96,10 +96,73 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 };
 
+    const loadArtWorkQueue = async (displayArea) => {
+    const getText = (key, fallback) => (translations[currentLang]?.[key]) || fallback;
+    try {
+        const response = await fetch('WorkArt.json');
+        if (!response.ok) throw new Error('Arquivo WorkArt.json não encontrado');
+        const data = await response.json();
+
+        const mapping = {
+            'art-queue-not-started': data.NotStartedArt || [],
+            'art-queue-in-progress': data.WipArt || [],
+            'art-queue-completed': data.FinishArt || []
+        };
+
+        for (const id in mapping) {
+            const listElement = displayArea.querySelector(`#${id}`);
+            if (listElement) {
+                listElement.innerHTML = '';
+                const items = mapping[id];
+                if (items.length > 0) {
+                    items.forEach(item => listElement.innerHTML += `<li>${item}</li>`);
+                } else {
+                    listElement.innerHTML = `<li>${getText('queue_empty', 'Nenhum trabalho aqui.')}</li>`;
+                }
+            }
+        }
+    } catch (error) {
+        console.error("Erro ao carregar a fila de trabalho de arte:", error);
+        displayArea.querySelector('#art-queue-not-started').innerHTML = `<li>${getText('queue_error', 'Erro ao carregar.')}</li>`;
+    }
+};
+
+// Função para carregar a Fila de Trabalho de SITES
+    const loadSitesWorkQueue = async (displayArea) => {
+        const getText = (key, fallback) => (translations[currentLang]?.[key]) || fallback;
+        try {
+            const response = await fetch('WorkSite.json');
+            if (!response.ok) throw new Error('Arquivo work_sites.json não encontrado');
+            const data = await response.json();
+
+            const mapping = {
+                'sites-queue-not-started': data.NotStartedSite || [],
+                'sites-queue-in-progress': data.WipSite || [],
+                'sites-queue-completed': data.FinishSite || []
+            };
+
+            for (const id in mapping) {
+                const listElement = displayArea.querySelector(`#${id}`);
+                if (listElement) {
+                    listElement.innerHTML = '';
+                    const items = mapping[id];
+                    if (items.length > 0) {
+                        items.forEach(item => listElement.innerHTML += `<li>${item}</li>`);
+                    } else {
+                        listElement.innerHTML = `<li>${getText('queue_empty', 'Nenhum trabalho aqui.')}</li>`;
+                    }
+                }
+            }
+        } catch (error) {
+            console.error("Erro ao carregar a fila de trabalho de sites:", error);
+            displayArea.querySelector('#sites-queue-not-started').innerHTML = `<li>${getText('queue_error', 'Erro ao carregar.')}</li>`;
+        }
+    };
+
     const loadWorkQueue = async (displayArea, sourceFolder) => {
         const statuses = { 
             'queue-not-started': `${sourceFolder}/NotStarted.txt`, 
-            'queue-in-progress': `${sourceFolder}/InProgress.txt`, 
+            'queue-in-progress': `${sourceFolder}/Wip.txt`, 
             'queue-completed': `${sourceFolder}/Finish.txt` 
         };
         const getText = (key, fallback) => (translations[currentLang] && translations[currentLang][key]) || fallback;
@@ -209,19 +272,26 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const moveContent = (contentId, displayArea) => {
-        if (displayArea.firstChild) contentStorage.appendChild(displayArea.firstChild);
-        const source = contentStorage.querySelector(`#${contentId}`);
-        if (source) {
-            displayArea.appendChild(source);
-            if (contentId === 'queue') loadWorkQueue(displayArea, 'work');
-            if (contentId === 'sites-queue') loadWorkQueue(displayArea, 'WorkSites');
-            const gallery = displayArea.querySelector('.gallery');
-            if (gallery && !gallery.dataset.initialized) {
-                setupSlider(gallery);
-                gallery.dataset.initialized = 'true';
-            }
+    if (displayArea.firstChild) {
+        contentStorage.appendChild(displayArea.firstChild);
+    }
+    const source = contentStorage.querySelector(`#${contentId}`);
+    if (source) {
+        displayArea.appendChild(source);
+        
+        // Lógica de chamada atualizada
+        if (contentId === 'queue') {
+            loadArtWorkQueue(displayArea);
+        } else if (contentId === 'sites-queue') {
+            loadSitesWorkQueue(displayArea);
         }
-    };
+        
+        const gallery = displayArea.querySelector('.gallery');
+        if (gallery) {
+            setupSlider(gallery);
+        }
+    }
+};
 
     // --- 3. INICIALIZAÇÃO E EVENTOS ---
     try {

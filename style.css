@@ -226,11 +226,26 @@ body {
     padding: 0;
     margin: 1.5rem 0;
 }
-.queue-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.queue-container .queue-column ul li {
+padding: 8px 0;
+line-height: 1.5;
 }
+
+.queue-container .queue-column ul li::before {
+    padding: 8px 0;
+    line-height: 1.5;
+    border-left: 2px solid var(--border-color);
+    padding-left: 10px;
+    margin-left: 5px;
+    content: "\f00c";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    display: inline-block;
+    width: 1em;
+    margin-right: 8px;
+    color: green;
+}
+
 .about-flex {
     display: flex;
     align-items: flex-start;
