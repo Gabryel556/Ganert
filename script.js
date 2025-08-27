@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lightboxClose = lightbox.querySelector('.lightbox-close');
     const lightboxPrev = lightbox.querySelector('.lightbox-nav.prev');
     const lightboxNext = lightbox.querySelector('.lightbox-nav.next');
+    const themeToggleButton = document.getElementById('theme-toggle'); // ADICIONE ESTA LINHA
+    const savedTheme = localStorage.getItem('theme') || 'dark'; // Pega o tema salvo ou usa 'dark' como padrão
+
+    if (savedTheme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+        themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+        document.body.removeAttribute('data-theme');
+        themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+    }
 
     const hubs = {
         gallery: {
@@ -527,6 +537,22 @@ tsParticles.load("tsparticles", {
             if (e.key === 'ArrowLeft') lightboxPrev.click();
         });
     }
+
+    themeToggleButton.addEventListener('click', () => {
+        const currentTheme = document.body.getAttribute('data-theme');
+        
+        if (currentTheme === 'light') {
+            // Mudar para o modo escuro
+            document.body.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'dark');
+            themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            // Mudar para o modo claro
+            document.body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
 
     if (navLinks.length > 0) {
         navLinks[0].click();

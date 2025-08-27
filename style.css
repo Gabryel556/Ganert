@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-:root { /* Usando o tema Preto e Laranja como base */
+:root {
     --bg-main: #121212;
     --sidebar-bg: #1e1e1e;
     --sidebar-text: #e0e0e0;
@@ -12,6 +12,48 @@
     --info-container-bg: rgba(0, 0, 0, 0.2);
     --border-color: #333333;
     --contact-btn-text: #000000;
+}
+
+/* Quando o body tiver o atributo data-theme="light", essas variáveis serão usadas */
+body[data-theme="light"] {
+    --bg-main: #f0f2f5;
+    --sidebar-bg: #ffffff;
+    --sidebar-text: #333333;
+    --link-hover-bg: #e9e9e9;
+    --link-active-bg: #ff8c00;
+    --link-active-glow: #ffa500;
+    --text-color: #1c1c1c;
+    --title-color: #d97706;
+    --info-container-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --contact-btn-text: #ffffff;
+}
+
+/* --- ESTILO DO BOTÃO DE TEMA --- */
+.theme-toggle {
+    background: var(--link-hover-bg);
+    border: 1px solid var(--border-color);
+    color: var(--sidebar-text);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem; /* Centraliza e adiciona margem abaixo */
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--link-active-bg);
+    color: var(--link-active-bg);
+}
+
+/* Ajuste no rodapé da sidebar para acomodar o botão */
+.sidebar-footer {
+    text-align: center; /* Garante que tudo no rodapé fique alinhado */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
