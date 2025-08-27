@@ -1,4 +1,8 @@
 {
+  "commission_status": {
+    "art": "closed",
+    "sites": "open"
+  },
   "pt": {
     "artist_name": "Ganert",
     "nav_gallery": "Galeria",
@@ -19,6 +23,9 @@
     "nav_commissions": "Comissões",
     "nav_queue": "Fila de Trabalho",
     "commissions_title": "Comissões e Preços",
+    "commission_status_label": "Status:",
+    "commission_status_open": "Aberto",
+    "commission_status_closed": "Fechado",
     "commissions_prices_subtitle": "Tabela de Preços",
     "price_type": "Tipo", "price_base": "Preço Base",
     "price_table": [
@@ -114,6 +121,9 @@
     "nav_commissions": "Commissions", 
     "nav_queue": "Work Queue", 
     "commissions_title": "Commissions & Prices", 
+    "commission_status_label": "Status:",
+    "commission_status_open": "Open",
+    "commission_status_closed": "Closed",
     "commissions_prices_subtitle": "Price List", 
     "price_type": "Type", 
     "price_base": "Base Price",
@@ -176,7 +186,11 @@
     "contact_text": "You can find me on the following platforms:",
     "copyright": "© 2025 AG Studio", 
     "hub_tab_my_sites": "My Sites", 
-    "site_visit_button": "Visit Site"
+    "site_visit_button": "Visit Site",
+    "age_gate_title": "Content Warning",
+    "age_gate_text": "The content you are trying to access is intended for audiences 18 and over only. Do you confirm you are of age to proceed?",
+    "age_gate_enter": "Enter",
+    "age_gate_leave": "Leave"
   },
   "fr": {
     "artist_name": "Ganert", 
@@ -198,6 +212,9 @@
     "nav_commissions": "Commissions", 
     "nav_queue": "File d'Attente", 
     "commissions_title": "Commissions & Prix", 
+    "commission_status_label": "Statut :",
+    "commission_status_open": "Ouvert",
+    "commission_status_closed": "Fermé",
     "commissions_prices_subtitle": "Liste de Prix", 
     "price_type": "Type", 
     "price_base": "Prix de Base",
@@ -289,6 +306,9 @@
     "nav_commissions": "Comisiones", 
     "nav_queue": "Cola de Trabajo", 
     "commissions_title": "Comisiones y Precios", 
+    "commission_status_label": "Estado:",
+    "commission_status_open": "Abierto",
+    "commission_status_closed": "Cerrado",
     "commissions_prices_subtitle": "Lista de Precios", 
     "price_type": "Tipo", 
     "price_base": "Precio Base",
@@ -358,7 +378,11 @@
     "contact_text": "Puedes encontrarme en las siguientes plataformas:",
     "copyright": "© 2025 AG Studio", 
     "hub_tab_my_sites": "Mis Sitios", 
-    "site_visit_button": "Visitar Sitio"
+    "site_visit_button": "Visitar Sitio",
+    "age_gate_title": "Advertencia de Contenido",
+    "age_gate_text": "El contenido que estás intentando ver está destinado únicamente a mayores de 18 años. ¿Confirmas que tienes la edad para continuar?",
+    "age_gate_enter": "Entrar",
+    "age_gate_leave": "Salir"
   },
   "ru": {
     "artist_name": "Ganert", 
@@ -380,6 +404,9 @@
     "nav_commissions": "Заказы", 
     "nav_queue": "Очередь работ", 
     "commissions_title": "Заказы и Цены", 
+    "commission_status_label": "Статус:",
+    "commission_status_open": "Открыто",
+    "commission_status_closed": "Закрыто",
     "commissions_prices_subtitle": "Прайс-лист", 
     "price_type": "Тип", 
     "price_base": "Базовая цена",
@@ -451,7 +478,11 @@
     "contact_text": "Вы можете найти меня на следующих платформах:",
     "copyright": "© 2025 AG Studio", 
     "hub_tab_my_sites": "Мои сайты", 
-    "site_visit_button": "Посетить сайт"
+    "site_visit_button": "Посетить сайт",
+    "age_gate_title": "Предупреждение о контенте",
+    "age_gate_text": "Контент, к которому вы пытаетесь получить доступ, предназначен только для аудитории старше 18 лет. Вы подтверждаете, что достигли совершеннолетия для продолжения?",
+    "age_gate_enter": "Войти",
+    "age_gate_leave": "Выйти"
   },
   "ja": {
     "artist_name": "Ganert", 
@@ -473,6 +504,9 @@
     "nav_commissions": "コミッション", 
     "nav_queue": "作業キュー", 
     "commissions_title": "コミッションと価格", 
+    "commission_status_label": "状態：",
+    "commission_status_open": "受付中",
+    "commission_status_closed": "停止中",
     "commissions_prices_subtitle": "価格表", 
     "price_type": "タイプ", 
     "price_base": "基本価格",
@@ -544,7 +578,11 @@
     "contact_text": "以下のプラットフォームで私を見つけることができます：",
     "copyright": "© 2025 AG Studio", 
     "hub_tab_my_sites": "私のサイト", 
-    "site_visit_button": "サイトを見る"
+    "site_visit_button": "サイトを見る",
+    "age_gate_title": "コンテンツに関する警告",
+    "age_gate_text": "アクセスしようとしているコンテンツは18歳以上の方のみを対象としています。続行する年齢であることを確認しますか？",
+    "age_gate_enter": "入る",
+    "age_gate_leave": "出る"
   },
   "zh": {
     "artist_name": "Ganert", 
@@ -566,6 +604,9 @@
     "nav_commissions": "委托", 
     "nav_queue": "工作队列", 
     "commissions_title": "委托和价格", 
+    "commission_status_label": "状态：",
+    "commission_status_open": "开放",
+    "commission_status_closed": "关闭",
     "commissions_prices_subtitle": "价格表", 
     "price_type": "类型", 
     "price_base": "基本价格",
@@ -635,6 +676,10 @@
     "contact_text": "您可以在以下平台上找到我：",
     "copyright": "© 2025 AG Studio", 
     "hub_tab_my_sites": "我的网站", 
-    "site_visit_button": "访问网站"
+    "site_visit_button": "访问网站",
+    "age_gate_title": "内容警告",
+    "age_gate_text": "您尝试访问的内容仅供18岁及以上观众观看。您确认已达到继续操作的年龄吗？",
+    "age_gate_enter": "进入",
+    "age_gate_leave": "离开"
   }
 }

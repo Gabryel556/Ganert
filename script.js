@@ -53,6 +53,37 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
         });
+
+        // --- Adicione esta lógica para atualizar o status das comissões ---
+        const commissionStatus = translations.commission_status;
+        if (commissionStatus) {
+            const artBadge = document.getElementById('art-status-badge');
+            const sitesBadge = document.getElementById('sites-status-badge');
+            const langData = translations[lang];
+
+            // Atualiza status de Arte
+            if (artBadge) {
+                if (commissionStatus.art === 'open') {
+                    artBadge.textContent = langData.commission_status_open;
+                    artBadge.className = 'status-badge open';
+                } else {
+                    artBadge.textContent = langData.commission_status_closed;
+                    artBadge.className = 'status-badge closed';
+                }
+            }
+
+            // Atualiza status de Sites
+            if (sitesBadge) {
+                if (commissionStatus.sites === 'open') {
+                    sitesBadge.textContent = langData.commission_status_open;
+                    sitesBadge.className = 'status-badge open';
+                } else {
+                    sitesBadge.textContent = langData.commission_status_closed;
+                    sitesBadge.className = 'status-badge closed';
+                }
+            }
+        }
+        // --- Fim da lógica adicionada ---
     };
 
     const populateInfoPages = () => {
@@ -399,10 +430,22 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (hub.contentButtons) {
             hub.contentButtons.forEach(button => {
-                button.addEventListener('click', () => { // MUDADO PARA CLICK
-                    hub.contentButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    moveContent(button.dataset.contentId, hub.displayArea);
+                button.addEventListener('click', (e) => { // Adicionamos o 'e' de evento
+                    const contentId = button.dataset.contentId;
+                    const isNsfw = contentId === 'nsfw';
+                    const isVerified = sessionStorage.getItem('nsfw-verified') === 'true';
+
+                    // 1. Verifica se o conteúdo é NSFW e se o usuário AINDA NÃO foi verificado
+                    if (isNsfw && !isVerified) {
+                        e.preventDefault(); // Previne a ação padrão
+                        elementToOpenAfterAgeGate = button; // Guarda o botão que foi clicado
+                        ageGate.classList.add('active'); // Mostra a tela de aviso
+                    } else {
+                        // 2. Se não for NSFW, ou se o usuário já foi verificado, carrega o conteúdo normalmente
+                        hub.contentButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        moveContent(contentId, hub.displayArea);
+                    }
                 });
             });
         }
