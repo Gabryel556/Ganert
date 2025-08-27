@@ -346,25 +346,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('mouseover', (e) => {
             e.preventDefault();
-            const pageId = link.dataset.page;
-            
-            // Lógica do Aviso NSFW
-            if (pageId === 'nsfw' && sessionStorage.getItem('nsfw-verified') !== 'true') {
-                elementToOpenAfterAgeGate = link; // Guarda o link que foi clicado
-                ageGate.classList.add('active');
-                applyTranslations();
-                return; // Para a execução normal
-            }
-
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
+            const pageId = link.dataset.page;
             showPage(pageId);
             
             document.querySelectorAll('.hub-content-display').forEach(display => {
                 if (display.firstChild) contentStorage.appendChild(display.firstChild);
             });
+
             if (pageId.includes('-hub')) {
                 document.querySelector(`#${pageId} .hub-tab-button`)?.click();
             }
