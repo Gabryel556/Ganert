@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // --- 1. SELEÇÃO DE ELEMENTOS GLOBAIS ---
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
+    const ageGate = document.getElementById('age-gate');
+    const ageGateEnter = document.getElementById('age-gate-enter');
+    const ageGateLeave = document.getElementById('age-gate-leave');
     const contentStorage = document.getElementById('content-storage');
     const langSelector = document.getElementById('lang-selector');
     const lightbox = document.getElementById('lightbox');
@@ -29,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let galleriesData = {};
     let translations = {};
     let currentLang = 'pt';
+    let elementToOpenAfterAgeGate = null;
     let currentLightboxGallerySlides = [];
     let currentLightboxIndex = 0;
 
@@ -52,49 +56,69 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     const populateInfoPages = () => {
-    const lang = currentLang;
-    if (!translations[lang]) return;
+        const lang = currentLang;
+        if (!translations[lang]) return;
 
-    const priceTableBodyArt = document.querySelector('#content-storage #price-table-body');
-    if (priceTableBodyArt && translations[lang].price_table) {
-        priceTableBodyArt.innerHTML = '';
-        translations[lang].price_table.forEach(item => {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td>${item.type}</td><td>${item.price}</td>`;
-            priceTableBodyArt.appendChild(row);
-        });
-    }
+        const priceTableBodyArt = document.querySelector('#content-storage #price-table-body');
+        if (priceTableBodyArt && translations[lang].price_table) {
+            priceTableBodyArt.innerHTML = '';
+            translations[lang].price_table.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${item.type}</td><td>${item.price}</td>`;
+                priceTableBodyArt.appendChild(row);
+            });
+        }
 
-    const tosListArt = document.querySelector('#content-storage #tos-list');
-    if (tosListArt && translations[lang].tos_list) {
-        tosListArt.innerHTML = '';
-        translations[lang].tos_list.forEach(itemText => {
-            const listItem = document.createElement('li');
-            listItem.textContent = itemText;
-            tosListArt.appendChild(listItem);
-        });
-    }
-    
-    const priceTableBodySites = document.querySelector('#content-storage #sites-price-table-body');
-    if (priceTableBodySites && translations[lang].sites_price_table) {
-        priceTableBodySites.innerHTML = '';
-        translations[lang].sites_price_table.forEach(item => {
-            const row = document.createElement('tr');
-            row.innerHTML = `<td>${item.type}</td><td>${item.price}</td>`;
-            priceTableBodySites.appendChild(row);
-        });
-    }
+        const tosListArt = document.querySelector('#content-storage #tos-list');
+        if (tosListArt && translations[lang].tos_list) {
+            tosListArt.innerHTML = '';
+            translations[lang].tos_list.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                tosListArt.appendChild(listItem);
+            });
+        }
+        
+        const priceTableBodySites = document.querySelector('#content-storage #sites-price-table-body');
+        if (priceTableBodySites && translations[lang].sites_price_table) {
+            priceTableBodySites.innerHTML = '';
+            translations[lang].sites_price_table.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${item.type}</td><td>${item.price}</td>`;
+                priceTableBodySites.appendChild(row);
+            });
+        }
 
-    const tosListSites = document.querySelector('#content-storage #sites-tos-list');
-    if (tosListSites && translations[lang].sites_tos_list) {
-        tosListSites.innerHTML = '';
-        translations[lang].sites_tos_list.forEach(itemText => {
-            const listItem = document.createElement('li');
-            listItem.textContent = itemText;
-            tosListSites.appendChild(listItem);
-        });
-    }
-};
+        const tosListSites = document.querySelector('#content-storage #sites-tos-list');
+        if (tosListSites && translations[lang].sites_tos_list) {
+            tosListSites.innerHTML = '';
+            translations[lang].sites_tos_list.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                tosListSites.appendChild(listItem);
+            });
+        }
+
+        const setupList = document.querySelector('#about #setup-list');
+        if (setupList && translations[lang].about_setup_content) {
+            setupList.innerHTML = '';
+            translations[lang].about_setup_content.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                setupList.appendChild(listItem);
+            });
+        }
+
+        const scheduleList = document.querySelector('#about #live-schedule-list');
+        if (scheduleList && translations[lang].about_schedule_list) {
+            scheduleList.innerHTML = '';
+            translations[lang].about_schedule_list.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                scheduleList.appendChild(listItem);
+            });
+        }
+    };
 
     const loadArtWorkQueue = async (displayArea) => {
     const getText = (key, fallback) => (translations[currentLang]?.[key]) || fallback;
@@ -268,7 +292,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     };
 
     function showPage(pageId) {
-        pages.forEach(page => page.classList.toggle('active', page.id === pageId));
+        pages.forEach(page => {
+            page.classList.toggle('active', page.id === pageId);
+        });
     }
 
     const moveContent = (contentId, displayArea) => {
@@ -320,21 +346,41 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('mouseover', (e) => { // MUDADO PARA CLICK
+        link.addEventListener('click', (e) => {
             e.preventDefault();
+            const pageId = link.dataset.page;
+            
+            // Lógica do Aviso NSFW
+            if (pageId === 'nsfw' && sessionStorage.getItem('nsfw-verified') !== 'true') {
+                elementToOpenAfterAgeGate = link; // Guarda o link que foi clicado
+                ageGate.classList.add('active');
+                applyTranslations();
+                return; // Para a execução normal
+            }
+
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
-            const pageId = link.dataset.page;
             showPage(pageId);
             
             document.querySelectorAll('.hub-content-display').forEach(display => {
                 if (display.firstChild) contentStorage.appendChild(display.firstChild);
             });
-
             if (pageId.includes('-hub')) {
                 document.querySelector(`#${pageId} .hub-tab-button`)?.click();
             }
         });
+    });
+
+    ageGateLeave.addEventListener('click', () => {
+        ageGate.classList.remove('active');
+    });
+
+    ageGateEnter.addEventListener('click', () => {
+        sessionStorage.setItem('nsfw-verified', 'true');
+        ageGate.classList.remove('active');
+        if (elementToOpenAfterAgeGate) {
+            elementToOpenAfterAgeGate.click(); // Simula o clique original
+        }
     });
 
     Object.values(hubs).forEach(hub => {
@@ -361,7 +407,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (hub.contentButtons) {
             hub.contentButtons.forEach(button => {
-                button.addEventListener('mouseover', () => { // MUDADO PARA CLICK
+                button.addEventListener('click', () => { // MUDADO PARA CLICK
                     hub.contentButtons.forEach(btn => btn.classList.remove('active'));
                     button.classList.add('active');
                     moveContent(button.dataset.contentId, hub.displayArea);

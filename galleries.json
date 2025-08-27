@@ -1,8 +1,8 @@
 {
   "headshot": [
-    "Headshot/Image1.png",
-    "Headshot/Image2.png",
-    "Headshot/Image3.png"
+    "Headshot/Imagem1.png",
+    "Headshot/Imagem2.png"
+
   ],
   "halfbody": [
     "HalfBody/image1.png"
@@ -19,6 +19,9 @@
   ],
   "semirealism": [
     "SemiRealismo/image1.png"
+  ],
+  "chibi": [
+    "Chibi/image1.png"
   ],
   "vtuber": [
     "Vtuber/image1.png"
