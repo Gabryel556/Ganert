@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lightboxNext = lightbox.querySelector('.lightbox-nav.next');
     const themeToggleButton = document.getElementById('theme-toggle'); // ADICIONE ESTA LINHA
     const savedTheme = localStorage.getItem('theme') || 'dark'; // Pega o tema salvo ou usa 'dark' como padrão
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const sidebar = document.querySelector('.sidebar');
+    const menuOverlay = document.getElementById('menu-overlay');
 
     if (savedTheme === 'light') {
         document.body.setAttribute('data-theme', 'light');
@@ -388,6 +391,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     navLinks.forEach(link => {
         link.addEventListener('mouseover', (e) => {
+            if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+                toggleMenu(); // FECHA O MENU NO CELULAR
+            }
             e.preventDefault();
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
@@ -553,6 +559,14 @@ tsParticles.load("tsparticles", {
             themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';
         }
     });
+
+    const toggleMenu = () => {
+        sidebar.classList.toggle('open');
+        menuOverlay.classList.toggle('active');
+    };
+
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    menuOverlay.addEventListener('click', toggleMenu);
 
     if (navLinks.length > 0) {
         navLinks[0].click();
