@@ -906,4 +906,8 @@ line-height: 1.5;
     .form-row {
         flex-direction: column; /* Empilha os campos 'Nome' e 'Email' em telas menores */
     }
+    .sites-grid {
+        grid-template-columns: 1fr; /* Força a grade a ter apenas uma coluna */
+        gap: 1.5rem; /* Diminui o espaço entre os cards empilhados */
+    }
 }
