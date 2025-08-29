@@ -568,7 +568,8 @@ tsParticles.load("tsparticles", {
     hamburgerBtn.addEventListener('click', toggleMenu);
     menuOverlay.addEventListener('click', toggleMenu);
 
-    if (navLinks.length > 0) {
-        navLinks[0].click();
-    }
+    const defaultPageLink = document.querySelector('.nav-link[data-page="about"]');
+    if (defaultPageLink) {
+        defaultPageLink.click();
+        }
 });
