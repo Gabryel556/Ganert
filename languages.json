@@ -41,6 +41,7 @@
       { "type": "NSFW", "price": "$85" }
     ],
     "sites_price_table": [
+      { "type": "Sites para artistas", "price": "$30" },
       { "type": "Pagina desktop simples", "price": "$50" },
       { "type": "Pagina com visualização desktop e mobile", "price": "$75" },
       { "type": "Site Institucional / Empresarial", "price": "$100" },
@@ -140,6 +141,7 @@
       { "type": "NSFW", "price": "$85" } 
     ],
     "sites_price_table": [ 
+      { "type": "Websites for artists", "price": "$30" },
       { "type": "Simple desktop page", "price": "$50" }, 
       { "type": "Page with desktop and mobile view", "price": "$75" }, 
       { "type": "Institutional / Business Site", "price": "$100" }, 
@@ -230,6 +232,7 @@
       { "type": "Portrait Semi-Réaliste", "price": "30€" }, 
       { "type": "NSFW", "price": "75€" } ],
     "sites_price_table": [ 
+      { "type": "Sites pour artistes", "price": "25€" }, 
       { "type": "Page de bureau simple", "price": "45€" }, 
       { "type": "Page avec vue bureau et mobile", "price": "65€" }, 
       { "type": "Site Institutionnel / d'Entreprise", "price": "85€" }, 
@@ -325,6 +328,7 @@
       { "type": "NSFW", "price": "75€" } 
     ],
     "sites_price_table": [ 
+      { "type": "Sitios web para artistas", "price": "25€" },
       { "type": "Página de escritorio simple", "price": "45€" }, 
       { "type": "Página con vista de escritorio y móvil", "price": "65€" }, 
       { "type": "Sitio Institucional / Empresarial", "price": "85€" }, 
@@ -423,6 +427,7 @@
       { "type": "NSFW", "price": "75€" } 
     ],
     "sites_price_table": [ 
+      { "type": "Сайты для художников", "price": "25€" },
       { "type": "Простая страница для ПК", "price": "45€" }, 
       { "type": "Страница с просмотром на ПК и мобильных", "price": "65€" }, 
       { "type": "Корпоративный сайт", "price": "85€" }, 
@@ -523,6 +528,7 @@
       { "type": "NSFW", "price": "¥12500" } 
     ],
     "sites_price_table": [ 
+      { "type": "アーティストのためのサイト", "price": "¥4400" },
       { "type": "シンプルなデスクトップページ", "price": "¥7400" }, 
       { "type": "デスクトップとモバイル表示のあるページ", "price": "¥11000" }, 
       { "type": "機関/ビジネスサイト", "price": "¥14700" }, 
@@ -622,6 +628,7 @@
       { "type": "半写实头像", "price": "¥215" }, 
       { "type": "NSFW", "price": "¥605" } ],
     "sites_price_table": [ 
+      { "type": "艺术家网站", "price": "¥215" },
       { "type": "简单的桌面页面", "price": "¥355" }, 
       { "type": "带有桌面和移动视图的页面", "price": "¥535" }, 
       { "type": "机构/商业网站", "price": "¥715" }, 
