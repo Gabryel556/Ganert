@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('mouseover', (e) => {
+        link.addEventListener('click', (e) => {
             if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
                 toggleMenu(); // FECHA O MENU NO CELULAR
             }
