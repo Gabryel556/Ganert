@@ -97,15 +97,28 @@ body {
     border-radius: 8px; 
     margin-bottom: 0.5rem; 
     transition: all 0.2s ease; 
+    position: relative;
 }
 .nav-link:hover { 
     background-color: var(--link-hover-bg); 
 }
-.nav-link.active { 
-    background-color: var(--link-active-bg); 
-    color: var(--contact-btn-text); 
-    font-weight: 600; 
-    box-shadow: 0 0 15px var(--link-active-glow); 
+.nav-link.active {
+    background-color: var(--link-active-bg);
+    color: var(--contact-btn-text);
+    font-weight: 600;
+    box-shadow: 0 0 8px var(--link-active-glow); /* ALTERADO AQUI */
+}
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* Posiciona a seta para fora do botão, à direita */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--link-active-bg); /* A cor da seta */
 }
 .sidebar-footer { 
     margin-top: auto; 
@@ -510,12 +523,15 @@ line-height: 1.5;
 }
 
 #contact .contact-buttons {
-    gap: 1rem; /* Diminui o espaço entre os botões */
+    gap: 1.5rem 1rem;
 }
 
 #contact .contact-btn {
-    min-width: 150px; /* Permite que os botões fiquem menores */
-    padding: 0.7rem 1.5rem;
+    width: calc(50% - 0.5rem); /* Ocupa metade do espaço menos um pouco do gap */
+    min-width: 0; /* Remove a largura mínima do desktop */
+    padding: 0.8rem 1rem; /* Ajusta o padding para caber melhor */
+    font-size: 1rem; /* Diminui um pouco a fonte se necessário */
+    justify-content: center; /* Garante que o conteúdo interno fique centralizado */
 }
 
 .sites-grid {
