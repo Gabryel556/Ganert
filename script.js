@@ -162,6 +162,26 @@ document.addEventListener('DOMContentLoaded', async () => {
                 scheduleList.appendChild(listItem);
             });
         }
+
+        const programList = document.querySelector('#about #programming-skills-list');
+        if (programList && translations[lang].about_programming_skills_list) {
+            programList.innerHTML = '';
+            translations[lang].about_programming_skills_list.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                programList.appendChild(listItem);
+            });
+        }
+
+        const ArtistList = document.querySelector('#about #artist-skills-list');
+        if (ArtistList && translations[lang].about_arts_skills_list) {
+            ArtistList.innerHTML = '';
+            translations[lang].about_arts_skills_list.forEach(itemText => {
+                const listItem = document.createElement('li');
+                listItem.textContent = itemText;
+                ArtistList.appendChild(listItem);
+            });
+        }
     };
 
     const loadArtWorkQueue = async (displayArea) => {

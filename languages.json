@@ -92,6 +92,23 @@
       "Sextas: A partir das 20:30 Somente com jogos",
       "Sabados e Domingo: Começa a partir das 9h com alguns jogos e comissions até as 23h encerrando com algum filme"
     ],
+    "about_programming_skills_title": "Habilidades em Programação",
+    "about_programming_skills_list": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "C",
+        "C++",
+        "C#"
+    ],
+    "about_arts_skills_title": "Habilidades artisticas",
+    "about_arts_skills_list": [
+        "Anime",
+        "Semi-realismo",
+        "Chibi",
+        "VTuber Rigging"
+    ],
     "contact_title": "Contato", 
     "contact_text": "Você pode me encontrar nas seguintes plataformas:",
     "copyright": "© 2025 AG Studio",
@@ -183,6 +200,23 @@
       "Thursdays: From 12:30 PM until 3 PM and we return at 8:30 PM with a movie", 
       "Fridays: From 8:30 PM only with games", 
       "Saturdays and Sundays: Starts from 9 AM with some games and commissions until 11 PM ending with a movie" 
+    ],
+    "about_programming_skills_title": "Programming Skills",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "Art Skills",
+    "about_arts_skills_list": [ 
+      "Anime", 
+      "Semi-Realism", 
+      "Chibi", 
+      "VTuber Rigging" 
     ],
     "contact_title": "Contact", 
     "contact_text": "You can find me on the following platforms:",
@@ -283,6 +317,23 @@
       "Vendredis : À partir de 20h30 uniquement avec des jeux", 
       "Samedis et Dimanches : Commence à partir de 9h avec quelques jeux et commissions jusqu'à 23h se terminant par un film" 
     ],
+    "about_programming_skills_title": "Compétences en Programmation",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "Compétences artistiques",
+    "about_arts_skills_list": [ 
+      "Anime", 
+      "Semi-réalisme", 
+      "Chibi", 
+      "Rigging VTuber" 
+    ],
     "contact_title": "Contact", 
     "contact_text": "Vous pouvez me trouver sur les plateformes suivantes :",
     "copyright": "© 2025 AG Studio", 
@@ -377,6 +428,23 @@
       "Jueves: Desde las 12:30 hasta las 15h y volvemos a las 20:30 con alguna película", 
       "Viernes: Desde las 20:30 solo con juegos", 
       "Sábados y Domingos: Empieza desde las 9h con algunos juegos y comisiones hasta las 23h terminando con alguna película" 
+    ],
+    "about_programming_skills_title": "Habilidades en Programación",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "Habilidades Artísticas",
+    "about_arts_skills_list": [ 
+      "Anime", 
+      "Semi-Realismo", 
+      "Chibi", 
+      "Rigging VTuber" 
     ],
     "contact_title": "Contacto", 
     "contact_text": "Puedes encontrarme en las siguientes plataformas:",
@@ -479,6 +547,23 @@
       "Пятница: С 20:30 только с играми", 
       "Суббота и Воскресенье: Начинается с 9:00 с играми и заказами до 23:00, заканчивая фильмом" 
     ],
+    "about_programming_skills_title": "Навыки программирования",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "Навыки искусства",
+    "about_arts_skills_list": [ 
+      "Аниме", 
+      "Полуреализм", 
+      "Чиби", 
+      "Риггинг VTuber" 
+    ],
     "contact_title": "Контакты", 
     "contact_text": "Вы можете найти меня на следующих платформах:",
     "copyright": "© 2025 AG Studio", 
@@ -580,6 +665,23 @@
       "金曜日：20時30分からゲームのみ", 
       "土曜日と日曜日：9時からいくつかのゲームとコミッションで始まり、23時に映画で終わる" 
     ],
+    "about_programming_skills_title": "プログラミングスキル",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "アートスキル",
+    "about_arts_skills_list": [ 
+      "アニメ", 
+      "セミリアリズム", 
+      "チビ", 
+      "VTuberリギング" 
+    ],
     "contact_title": "連絡先", 
     "contact_text": "以下のプラットフォームで私を見つけることができます：",
     "copyright": "© 2025 AG Studio", 
@@ -678,6 +780,23 @@
       "周四：从12:30到15点，然后在20:30看电影", 
       "周五：从20:30开始只有游戏", 
       "周六和周日：从9点开始玩一些游戏和处理委托，直到23点以一部电影结束" 
+    ],
+    "about_programming_skills_title": "编程技能",
+    "about_programming_skills_list": [ 
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "Python", 
+      "C", 
+      "C++", 
+      "C#" 
+    ],
+    "about_arts_skills_title": "艺术技能",
+    "about_arts_skills_list": [ 
+      "动漫", 
+      "半写实", 
+      "Chibi", 
+      "VTuber绑定" 
     ],
     "contact_title": "联系方式", 
     "contact_text": "您可以在以下平台上找到我：",
