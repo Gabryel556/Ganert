@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             tabButtons: document.querySelectorAll('#websites-hub .hub-tab-button'),
             contentTabs: document.querySelectorAll('#websites-hub .hub-content-tab'),
             displayArea: document.getElementById('websites-hub-content-display')
+        },
+        apps: {
+            tabButtons: document.querySelectorAll('#apps-hub .hub-tab-button'),
+            displayArea: document.getElementById('apps-hub-content-display')
         }
     };
     
@@ -444,7 +448,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     Object.values(hubs).forEach(hub => {
         hub.tabButtons.forEach(button => {
-            button.addEventListener('mouseover', () => { // MUDADO PARA CLICK
+            button.addEventListener('click', () => { // MUDADO PARA CLICK PARA CONSISTÊNCIA
                 hub.tabButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
 
@@ -453,12 +457,33 @@ document.addEventListener('DOMContentLoaded', async () => {
                     hub.contentTabs.forEach(tab => tab.classList.toggle('active', tab.id === targetId));
                 }
                 
-                if (hub.displayArea.firstChild) contentStorage.appendChild(hub.displayArea.firstChild);
+                // Limpa a área de exibição antes de carregar novo conteúdo
+                if (hub.displayArea.firstChild) {
+                    contentStorage.appendChild(hub.displayArea.firstChild);
+                }
                 
-                if (hub.contentButtons) {
-                    hub.contentButtons.forEach(btn => btn.classList.remove('active'));
-                } else { // Para o hub de sites que carrega direto
-                    const contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
+                // Se o hub tem uma aba de categorias (como a galeria), não carrega nada ainda
+                if (hub.contentButtons && hub.contentTabs) {
+                    const targetId = button.dataset.hubTarget;
+                    const targetTab = document.getElementById(targetId);
+                    // Se a aba alvo não tem botões de conteúdo, não faz nada
+                    if(targetTab && targetTab.querySelector('.hub-content-button')) {
+                        hub.contentButtons.forEach(btn => btn.classList.remove('active'));
+                    } else {
+                        // Trata abas que carregam conteúdo direto, como a fila de trabalho
+                        const contentId = button.dataset.hubTarget;
+                        moveContent(contentId, hub.displayArea);
+                    }
+                } else { 
+                    // Para hubs mais simples como 'sites' e o novo 'apps'
+                    let contentId = button.dataset.hubTarget;
+                    // Lógica específica para o hub de websites
+                    if (button.closest('#websites-hub')) {
+                        contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
+                    } else if (button.closest('#apps-hub')) {
+                        // Lógica para o novo hub de apps
+                        contentId = 'my-apps-content'; 
+                    }
                     moveContent(contentId, hub.displayArea);
                 }
             });
@@ -466,18 +491,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (hub.contentButtons) {
             hub.contentButtons.forEach(button => {
-                button.addEventListener('click', (e) => { // Adicionamos o 'e' de evento
+                button.addEventListener('click', (e) => {
                     const contentId = button.dataset.contentId;
                     const isNsfw = contentId === 'nsfw';
                     const isVerified = sessionStorage.getItem('nsfw-verified') === 'true';
 
-                    // 1. Verifica se o conteúdo é NSFW e se o usuário AINDA NÃO foi verificado
                     if (isNsfw && !isVerified) {
-                        e.preventDefault(); // Previne a ação padrão
-                        elementToOpenAfterAgeGate = button; // Guarda o botão que foi clicado
-                        ageGate.classList.add('active'); // Mostra a tela de aviso
+                        e.preventDefault();
+                        elementToOpenAfterAgeGate = button;
+                        ageGate.classList.add('active');
                     } else {
-                        // 2. Se não for NSFW, ou se o usuário já foi verificado, carrega o conteúdo normalmente
                         hub.contentButtons.forEach(btn => btn.classList.remove('active'));
                         button.classList.add('active');
                         moveContent(contentId, hub.displayArea);
