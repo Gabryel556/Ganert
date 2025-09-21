@@ -29,7 +29,6 @@ body[data-theme="light"] {
     --contact-btn-text: #ffffff;
 }
 
-/* --- ESTILO DO BOTÃO DE TEMA --- */
 .theme-toggle {
     background: var(--link-hover-bg);
     border: 1px solid var(--border-color);
@@ -42,7 +41,7 @@ body[data-theme="light"] {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    margin: 0 auto 1rem; /* Centraliza e adiciona margem abaixo */
+    margin: 0 auto 1rem;
     transition: all 0.2s ease;
 }
 
@@ -51,9 +50,8 @@ body[data-theme="light"] {
     color: var(--link-active-bg);
 }
 
-/* Ajuste no rodapé da sidebar para acomodar o botão */
 .sidebar-footer {
-    text-align: center; /* Garante que tudo no rodapé fique alinhado */
+    text-align: center;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -65,7 +63,6 @@ body {
     overflow: hidden; 
 }
 
-/* --- SIDEBAR --- */
 .sidebar { 
     width: 240px; 
     height: 100vh; 
@@ -87,38 +84,73 @@ body {
     list-style: none; 
     flex-grow: 1; 
 }
-.nav-link { 
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start; 
-    padding: 0.8rem 1.2rem; 
-    color: var(--sidebar-text); 
-    text-decoration: none; 
-    border-radius: 8px; 
-    margin-bottom: 0.5rem; 
-    transition: all 0.2s ease; 
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.8rem 1.2rem;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
     position: relative;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgb(235, 157, 12) 100%);
+    transition: 0.4s ease all;
+    -webkit-transition: 0.4s ease all;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.nav-link:hover { 
-    background-color: var(--link-hover-bg); 
+
+.nav-link:hover {
+    color: #f09f09;
+    background: transparent;
+    box-shadow: none;
 }
-.nav-link.active {
-    background-color: var(--link-active-bg);
-    color: var(--contact-btn-text);
-    font-weight: 600;
-    box-shadow: 0 0 8px var(--link-active-glow); /* ALTERADO AQUI */
-}
-.nav-link.active::after {
+
+.nav-link:before,
+.nav-link:after {
     content: '';
     position: absolute;
-    top: 50%;
-    right: -10px; /* Posiciona a seta para fora do botão, à direita */
-    transform: translateY(-50%);
+    top: 0;
+    right: 0;
+    height: 2px;
     width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid var(--link-active-bg); /* A cor da seta */
+    background: #f79604;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.nav-link:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-link:hover:before,
+.nav-link:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.nav-link.active {
+    color: #ff9900;
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-link.active:before,
+.nav-link.active:after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    display: none;
 }
 .sidebar-footer { 
     margin-top: auto; 
@@ -144,7 +176,6 @@ body {
     background-size: .65rem auto;
 }
 
-/* --- ESTRUTURA PRINCIPAL --- */
 .main-content { 
     margin-left: 240px; 
     width: calc(100% - 240px); 
@@ -190,24 +221,73 @@ body {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.8rem 
 }
-.hub-tab-button { 
-    background: none; 
-    border: none; 
-    padding: 0.4rem 0.8rem; 
-    font-family: 'Poppins', sans-serif; 
-    font-size: 0.9rem; 
-    color: var(--text-color); 
-    cursor: pointer; 
-    border-bottom: 3px solid transparent; 
-    transition: all 0.2s ease; 
+.hub-tab-button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff; /* ALTERADO: Cor do texto para branco para ser legível */
+    background: transparent; /* ALTERADO: Fundo principal fica transparente */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif; /* Adicionado para consistência */
+    font-weight: 600; /* Adicionado para melhor leitura */
 }
-.hub-tab-button:hover { 
-    color: var(--link-active-glow); 
+
+.hub-tab-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1; /* ALTERADO: O brilho agora é sempre visível */
+    transition: opacity .3s ease-in-out, filter .3s ease-in-out; /* ADICIONADO: Transição para o novo hover */
+    border-radius: 10px;
 }
-.hub-tab-button.active { 
-    color: var(--link-active-bg); 
-    border-bottom-color: var(--link-active-bg); 
+
+.hub-tab-button:hover:before {
+    filter: blur(8px);
 }
+
+
+.hub-tab-button {
+    color: #000
+}
+
+.hub-tab-button:active:after {
+    background: transparent;
+}
+
+.hub-tab-button:hover:before {
+    opacity: 1;
+}
+
+.hub-tab-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: rgba(17, 17, 17, 0.40); /* Fundo preto com 85% de opacidade */
+    left: 3px;
+    top: 3px;
+    border-radius: 8px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 .hub-nav-level2 { 
     display: flex; 
     justify-content: center; 
