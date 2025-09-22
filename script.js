@@ -610,7 +610,10 @@ tsParticles.load("tsparticles", {
 
     hamburgerBtn.addEventListener('click', toggleMenu);
     menuOverlay.addEventListener('click', toggleMenu);
-
+    document.querySelectorAll('.hub-content-button').forEach(button => {
+        const text = button.textContent.trim();
+        button.innerHTML = `<span>${text}</span>`;
+    });
     const defaultPageLink = document.querySelector('.nav-link[data-page="about"]');
     if (defaultPageLink) {
         defaultPageLink.click();

@@ -226,8 +226,8 @@ body {
     height: 50px;
     border: none;
     outline: none;
-    color: #fff; /* ALTERADO: Cor do texto para branco para ser legível */
-    background: transparent; /* ALTERADO: Fundo principal fica transparente */
+    color: #fff;
+    background: transparent;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -305,24 +305,94 @@ body {
 .hub-content-tab.active { 
     display: flex; 
 }
-.hub-content-button { 
-    background-color: var(--info-container-bg); 
-    color: var(--sidebar-text); 
-    border: 1px solid var(--border-color);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
+
+.hub-content-button {
+    background: rgb(247,150,192);
+    background: radial-gradient(circle, rgb(32, 255, 188) 0%, rgba(118,174,241,1) 100%);
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: #2c3e50;
+    font-weight: 600;
     font-size: 0.85rem;
     cursor: pointer;
-    transition: all 0.2s ease;
+    position: relative;
+    transition: all 1s ease; 
+    border-radius: 8px;
+    overflow: hidden;
 }
-.hub-content-button:hover { 
-    border-color: var(--link-active-bg); 
-    color: var(--link-active-bg); 
+
+.hub-content-button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-.hub-content-button.active { 
-    background-color: var(--link-active-bg); 
-    color: #fff; 
-    border-color: var(--link-active-bg); 
+
+.hub-content-button:before,
+.hub-content-button:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+    box-shadow: -1px -1px 20px 0px #76aef1, -4px -4px 5px 0px #76aef1, 7px 7px 20px 0px rgba(0,0,0,.4), 4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.hub-content-button:before { 
+    right: 0; 
+    top: 0; 
+    transition: all 500ms ease; 
+}
+.hub-content-button:after { 
+    left: 0; 
+    bottom: 0; 
+    transition: all 500ms ease; 
+}
+
+.hub-content-button span:before,
+.hub-content-button span:after {
+    position: absolute;
+    content: "";
+    box-shadow: -1px -1px 20px 0px #76aef1, -4px -4px 5px 0px #76aef1, 7px 7px 20px 0px rgba(0,0,0,.4), 4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.hub-content-button span:before { 
+    left: 0; 
+    top: 0; 
+    width: 0%; 
+    height: 1px; 
+    transition: all 500ms ease; 
+}
+.hub-content-button span:after { 
+    right: 0; 
+    bottom: 0; 
+    width: 0%; 
+    height: 1px; 
+    transition: all 500ms ease; 
+}
+
+.hub-content-button:hover {
+    background: #ffffff;
+    color: #76aef1;
+    box-shadow: none;
+}
+.hub-content-button:hover:before,
+.hub-content-button:hover:after { 
+    height: 100%; 
+}
+.hub-content-button:hover span:before,
+.hub-content-button:hover span:after { 
+    width: 100%; 
+}
+
+.hub-content-button.active {
+    color: #2c3e50;
+    box-shadow: none;
+}
+.hub-content-button.active:before,
+.hub-content-button.active:after { 
+    height: 100%; 
+}
+.hub-content-button.active span:before,
+.hub-content-button.active span:after { 
+    width: 100%; 
 }
 
 #hub-content-display { 
