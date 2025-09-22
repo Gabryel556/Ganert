@@ -982,6 +982,67 @@ line-height: 1.5;
     display: block;
     opacity: 1;
 }
+.install-guide-button {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--link-active-bg, #ff8c00);
+    border: 2px solid var(--link-active-bg, #ff8c00);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 0.5rem; /* Espaço entre os botões */
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+.install-guide-button:hover {
+    background-color: var(--link-active-bg, #ff8c00);
+    color: var(--contact-btn-text, #000);
+}
+
+.guide-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--info-container-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: left;
+}
+
+.guide-steps {
+    line-height: 1.8;
+    margin: 1.5rem 0;
+}
+
+.guide-steps p {
+    margin-bottom: 1rem;
+}
+
+.back-to-apps-btn {
+    background-color: var(--link-active-bg);
+    color: var(--contact-btn-text, #000);
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    align-self: center; /* Centraliza o botão no contêiner flex */
+    margin-top: 1rem;
+}
+
+.back-to-apps-btn:hover {
+    background-color: var(--link-active-glow);
+    transform: translateY(-3px);
+}
 
 @media (max-width: 768px) {
 

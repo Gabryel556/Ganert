@@ -53,6 +53,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentLightboxGallerySlides = [];
     let currentLightboxIndex = 0;
 
+    const clearDisplayArea = (displayArea) => {
+        while (displayArea.firstChild) {
+            contentStorage.appendChild(displayArea.firstChild);
+        }
+    };
+
     const applyTranslations = () => {
         const lang = currentLang;
         if (!translations[lang]) return;
@@ -184,6 +190,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const listItem = document.createElement('li');
                 listItem.textContent = itemText;
                 ArtistList.appendChild(listItem);
+            });
+        }
+
+        const guideContainer = document.querySelector('#webcam-desktop-guide .guide-steps');
+        if (guideContainer && translations[lang].guide_steps_webcam_desktop) {
+            guideContainer.innerHTML = ''; // Limpa o conteúdo anterior
+            translations[lang].guide_steps_webcam_desktop.forEach(stepText => {
+                const p = document.createElement('p');
+                p.textContent = stepText;
+                guideContainer.appendChild(p);
             });
         }
     };
@@ -366,9 +382,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const moveContent = (contentId, displayArea) => {
-    if (displayArea.firstChild) {
-        contentStorage.appendChild(displayArea.firstChild);
-    }
+    clearDisplayArea(displayArea); // USA A NOVA FUNÇÃO DE LIMPEZA
     const source = contentStorage.querySelector(`#${contentId}`);
     if (source) {
         displayArea.appendChild(source);
@@ -475,14 +489,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                         moveContent(contentId, hub.displayArea);
                     }
                 } else { 
-                    // Para hubs mais simples como 'sites' e o novo 'apps'
                     let contentId = button.dataset.hubTarget;
-                    // Lógica específica para o hub de websites
                     if (button.closest('#websites-hub')) {
-                        contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
-                    } else if (button.closest('#apps-hub')) {
-                        // Lógica para o novo hub de apps
-                        contentId = 'my-apps-content'; 
+                         contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
                     }
                     moveContent(contentId, hub.displayArea);
                 }
@@ -614,6 +623,32 @@ tsParticles.load("tsparticles", {
         const text = button.textContent.trim();
         button.innerHTML = `<span>${text}</span>`;
     });
+    const setupGuideButtons = () => {
+        const displayArea = hubs.apps.displayArea;
+
+        document.querySelectorAll('.install-guide-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const guideId = button.dataset.guideId;
+                clearDisplayArea(displayArea);
+                const guideContent = contentStorage.querySelector(`#${guideId}`);
+                if (guideContent) {
+                    displayArea.appendChild(guideContent);
+                }
+            });
+        });
+
+        document.querySelectorAll('.back-to-apps-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                clearDisplayArea(displayArea);
+                const appsGrid = contentStorage.querySelector('#my-apps-content');
+                if (appsGrid) {
+                    displayArea.appendChild(appsGrid);
+                }
+            });
+        });
+    };
+
+    setupGuideButtons();
     const defaultPageLink = document.querySelector('.nav-link[data-page="about"]');
     if (defaultPageLink) {
         defaultPageLink.click();
