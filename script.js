@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
 
-    // --- 1. SELEÇÃO DE ELEMENTOS GLOBAIS ---
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
     const ageGate = document.getElementById('age-gate');
@@ -13,8 +12,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lightboxClose = lightbox.querySelector('.lightbox-close');
     const lightboxPrev = lightbox.querySelector('.lightbox-nav.prev');
     const lightboxNext = lightbox.querySelector('.lightbox-nav.next');
-    const themeToggleButton = document.getElementById('theme-toggle'); // ADICIONE ESTA LINHA
-    const savedTheme = localStorage.getItem('theme') || 'dark'; // Pega o tema salvo ou usa 'dark' como padrão
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const sidebar = document.querySelector('.sidebar');
     const menuOverlay = document.getElementById('menu-overlay');
@@ -45,7 +44,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     };
     
-    // --- 2. VARIÁVEIS E FUNÇÕES GLOBAIS ---
     let galleriesData = {};
     let translations = {};
     let currentLang = 'pt';
@@ -77,14 +75,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         });
 
-        // --- Adicione esta lógica para atualizar o status das comissões ---
         const commissionStatus = translations.commission_status;
         if (commissionStatus) {
             const artBadge = document.getElementById('art-status-badge');
             const sitesBadge = document.getElementById('sites-status-badge');
             const langData = translations[lang];
 
-            // Atualiza status de Arte
             if (artBadge) {
                 if (commissionStatus.art === 'open') {
                     artBadge.textContent = langData.commission_status_open;
@@ -95,7 +91,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
 
-            // Atualiza status de Sites
             if (sitesBadge) {
                 if (commissionStatus.sites === 'open') {
                     sitesBadge.textContent = langData.commission_status_open;
@@ -106,7 +101,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
         }
-        // --- Fim da lógica adicionada ---
     };
 
     const populateInfoPages = () => {
@@ -195,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const guideContainer = document.querySelector('#webcam-desktop-guide .guide-steps');
         if (guideContainer && translations[lang].guide_steps_webcam_desktop) {
-            guideContainer.innerHTML = ''; // Limpa o conteúdo anterior
+            guideContainer.innerHTML = '';
             translations[lang].guide_steps_webcam_desktop.forEach(stepText => {
                 const p = document.createElement('p');
                 p.textContent = stepText;
@@ -235,7 +229,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 };
 
-// Função para carregar a Fila de Trabalho de SITES
     const loadSitesWorkQueue = async (displayArea) => {
         const getText = (key, fallback) => (translations[currentLang]?.[key]) || fallback;
         try {
@@ -401,7 +394,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 };
 
-    // --- 3. INICIALIZAÇÃO E EVENTOS ---
     try {
         const [translationsRes, galleriesRes] = await Promise.all([
             fetch('languages.json'),
@@ -430,7 +422,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
-                toggleMenu(); // FECHA O MENU NO CELULAR
+                toggleMenu();
             }
             e.preventDefault();
             navLinks.forEach(l => l.classList.remove('active'));
@@ -456,44 +448,32 @@ document.addEventListener('DOMContentLoaded', async () => {
         sessionStorage.setItem('nsfw-verified', 'true');
         ageGate.classList.remove('active');
         if (elementToOpenAfterAgeGate) {
-            elementToOpenAfterAgeGate.click(); // Simula o clique original
+            elementToOpenAfterAgeGate.click();
         }
     });
 
     Object.values(hubs).forEach(hub => {
         hub.tabButtons.forEach(button => {
-            button.addEventListener('click', () => { // MUDADO PARA CLICK PARA CONSISTÊNCIA
+            button.addEventListener('click', () => {
                 hub.tabButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
 
+                const targetId = button.dataset.hubTarget;
+                const targetElement = document.getElementById(targetId);
+
                 if (hub.contentTabs) {
-                    const targetId = button.dataset.hubTarget;
-                    hub.contentTabs.forEach(tab => tab.classList.toggle('active', tab.id === targetId));
+                    hub.contentTabs.forEach(tab => tab.classList.remove('active'));
                 }
-                
-                // Limpa a área de exibição antes de carregar novo conteúdo
-                if (hub.displayArea.firstChild) {
-                    contentStorage.appendChild(hub.displayArea.firstChild);
-                }
-                
-                // Se o hub tem uma aba de categorias (como a galeria), não carrega nada ainda
-                if (hub.contentButtons && hub.contentTabs) {
-                    const targetId = button.dataset.hubTarget;
-                    const targetTab = document.getElementById(targetId);
-                    // Se a aba alvo não tem botões de conteúdo, não faz nada
-                    if(targetTab && targetTab.querySelector('.hub-content-button')) {
+
+                if (targetElement && targetElement.classList.contains('hub-content-tab')) {
+                    clearDisplayArea(hub.displayArea);
+                    targetElement.classList.add('active');
+                    if (hub.contentButtons) {
                         hub.contentButtons.forEach(btn => btn.classList.remove('active'));
-                    } else {
-                        // Trata abas que carregam conteúdo direto, como a fila de trabalho
-                        const contentId = button.dataset.hubTarget;
-                        moveContent(contentId, hub.displayArea);
                     }
-                } else { 
-                    let contentId = button.dataset.hubTarget;
-                    if (button.closest('#websites-hub')) {
-                         contentId = button.dataset.hubTarget.replace('websites-hub-', 'sites-');
-                    }
-                    moveContent(contentId, hub.displayArea);
+                } 
+                else {
+                    moveContent(targetId, hub.displayArea);
                 }
             });
         });
@@ -525,10 +505,10 @@ tsParticles.load("tsparticles", {
   fpsLimit: 120,
   particles: {
     number: {
-      value: 100, // Poucas partículas, mas grandes
+      value: 100,
     },
     color: {
-      value: ["#00BFFF", "#4a3a96", "#ffffff"], // Usa a cor azul, roxo e branco
+      value: ["#00BFFF", "#4a3a96", "#ffffff"],
     },
     shape: {
       type: "circle",
@@ -537,14 +517,14 @@ tsParticles.load("tsparticles", {
       value: { min: 0.1, max: 0.3 },
     },
     size: {
-      value: { min: 50, max: 100 }, // Tamanhos grandes e variados
+      value: { min: 50, max: 100 },
     },
     move: {
       enable: true,
       speed: 0.5,
       direction: "top",
       out_mode: "out",
-      attract: { // Faz as bolhas se atraírem
+      attract: {
           enable: true,
           rotateX: 600,
           rotateY: 1200
@@ -561,7 +541,7 @@ tsParticles.load("tsparticles", {
     modes: {
       bubble: {
         distance: 200,
-        size: 120, // Aumenta ainda mais perto do mouse
+        size: 120,
         opacity: 0.4
       }
     },
@@ -577,13 +557,13 @@ tsParticles.load("tsparticles", {
         lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
 
         lightboxNext.addEventListener('click', (e) => {
-            e.stopPropagation(); // Impede o clique de fechar o lightbox
+            e.stopPropagation();
             currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxGallerySlides.length;
             updateLightboxImage();
         });
 
         lightboxPrev.addEventListener('click', (e) => {
-            e.stopPropagation(); // Impede o clique de fechar o lightbox
+            e.stopPropagation();
             currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxGallerySlides.length) % currentLightboxGallerySlides.length;
             updateLightboxImage();
         });
@@ -600,12 +580,10 @@ tsParticles.load("tsparticles", {
         const currentTheme = document.body.getAttribute('data-theme');
         
         if (currentTheme === 'light') {
-            // Mudar para o modo escuro
             document.body.removeAttribute('data-theme');
             localStorage.setItem('theme', 'dark');
             themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>';
         } else {
-            // Mudar para o modo claro
             document.body.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
             themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>';

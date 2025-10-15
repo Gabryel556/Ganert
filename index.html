@@ -19,7 +19,7 @@
     <nav class="sidebar">
         <h1 class="artist-name" data-lang="artist_name">Ganert</h1>
         <ul class="nav-links">
-            <li><a href="#" data-page="gallery-hub" class="nav-link"><i class="fa-solid fa-palette"></i> <span data-lang="nav_gallery">Galeria</span></a></li>
+            <li><a href="#" data-page="gallery-hub" class="nav-link"><i class="fa-solid fa-palette"></i> <span data-lang="nav_arts">Artes</span></a></li>
             <li><a href="#" data-page="websites-hub" class="nav-link"><i class="fa-solid fa-globe"></i> <span data-lang="nav_websites">Sites</span></a></li>
             <li><a href="#" data-page="apps-hub" class="nav-link"><i class="fa-solid fa-cube"></i> <span data-lang="nav_apps">Aplicativos</span></a></li>
             <li><a href="#" data-page="about" class="nav-link active"><i class="fa-solid fa-address-card"></i> <span data-lang="nav_about">Sobre Mim</span></a></li>
@@ -45,11 +45,12 @@
         <div id="gallery-hub" class="page">
             <div class="hub-nav-container">
                 <div class="hub-nav-level1">
-                    <button class="hub-tab-button" data-hub-target="hub-categorias" data-lang="hub_tab_categories">Categorias de Arte</button>
-                    <button class="hub-tab-button" data-hub-target="hub-info" data-lang="hub_tab_info">Informações</button>
+                    <button class="hub-tab-button" data-hub-target="gallery-categories" data-lang="nav_gallery">Galeria</button>
+                    <button class="hub-tab-button" data-hub-target="commissions" data-lang="hub_tab_prices_terms">Preços e Termos</button>
+                    <button class="hub-tab-button" data-hub-target="queue" data-lang="nav_queue">Fila de Trabalho</button>
                 </div>
                 <div class="hub-nav-level2">
-                    <div id="hub-categorias" class="hub-content-tab">
+                    <div id="gallery-categories" class="hub-content-tab">
                         <button class="hub-content-button" data-content-id="headshot" data-lang="cat_headshot">Headshot</button>
                         <button class="hub-content-button" data-content-id="halfbody" data-lang="cat_halfbody">Halfbody</button>
                         <button class="hub-content-button" data-content-id="kneeup" data-lang="cat_kneeup">KneeUp</button>
@@ -59,10 +60,6 @@
                         <button class="hub-content-button" data-content-id="chibi" data-lang="cat_Chibi">Chibi</button>
                         <button class="hub-content-button" data-content-id="vtuber" data-lang="cat_vtuber">Vtuber</button>
                         <button class="hub-content-button" data-content-id="nsfw" data-lang="cat_nsfw">NSFW</button>
-                        </div>
-                    <div id="hub-info" class="hub-content-tab">
-                        <button class="hub-content-button" data-content-id="commissions" data-lang="nav_commissions">Comissões</button>
-                        <button class="hub-content-button" data-content-id="queue" data-lang="nav_queue">Fila de Trabalho</button>
                     </div>
                 </div>
             </div>
@@ -253,9 +250,18 @@
         <div id="queue" class="content-item">
             <h2 class="page-title" data-lang="queue_title"></h2>
             <div class="queue-container">
-                <div class="queue-column"><h3 data-lang="queue_col_not_started"><i class="fas fa-clock"></i></h3><ul id="art-queue-not-started"></ul></div>
-                <div class="queue-column"><h3 data-lang="queue_col_in_progress"><i class="fas fa-pencil-alt"></i></h3><ul id="art-queue-in-progress"></ul></div>
-                <div class="queue-column"><h3 data-lang="queue_col_completed"><i class="fas fa-check-circle"></i></h3><ul id="art-queue-completed"></ul></div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-clock"></i> <span data-lang="queue_col_not_started"></span></h3>
+                    <ul id="art-queue-not-started"></ul>
+                </div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-pencil-alt"></i> <span data-lang="queue_col_in_progress"></span></h3>
+                    <ul id="art-queue-in-progress"></ul>
+                </div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-check-circle"></i> <span data-lang="queue_col_completed"></span></h3>
+                    <ul id="art-queue-completed"></ul>
+                </div>
             </div>
         </div>
 
@@ -275,9 +281,18 @@
         <div id="sites-queue" class="content-item">
             <h2 class="page-title" data-lang="queue_title"></h2>
             <div class="queue-container">
-                <div class="queue-column"><h3 data-lang="queue_col_not_started"><i class="fas fa-clock"></i></h3><ul id="sites-queue-not-started"></ul></div>
-                <div class="queue-column"><h3 data-lang="queue_col_in_progress"><i class="fas fa-pencil-alt"></i></h3><ul id="sites-queue-in-progress"></ul></div>
-                <div class="queue-column"><h3 data-lang="queue_col_completed"><i class="fas fa-check-circle"></i></h3><ul id="sites-queue-completed"></ul></div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-clock"></i> <span data-lang="queue_col_not_started"></span></h3>
+                    <ul id="sites-queue-not-started"></ul>
+                </div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-pencil-alt"></i> <span data-lang="queue_col_in_progress"></span></h3>
+                    <ul id="sites-queue-in-progress"></ul>
+                </div>
+                <div class="queue-column">
+                    <h3><i class="fas fa-check-circle"></i> <span data-lang="queue_col_completed"></span></h3>
+                    <ul id="sites-queue-completed"></ul>
+                </div>
             </div>
         </div>
         <div id="my-sites" class="content-item">

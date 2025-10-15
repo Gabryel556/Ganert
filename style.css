@@ -256,11 +256,6 @@ body {
     filter: blur(8px);
 }
 
-
-.hub-tab-button {
-    color: #000
-}
-
 .hub-tab-button:active:after {
     background: transparent;
 }
@@ -442,12 +437,41 @@ body {
     padding: 0;
     margin: 1.5rem 0;
 }
-.queue-container .queue-column ul li {
-padding: 8px 0;
-line-height: 1.5;
+.queue-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: flex-start;
 }
 
-.queue-list li {
+.queue-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+
+.queue-column h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.3rem;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.queue-column ul {
+    list-style: none;
+    padding: 0;
+}
+.queue-container .queue-column ul li {
+    padding: 8px 0;
+    line-height: 1.5;
+}
+
+.queue-column ul li {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 0.8rem 1rem;
     border-radius: 6px;
@@ -1111,7 +1135,7 @@ line-height: 1.5;
     }
 
     .queue-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .about-flex {
