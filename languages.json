@@ -106,7 +106,10 @@
         "Python", 
         "C", 
         "C++", 
-        "C#"
+        "C#",
+        "Java",
+        "Kotlin",
+        "PostgreSQL"
     ],
     "about_arts_skills_title": "Habilidades artisticas",
     "about_arts_skills_list": [
@@ -245,7 +248,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "Art Skills",
     "about_arts_skills_list": [
@@ -379,7 +385,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "Compétences artistiques",
     "about_arts_skills_list": [
@@ -517,7 +526,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "Habilidades Artísticas",
     "about_arts_skills_list": [
@@ -655,7 +667,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "Навыки искусства",
     "about_arts_skills_list": [
@@ -793,7 +808,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "アートスキル",
     "about_arts_skills_list": [
@@ -931,7 +949,10 @@
       "Python", 
       "C", 
       "C++", 
-      "C#"
+      "C#",
+      "Java",
+      "Kotlin",
+      "PostgreSQL"
     ],
     "about_arts_skills_title": "艺术技能",
     "about_arts_skills_list": [
