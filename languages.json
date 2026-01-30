@@ -33,23 +33,64 @@
     "price_type": "Tipo",
     "price_base": "Preço Base",
     "price_table": [
-      { "type": "Headshot", "price": "$20" },
-      { "type": "Halfbody", "price": "$40" },
-      { "type": "Knee-Up", "price": "$60" },
-      { "type": "FullBody", "price": "$80" },
-      { "type": "Chibi", "price": "$30" },
-      { "type": "Ref. Sheet", "price": "$90" },
-      { "type": "VTuber", "price": "$100" },
-      { "type": "VTuber Rig", "price": "$120" },
-      { "type": "Semi-Realista Headshot", "price": "$30" },
-      { "type": "NSFW", "price": "$85" }
+      {
+        "type": "Headshot",
+        "price": "R$ 130"
+      },
+      {
+        "type": "Halfbody",
+        "price": "R$ 234"
+      },
+      {
+        "type": "Knee-Up",
+        "price": "R$ 363"
+      },
+      {
+        "type": "FullBody",
+        "price": "R$ 467"
+      },
+      {
+        "type": "Chibi",
+        "price": "R$ 182"
+      },
+      {
+        "type": "Ref. Sheet",
+        "price": "R$ 571"
+      },
+      {
+        "type": "VTuber",
+        "price": "R$ 649"
+      },
+      {
+        "type": "VTuber Rig",
+        "price": "R$ 779"
+      },
+      {
+        "type": "Semi-Realista Headshot",
+        "price": "R$ 208"
+      },
+      {
+        "type": "NSFW",
+        "price": "R$ 519"
+      }
     ],
     "sites_price_table": [
-      { "type": "Sites para artistas", "price": "$30" },
-      { "type": "Pagina desktop simples", "price": "$50" },
-      { "type": "Pagina com visualização desktop e mobile", "price": "$75" },
-      { "type": "Site Institucional / Empresarial", "price": "$100" },
-      { "type": "Manutenção Mensal", "price": "$15 / mês" }
+      {
+        "type": "Landing Page / Site Simples",
+        "price": "R$ 1817"
+      },
+      {
+        "type": "Site para Artistas (Portfólio)",
+        "price": "R$ 2336"
+      },
+      {
+        "type": "Site Completo (E-commerce/Sistemas)",
+        "price": "R$ 3633"
+      },
+      {
+        "type": "Manutenção Mensal",
+        "price": "R$ 208 / mês"
+      }
     ],
     "commissions_tos_subtitle": "Termos de Serviço",
     "tos_list": [
@@ -71,52 +112,52 @@
     "queue_error": "Não foi possível carregar.",
     "about_title": "Sobre Mim",
     "about_p1": "Olá! Meu nome é Ganert e sou um programador que está tentando também se tornar um artista digital.",
-    "about_p2": "Estou aprendendo a criar arte digital e estou animado para compartilhar meu progresso com vocês. Meu objetivo é criar personagens vibrantes e histórias envolventes através da arte digital.",
+    "about_p2": "Estou aprendendo a criar arte digital e estou animado para compartilhar meu progresso com vocês.",
     "about_setup_title": "Meu Setup",
     "about_setup_content": [
-        "Mesa Digitalizadora: Tomate MTM-1106 11.6\"", 
-        "Software: Adobe Photoshop", 
-        "CPU: Intel Core i3 10100f", 
-        "GPU: NVIDIA GeForce RTX 3060ti", 
-        "RAM: DDR4 64GB 2666MHz", 
-        "PSU: Cooler Master MWE Gold v2 1050W", 
-        "Cooling System: Water Cooler Mancer Mystic G1 360mm",
-        "SSD 1: XPG Spectrix S20 500GB", 
-        "SSD 2: Husky 500GB", 
-        "HDD 1: WDC WD30PURX 3TB", 
-        "HDD 2: ST2000DM008 2TB", 
-        "Headset: Havit Fuxi H3 / Redragon Zeus X", 
-        "Microfone: Meanton ME6S", 
-        "Mouse: Redragon Cobra Lunar White", 
-        "Teclado: Redragon Kala V2 K557-RGB"
+      "Mesa Digitalizadora: Tomate MTM-1106 11.6\"",
+      "Software: Adobe Photoshop",
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "PSU: Cooler Master MWE Gold v2 1050W",
+      "Cooling System: Water Cooler Mancer Mystic G1 360mm",
+      "SSD 1: XPG Spectrix S20 500GB",
+      "SSD 2: Husky 500GB",
+      "HDD 1: WDC WD30PURX 3TB",
+      "HDD 2: ST2000DM008 2TB",
+      "Headset: Havit Fuxi H3 / Redragon Zeus X",
+      "Microfone: Meanton ME6S",
+      "Mouse: Redragon Cobra Lunar White",
+      "Teclado: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "Horários de Live",
     "about_schedule_list": [
-      "Segundas e Terças: a partir das 16h Algumas comissions até as 18h e voltamos as 20:30 até as 22h com jogos", 
-      "Quartas: Começamos as 8h até as 15h e voltamos as 20:30 com alguns jogos", 
-      "Quintas: A partir de 12:30 até 15h e voltamos as 20:30 com algum filme", 
-      "Sextas: A partir das 20:30 Somente com jogos", 
+      "Segundas e Terças: a partir das 16h Algumas comissions até as 18h e voltamos as 20:30 até as 22h com jogos",
+      "Quartas: Começamos as 8h até as 15h e voltamos as 20:30 com alguns jogos",
+      "Quintas: A partir de 12:30 até 15h e voltamos as 20:30 com algum filme",
+      "Sextas: A partir das 20:30 Somente com jogos",
       "Sabados e Domingo: Começa a partir das 9h com alguns jogos e comissions até as 23h encerrando com algum filme"
     ],
     "about_programming_skills_title": "Habilidades em Programação",
     "about_programming_skills_list": [
-        "HTML", 
-        "CSS", 
-        "JavaScript", 
-        " ",
-        "Python", 
-        "C", 
-        "C++", 
-        "C#",
-        "Java",
-        "Kotlin"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
+      "C#",
+      "Java",
+      "Kotlin"
     ],
     "about_arts_skills_title": "Habilidades artisticas",
     "about_arts_skills_list": [
-        "Anime", 
-        "Semi-realismo", 
-        "Chibi", 
-        "VTuber Rigging"
+      "Anime",
+      "Semi-realismo",
+      "Chibi",
+      "VTuber Rigging"
     ],
     "contact_title": "Contato",
     "contact_text": "Você pode me encontrar nas seguintes plataformas:",
@@ -136,9 +177,9 @@
     "guide_title_webcam_desktop": "Guia de Instalação - Webcam Desktop",
     "guide_steps_webcam_desktop": [
       "Passo 1: Abra o seu OBS e procure a aba fontes e clicar em +.",
-      "Passo 2: Selecione a opção Fonte de mídia.", 
-      "Passo 3: Desmarque a opção Arquivo Local, diminua o Buffering de rede para 0, adicione em Entrada o Endereço IP que aparece na parte inferior do aplicativo mobile e clique em OK.", 
-      "Passo 4: Abra o aplicativo Webcam desktop e digite seu endereço IP do aplicativo mobile.", 
+      "Passo 2: Selecione a opção Fonte de mídia.",
+      "Passo 3: Desmarque a opção Arquivo Local, diminua o Buffering de rede para 0, adicione em Entrada o Endereço IP que aparece na parte inferior do aplicativo mobile e clique em OK.",
+      "Passo 4: Abra o aplicativo Webcam desktop e digite seu endereço IP do aplicativo mobile.",
       "Passo 5: Agora sua câmera estará funcionando corretamente."
     ],
     "age_gate_title": "Aviso de Conteúdo",
@@ -175,33 +216,74 @@
     "price_type": "Type",
     "price_base": "Base Price",
     "price_table": [
-      { "type": "Headshot", "price": "$20" }, 
-      { "type": "Halfbody", "price": "$40" }, 
-      { "type": "Knee-Up", "price": "$60" }, 
-      { "type": "FullBody", "price": "$80" }, 
-      { "type": "Chibi", "price": "$30" }, 
-      { "type": "Ref. Sheet", "price": "$90" }, 
-      { "type": "VTuber", "price": "$100" },
-       { "type": "VTuber Rig", "price": "$120" }, 
-       { "type": "Semi-Realistic Headshot", "price": "$30" }, 
-       { "type": "NSFW", "price": "$85" }
+      {
+        "type": "Headshot",
+        "price": "$25"
+      },
+      {
+        "type": "Halfbody",
+        "price": "$45"
+      },
+      {
+        "type": "Knee-Up",
+        "price": "$70"
+      },
+      {
+        "type": "FullBody",
+        "price": "$90"
+      },
+      {
+        "type": "Chibi",
+        "price": "$35"
+      },
+      {
+        "type": "Ref. Sheet",
+        "price": "$110"
+      },
+      {
+        "type": "VTuber",
+        "price": "$125"
+      },
+      {
+        "type": "VTuber Rig",
+        "price": "$150"
+      },
+      {
+        "type": "Semi-Realistic Headshot",
+        "price": "$40"
+      },
+      {
+        "type": "NSFW",
+        "price": "$100"
+      }
     ],
     "sites_price_table": [
-      { "type": "Websites for artists", "price": "$30" }, 
-      { "type": "Simple desktop page", "price": "$50" }, 
-      { "type": "Page with desktop and mobile view", "price": "$75" }, 
-      { "type": "Institutional / Business Site", "price": "$100" }, 
-      { "type": "Monthly Maintenance", "price": "$15 / month" }
+      {
+        "type": "Landing Page / Simple Site",
+        "price": "$350"
+      },
+      {
+        "type": "Artist Site (Portfolio)",
+        "price": "$450"
+      },
+      {
+        "type": "Full Site (E-commerce/Systems)",
+        "price": "$700"
+      },
+      {
+        "type": "Monthly Maintenance",
+        "price": "$40 / month"
+      }
     ],
     "commissions_tos_subtitle": "Terms of Service",
     "tos_list": [
-      "Payment: 50% upfront, 50% after the work is completed.", 
-      "Revisions: Up to 3 minor revisions are included. Major changes may incur additional fees.", 
+      "Payment: 50% upfront, 50% after the work is completed.",
+      "Revisions: Up to 3 minor revisions are included. Major changes may incur additional fees.",
       "Refunds: Full refunds are only possible before the work begins. After starting, partial refunds may be considered depending on the progress."
     ],
     "sites_tos_list": [
-      "Hosting and Domain: The client must provide access credentials for the work to be carried out.", 
-      "Updates: A document will be provided explaining what needs to be done for each update.", 
+      "Hosting and Domain: The client must provide access credentials for the work to be carried out.",
+      "Updates: A document will be provided explaining what needs to be done for each update.",
       "Revisions: Up to 5 minor revisions are included. Major changes may incur additional fees."
     ],
     "queue_title": "Work Queue",
@@ -216,48 +298,48 @@
     "about_p2": "I'm learning to create digital art and I'm excited to share my progress with you. My goal is to create vibrant characters and engaging stories through digital art.",
     "about_setup_title": "My Setup",
     "about_setup_content": [
-      "Drawing Tablet: Tomate MTM-1106 11.6\"", 
-      "Software: Adobe Photoshop", 
-      "CPU: Intel Core i3 10100f", 
-      "GPU: NVIDIA GeForce RTX 3060ti", 
-      "RAM: DDR4 64GB 2666MHz", 
-      "PSU: Cooler Master MWE Gold v2 1050W", 
-      "Cooling System: Water Cooler Mancer Mystic G1 360mm", 
-      "SSD 1: XPG Spectrix S20 500GB", 
-      "SSD 2: Husky 500GB", 
-      "HDD 1: WDC WD30PURX 3TB", 
-      "HDD 2: ST2000DM008 2TB", 
-      "Headset: Havit Fuxi H3 / Redragon Zeus X", 
-      "Microphone: Meanton ME6S", 
-      "Mouse: Redragon Cobra Lunar White", 
+      "Drawing Tablet: Tomate MTM-1106 11.6\"",
+      "Software: Adobe Photoshop",
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "PSU: Cooler Master MWE Gold v2 1050W",
+      "Cooling System: Water Cooler Mancer Mystic G1 360mm",
+      "SSD 1: XPG Spectrix S20 500GB",
+      "SSD 2: Husky 500GB",
+      "HDD 1: WDC WD30PURX 3TB",
+      "HDD 2: ST2000DM008 2TB",
+      "Headset: Havit Fuxi H3 / Redragon Zeus X",
+      "Microphone: Meanton ME6S",
+      "Mouse: Redragon Cobra Lunar White",
       "Keyboard: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "Live Schedule",
     "about_schedule_list": [
-      "Mondays and Tuesdays: from 4 PM some commissions until 6 PM and we return at 8:30 PM until 10 PM with games", 
-      "Wednesdays: We start at 8 AM until 3 PM and return at 8:30 PM with some games", 
-      "Thursdays: From 12:30 PM until 3 PM and we return at 8:30 PM with a movie", 
-      "Fridays: From 8:30 PM only with games", 
+      "Mondays and Tuesdays: from 4 PM some commissions until 6 PM and we return at 8:30 PM until 10 PM with games",
+      "Wednesdays: We start at 8 AM until 3 PM and return at 8:30 PM with some games",
+      "Thursdays: From 12:30 PM until 3 PM and we return at 8:30 PM with a movie",
+      "Fridays: From 8:30 PM only with games",
       "Saturdays and Sundays: Starts from 9 AM with some games and commissions until 11 PM ending with a movie"
     ],
     "about_programming_skills_title": "Programming Skills",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "Art Skills",
     "about_arts_skills_list": [
-      "Anime", 
-      "Semi-Realism", 
-      "Chibi", 
+      "Anime",
+      "Semi-Realism",
+      "Chibi",
       "VTuber Rigging"
     ],
     "contact_title": "Contact",
@@ -285,7 +367,8 @@
     "age_gate_title": "Content Warning",
     "age_gate_text": "The content you are trying to access is intended for audiences 18 and over only. Do you confirm you are of age to proceed?",
     "age_gate_enter": "Enter",
-    "age_gate_leave": "Leave"
+    "age_gate_leave": "Leave",
+    "hub_tab_prices_terms": "Prices & Terms"
   },
   "fr": {
     "artist_name": "Ganert",
@@ -316,33 +399,74 @@
     "price_type": "Type",
     "price_base": "Prix de Base",
     "price_table": [
-      { "type": "Portrait", "price": "20€" }, 
-      { "type": "Buste", "price": "35€" }, 
-      { "type": "Plan Américain", "price": "50€" }, 
-      { "type": "Corps Entier", "price": "70€" }, 
-      { "type": "Fiche de Réf.", "price": "80€" }, 
-      { "type": "Chibi", "price": "25€" }, 
-      { "type": "VTuber", "price": "85€" }, 
-      { "type": "Rig VTuber", "price": "100€" }, 
-      { "type": "Portrait Semi-Réaliste", "price": "30€" }, 
-      { "type": "NSFW", "price": "75€" }
+      {
+        "type": "Portrait",
+        "price": "21 €"
+      },
+      {
+        "type": "Buste",
+        "price": "38 €"
+      },
+      {
+        "type": "Plan Américain",
+        "price": "59 €"
+      },
+      {
+        "type": "Corps Entier",
+        "price": "76 €"
+      },
+      {
+        "type": "Fiche de Réf.",
+        "price": "29 €"
+      },
+      {
+        "type": "Chibi",
+        "price": "92 €"
+      },
+      {
+        "type": "VTuber",
+        "price": "105 €"
+      },
+      {
+        "type": "Rig VTuber",
+        "price": "126 €"
+      },
+      {
+        "type": "Portrait Semi-Réaliste",
+        "price": "34 €"
+      },
+      {
+        "type": "NSFW",
+        "price": "84 €"
+      }
     ],
     "sites_price_table": [
-      { "type": "Sites pour artistes", "price": "25€" }, 
-      { "type": "Page de bureau simple", "price": "45€" }, 
-      { "type": "Page avec vue bureau et mobile", "price": "65€" }, 
-      { "type": "Site Institutionnel / d'Entreprise", "price": "85€" }, 
-      { "type": "Maintenance Mensuelle", "price": "13€ / mois" }
+      {
+        "type": "Page de Destination / Site Simple",
+        "price": "294 €"
+      },
+      {
+        "type": "Site d'Artiste (Portfolio)",
+        "price": "378 €"
+      },
+      {
+        "type": "Site Complet (E-commerce/Systèmes)",
+        "price": "588 €"
+      },
+      {
+        "type": "Maintenance Mensuelle",
+        "price": "34 € / mois"
+      }
     ],
     "commissions_tos_subtitle": "Conditions d'Utilisation",
     "tos_list": [
-      "Paiement : 50 % d'acompte, 50 % une fois le travail terminé.", 
-      "Révisions : Jusqu'à 3 révisions mineures sont incluses. Des modifications majeures peuvent entraîner des frais supplémentaires.", 
+      "Paiement : 50 % d'acompte, 50 % une fois le travail terminé.",
+      "Révisions : Jusqu'à 3 révisions mineures sont incluses. Des modifications majeures peuvent entraîner des frais supplémentaires.",
       "Remboursements : Les remboursements complets ne sont possibles qu'avant le début du travail. Une fois commencé, des remboursements partiels peuvent être envisagés en fonction de l'avancement."
     ],
     "sites_tos_list": [
-      "Hébergement et Domaine : Le client doit fournir les informations d'accès pour que le travail soit effectué.", 
-      "Mises à jour : Un document expliquant ce qui doit être fait pour chaque mise à jour sera fourni.", 
+      "Hébergement et Domaine : Le client doit fournir les informations d'accès pour que le travail soit effectué.",
+      "Mises à jour : Un document expliquant ce qui doit être fait pour chaque mise à jour sera fourni.",
       "Révisions : Jusqu'à 5 révisions mineures sont incluses. Des modifications majeures peuvent entraîner des frais supplémentaires."
     ],
     "queue_title": "File d'Attente",
@@ -357,44 +481,48 @@
     "about_p2": "J'apprends à créer de l'art numérique et je suis ravi de partager mes progrès avec vous. Mon objectif est de créer des personnages vibrants et des histoires captivantes grâce à l'art numérique.",
     "about_setup_title": "Mon Setup",
     "about_setup_content": [
-      "Tablette Graphique : Tomate MTM-1106 11.6\"", 
-      "Logiciel : Adobe Photoshop", 
-      "CPU : Intel Core i3 10100f", 
-      "GPU : NVIDIA GeForce RTX 3060ti", 
-      "RAM : DDR4 64GB 2666MHz", 
-      "PSU : Cooler Master MWE Gold v2 1050W", 
-      "Système de Refroidissement : Water Cooler Mancer Mystic G1 360mm", 
-      "SSD 1 : XPG Spectrix S20 500GB", 
-      "SSD 2 : Husky 500GB", 
-      "HDD 1 : WDC WD30PURX 3TB", 
-      "HDD 2 : ST2000DM008 2TB", 
-      "Casque : Havit Fuxi H3 / Redragon Zeus X", 
-      "Microphone : Meanton ME6S", 
-      "Souris : Redragon Cobra Lunar White", 
+      "Tablette Graphique : Tomate MTM-1106 11.6\"",
+      "Logiciel : Adobe Photoshop",
+      "CPU : Intel Core i3 10100f",
+      "GPU : NVIDIA GeForce RTX 3060ti",
+      "RAM : DDR4 64GB 2666MHz",
+      "PSU : Cooler Master MWE Gold v2 1050W",
+      "Système de Refroidissement : Water Cooler Mancer Mystic G1 360mm",
+      "SSD 1 : XPG Spectrix S20 500GB",
+      "SSD 2 : Husky 500GB",
+      "HDD 1 : WDC WD30PURX 3TB",
+      "HDD 2 : ST2000DM008 2TB",
+      "Casque : Havit Fuxi H3 / Redragon Zeus X",
+      "Microphone : Meanton ME6S",
+      "Souris : Redragon Cobra Lunar White",
       "Clavier : Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "Horaires des Lives",
     "about_schedule_list": [
-      "Lundis et Mardis : à partir de 16h quelques commissions jusqu'à 18h et nous revenons à 20h30 jusqu'à 22h avec des jeux", "Mercredis : Nous commençons à 8h jusqu'à 15h et revenons à 20h30 avec quelques jeux", "Jeudis : À partir de 12h30 jusqu'à 15h et nous revenons à 20h30 avec un film", "Vendredis : À partir de 20h30 uniquement avec des jeux", "Samedis et Dimanches : Commence à partir de 9h avec quelques jeux et commissions jusqu'à 23h se terminant par un film"
+      "Lundis et Mardis : à partir de 16h quelques commissions jusqu'à 18h et nous revenons à 20h30 jusqu'à 22h avec des jeux",
+      "Mercredis : Nous commençons à 8h jusqu'à 15h et revenons à 20h30 avec quelques jeux",
+      "Jeudis : À partir de 12h30 jusqu'à 15h et nous revenons à 20h30 avec un film",
+      "Vendredis : À partir de 20h30 uniquement avec des jeux",
+      "Samedis et Dimanches : Commence à partir de 9h avec quelques jeux et commissions jusqu'à 23h se terminant par un film"
     ],
     "about_programming_skills_title": "Compétences en Programmation",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "Compétences artistiques",
     "about_arts_skills_list": [
-      "Anime", 
-      "Semi-réalisme", 
-      "Chibi", 
+      "Anime",
+      "Semi-réalisme",
+      "Chibi",
       "Rigging VTuber"
     ],
     "contact_title": "Contact",
@@ -422,7 +550,8 @@
     "age_gate_title": "Avertissement de Contenu",
     "age_gate_text": "Le contenu que vous essayez d'accéder est destiné aux adultes de 18 ans et plus uniquement. Confirmez-vous que vous avez l'âge requis pour continuer?",
     "age_gate_enter": "Entrer",
-    "age_gate_leave": "Quitter"
+    "age_gate_leave": "Quitter",
+    "hub_tab_prices_terms": "Prix et Conditions"
   },
   "es": {
     "artist_name": "Ganert",
@@ -453,33 +582,74 @@
     "price_type": "Tipo",
     "price_base": "Precio Base",
     "price_table": [
-      { "type": "Retrato", "price": "20€" }, 
-      { "type": "Medio Cuerpo", "price": "35€" }, 
-      { "type": "Plano Americano", "price": "50€" }, 
-      { "type": "Cuerpo Completo", "price": "70€" }, 
-      { "type": "Hoja de Ref.", "price": "80€" }, 
-      { "type": "Chibi", "price": "25€" }, 
-      { "type": "VTuber", "price": "85€" }, 
-      { "type": "Rig VTuber", "price": "100€" }, 
-      { "type": "Retrato Semi-Realista", "price": "30€" }, 
-      { "type": "NSFW", "price": "75€" }
+      {
+        "type": "Retrato",
+        "price": "21 €"
+      },
+      {
+        "type": "Medio Cuerpo",
+        "price": "38 €"
+      },
+      {
+        "type": "Plano Americano",
+        "price": "59 €"
+      },
+      {
+        "type": "Cuerpo Completo",
+        "price": "76 €"
+      },
+      {
+        "type": "Hoja de Ref.",
+        "price": "29 €"
+      },
+      {
+        "type": "Chibi",
+        "price": "92 €"
+      },
+      {
+        "type": "VTuber",
+        "price": "105 €"
+      },
+      {
+        "type": "Rig VTuber",
+        "price": "126 €"
+      },
+      {
+        "type": "Retrato Semi-Realista",
+        "price": "34 €"
+      },
+      {
+        "type": "NSFW",
+        "price": "84 €"
+      }
     ],
     "sites_price_table": [
-      { "type": "Sitios web para artistas", "price": "25€" }, 
-      { "type": "Página de escritorio simple", "price": "45€" }, 
-      { "type": "Página con vista de escritorio y móvil", "price": "65€" }, 
-      { "type": "Sitio Institucional / Empresarial", "price": "85€" }, 
-      { "type": "Mantenimiento Mensual", "price": "13€ / mes" }
+      {
+        "type": "Landing Page / Sitio Simple",
+        "price": "294 €"
+      },
+      {
+        "type": "Sitio para Artistas (Portafolio)",
+        "price": "378 €"
+      },
+      {
+        "type": "Sitio Completo (E-commerce/Sistemas)",
+        "price": "588 €"
+      },
+      {
+        "type": "Mantenimiento Mensual",
+        "price": "34 € / mes"
+      }
     ],
     "commissions_tos_subtitle": "Términos de Servicio",
     "tos_list": [
-      "Pago: 50% por adelantado, 50% después de la finalización del trabajo.", 
-      "Revisiones: Se incluyen hasta 3 revisiones menores. Cambios importantes pueden incurrir en tarifas adicionales.", 
+      "Pago: 50% por adelantado, 50% después de la finalización del trabajo.",
+      "Revisiones: Se incluyen hasta 3 revisiones menores. Cambios importantes pueden incurrir en tarifas adicionales.",
       "Reembolsos: Los reembolsos completos solo son posibles antes de que comience el trabajo. Después de comenzar, se pueden considerar reembolsos parciales dependiendo del progreso."
     ],
     "sites_tos_list": [
-      "Alojamiento y Dominio: El cliente debe proporcionar las credenciales de acceso para que se realice el trabajo.", 
-      "Actualizaciones: Se proporcionará un documento que explica lo que se debe hacer para cada actualización.", 
+      "Alojamiento y Dominio: El cliente debe proporcionar las credenciales de acceso para que se realice el trabajo.",
+      "Actualizaciones: Se proporcionará un documento que explica lo que se debe hacer para cada actualización.",
       "Revisiones: Se incluyen hasta 5 revisiones menores. Cambios importantes pueden incurrir en tarifas adicionales."
     ],
     "queue_title": "Cola de Trabajo",
@@ -494,48 +664,48 @@
     "about_p2": "Estoy aprendiendo a crear arte digital y estoy emocionado de compartir mi progreso con ustedes. Mi objetivo es crear personajes vibrantes e historias atractivas a través del arte digital.",
     "about_setup_title": "Mi Setup",
     "about_setup_content": [
-      "Tableta Gráfica: Tomate MTM-1106 11.6\"", 
-      "Software: Adobe Photoshop", 
-      "CPU: Intel Core i3 10100f", 
-      "GPU: NVIDIA GeForce RTX 3060ti", 
-      "RAM: DDR4 64GB 2666MHz", 
-      "PSU: Cooler Master MWE Gold v2 1050W", 
-      "Sistema de Refrigeración: Water Cooler Mancer Mystic G1 360mm", 
-      "SSD 1: XPG Spectrix S20 500GB", 
-      "SSD 2: Husky 500GB", 
-      "HDD 1: WDC WD30PURX 3TB", 
-      "HDD 2: ST2000DM008 2TB", 
-      "Auriculares: Havit Fuxi H3 / Redragon Zeus X", 
-      "Micrófono: Meanton ME6S", 
-      "Ratón: Redragon Cobra Lunar White", 
+      "Tableta Gráfica: Tomate MTM-1106 11.6\"",
+      "Software: Adobe Photoshop",
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "PSU: Cooler Master MWE Gold v2 1050W",
+      "Sistema de Refrigeración: Water Cooler Mancer Mystic G1 360mm",
+      "SSD 1: XPG Spectrix S20 500GB",
+      "SSD 2: Husky 500GB",
+      "HDD 1: WDC WD30PURX 3TB",
+      "HDD 2: ST2000DM008 2TB",
+      "Auriculares: Havit Fuxi H3 / Redragon Zeus X",
+      "Micrófono: Meanton ME6S",
+      "Ratón: Redragon Cobra Lunar White",
       "Teclado: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "Horarios de Directos",
     "about_schedule_list": [
-      "Lunes y Martes: desde las 16h algunas comisiones hasta las 18h y volvemos a las 20:30 hasta las 22h con juegos", 
-      "Miércoles: Empezamos a las 8h hasta las 15h y volvemos a las 20:30 con algunos juegos", 
-      "Jueves: Desde las 12:30 hasta las 15h y volvemos a las 20:30 con alguna película", 
-      "Viernes: Desde las 20:30 solo con juegos", 
+      "Lunes y Martes: desde las 16h algunas comisiones hasta las 18h y volvemos a las 20:30 hasta las 22h con juegos",
+      "Miércoles: Empezamos a las 8h hasta las 15h y volvemos a las 20:30 con algunos juegos",
+      "Jueves: Desde las 12:30 hasta las 15h y volvemos a las 20:30 con alguna película",
+      "Viernes: Desde las 20:30 solo con juegos",
       "Sábados y Domingos: Empieza desde las 9h con algunos juegos y comisiones hasta las 23h terminando con alguna película"
     ],
     "about_programming_skills_title": "Habilidades en Programación",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "Habilidades Artísticas",
     "about_arts_skills_list": [
-      "Anime", 
-      "Semi-Realismo", 
-      "Chibi", 
+      "Anime",
+      "Semi-Realismo",
+      "Chibi",
       "Rigging VTuber"
     ],
     "contact_title": "Contacto",
@@ -563,7 +733,8 @@
     "age_gate_title": "Advertencia de Contenido",
     "age_gate_text": "El contenido que estás intentando ver está destinado únicamente a mayores de 18 años. ¿Confirmas que tienes la edad para continuar?",
     "age_gate_enter": "Entrar",
-    "age_gate_leave": "Salir"
+    "age_gate_leave": "Salir",
+    "hub_tab_prices_terms": "Precios y Términos"
   },
   "ru": {
     "artist_name": "Ganert",
@@ -594,33 +765,74 @@
     "price_type": "Тип",
     "price_base": "Базовая цена",
     "price_table": [
-      { "type": "Портрет", "price": "20€" }, 
-      { "type": "Половина тела", "price": "35€" }, 
-      { "type": "До колен", "price": "50€" }, 
-      { "type": "Полное тело", "price": "70€" }, 
-      { "type": "Референс", "price": "80€" }, 
-      { "type": "Чиби", "price": "25€" }, 
-      { "type": "VTuber", "price": "85€" }, 
-      { "type": "Риггинг VTuber", "price": "100€" }, 
-      { "type": "Полуреалистичный портрет", "price": "30€" }, 
-      { "type": "NSFW", "price": "75€" }
+      {
+        "type": "Портрет",
+        "price": "1907 ₽"
+      },
+      {
+        "type": "Половина тела",
+        "price": "3432 ₽"
+      },
+      {
+        "type": "До колен",
+        "price": "5339 ₽"
+      },
+      {
+        "type": "Полное тело",
+        "price": "6864 ₽"
+      },
+      {
+        "type": "Референс",
+        "price": "2669 ₽"
+      },
+      {
+        "type": "Чиби",
+        "price": "8390 ₽"
+      },
+      {
+        "type": "VTuber",
+        "price": "9534 ₽"
+      },
+      {
+        "type": "Риггинг VTuber",
+        "price": "11440 ₽"
+      },
+      {
+        "type": "Полуреалистичный портрет",
+        "price": "3051 ₽"
+      },
+      {
+        "type": "NSFW",
+        "price": "7627 ₽"
+      }
     ],
     "sites_price_table": [
-      { "type": "Сайты для художников", "price": "25€" }, 
-      { "type": "Простая страница для ПК", "price": "45€" }, 
-      { "type": "Страница с просмотром на ПК и мобильных", "price": "65€" }, 
-      { "type": "Корпоративный сайт", "price": "85€" }, 
-      { "type": "Ежемесячное обслуживание", "price": "13€ / мес." }
+      {
+        "type": "Лендинг / Простой сайт",
+        "price": "26694 ₽"
+      },
+      {
+        "type": "Сайт для художников (Портфолио)",
+        "price": "34322 ₽"
+      },
+      {
+        "type": "Полный сайт (E-commerce/Системы)",
+        "price": "53389 ₽"
+      },
+      {
+        "type": "Ежемесячное обслуживание",
+        "price": "3051 ₽ / мес."
+      }
     ],
     "commissions_tos_subtitle": "Условия обслуживания",
     "tos_list": [
-      "Оплата: 50% предоплата, 50% после завершения работы.", 
-      "Правки: Включено до 3 небольших правок. Крупные изменения могут потребовать дополнительной платы.", 
+      "Оплата: 50% предоплата, 50% после завершения работы.",
+      "Правки: Включено до 3 небольших правок. Крупные изменения могут потребовать дополнительной платы.",
       "Возврат средств: Полный возврат средств возможен только до начала работы. После начала работы возможен частичный возврат в зависимости от прогресса."
     ],
     "sites_tos_list": [
-      "Хостинг и домен: Клиент должен предоставить учетные данные для доступа для выполнения работы.", 
-      "Обновления: Будет предоставлен документ, объясняющий, что нужно делать для каждого обновления.", 
+      "Хостинг и домен: Клиент должен предоставить учетные данные для доступа для выполнения работы.",
+      "Обновления: Будет предоставлен документ, объясняющий, что нужно делать для каждого обновления.",
       "Правки: Включено до 5 небольших правок. Крупные изменения могут потребовать дополнительной платы."
     ],
     "queue_title": "Очередь работ",
@@ -635,48 +847,48 @@
     "about_p2": "Я учусь создавать цифровое искусство и рад поделиться с вами своим прогрессом. Моя цель — создавать ярких персонажей и увлекательные истории с помощью цифрового искусства.",
     "about_setup_title": "Мой Сетап",
     "about_setup_content": [
-      "Графический планшет: Tomate MTM-1106 11.6\"", 
-      "Программное обеспечение: Adobe Photoshop", 
-      "ЦП: Intel Core i3 10100f", 
-      "ГП: NVIDIA GeForce RTX 3060ti", 
-      "ОЗУ: DDR4 64GB 2666MHz", 
-      "БП: Cooler Master MWE Gold v2 1050W", 
-      "Система охлаждения: СЖО Mancer Mystic G1 360мм", 
-      "SSD 1: XPG Spectrix S20 500GB", 
-      "SSD 2: Husky 500GB", 
-      "HDD 1: WDC WD30PURX 3TB", 
-      "HDD 2: ST2000DM008 2TB", 
-      "Гарнитура: Havit Fuxi H3 / Redragon Zeus X", 
-      "Микрофон: Meanton ME6S", 
-      "Мышь: Redragon Cobra Lunar White", 
+      "Графический планшет: Tomate MTM-1106 11.6\"",
+      "Программное обеспечение: Adobe Photoshop",
+      "ЦП: Intel Core i3 10100f",
+      "ГП: NVIDIA GeForce RTX 3060ti",
+      "ОЗУ: DDR4 64GB 2666MHz",
+      "БП: Cooler Master MWE Gold v2 1050W",
+      "Система охлаждения: СЖО Mancer Mystic G1 360мм",
+      "SSD 1: XPG Spectrix S20 500GB",
+      "SSD 2: Husky 500GB",
+      "HDD 1: WDC WD30PURX 3TB",
+      "HDD 2: ST2000DM008 2TB",
+      "Гарнитура: Havit Fuxi H3 / Redragon Zeus X",
+      "Микрофон: Meanton ME6S",
+      "Мышь: Redragon Cobra Lunar White",
       "Клавиатура: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "Расписание Стримов",
     "about_schedule_list": [
-      "Понедельник и Вторник: с 16:00 некоторые заказы до 18:00 и возвращаемся в 20:30 до 22:00 с играми", 
-      "Среда: Начинаем в 8:00 до 15:00 и возвращаемся в 20:30 с играми", 
-      "Четверг: С 12:30 до 15:00 и возвращаемся в 20:30 с фильмом", 
-      "Пятница: С 20:30 только с играми", 
+      "Понедельник и Вторник: с 16:00 некоторые заказы до 18:00 и возвращаемся в 20:30 до 22:00 с играми",
+      "Среда: Начинаем в 8:00 до 15:00 и возвращаемся в 20:30 с играми",
+      "Четверг: С 12:30 до 15:00 и возвращаемся в 20:30 с фильмом",
+      "Пятница: С 20:30 только с играми",
       "Суббота и Воскресенье: Начинается с 9:00 с играми и заказами до 23:00, заканчивая фильмом"
     ],
     "about_programming_skills_title": "Навыки программирования",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "Навыки искусства",
     "about_arts_skills_list": [
-      "Аниме", 
-      "Полуреализм", 
-      "Чиби", 
+      "Аниме",
+      "Полуреализм",
+      "Чиби",
       "Риггинг VTuber"
     ],
     "contact_title": "Контакты",
@@ -704,7 +916,8 @@
     "age_gate_title": "Предупреждение о контенте",
     "age_gate_text": "Контент, к которому вы пытаетесь получить доступ, предназначен только для аудитории старше 18 лет. Вы подтверждаете, что достигли совершеннолетия для продолжения?",
     "age_gate_enter": "Войти",
-    "age_gate_leave": "Выйти"
+    "age_gate_leave": "Выйти",
+    "hub_tab_prices_terms": "Цены и условия"
   },
   "ja": {
     "artist_name": "Ganert",
@@ -735,33 +948,74 @@
     "price_type": "タイプ",
     "price_base": "基本価格",
     "price_table": [
-      { "type": "ヘッドショット", "price": "¥3000" }, 
-      { "type": "半身", "price": "¥5900" }, 
-      { "type": "膝上", "price": "¥8800" }, 
-      { "type": "全身", "price": "¥11800" }, 
-      { "type": "チビ", "price": "¥4400" }, 
-      { "type": "参照シート", "price": "¥13200" }, 
-      { "type": "VTuber", "price": "¥14700" }, 
-      { "type": "VTuberリギング", "price": "¥17700" }, 
-      { "type": "セミリアリスティックヘッドショット", "price": "¥4400" }, 
-      { "type": "NSFW", "price": "¥12500" }
+      {
+        "type": "ヘッドショット",
+        "price": "¥3827"
+      },
+      {
+        "type": "半身",
+        "price": "¥6889"
+      },
+      {
+        "type": "膝上",
+        "price": "¥10716"
+      },
+      {
+        "type": "全身",
+        "price": "¥13777"
+      },
+      {
+        "type": "チビ",
+        "price": "¥5358"
+      },
+      {
+        "type": "参照シート",
+        "price": "¥16839"
+      },
+      {
+        "type": "VTuber",
+        "price": "¥19135"
+      },
+      {
+        "type": "VTuberリギング",
+        "price": "¥22962"
+      },
+      {
+        "type": "セミリアリスティックヘッドショット",
+        "price": "¥6123"
+      },
+      {
+        "type": "NSFW",
+        "price": "¥15308"
+      }
     ],
     "sites_price_table": [
-      { "type": "アーティストのためのサイト", "price": "¥4400" }, 
-      { "type": "シンプルなデスクトップページ", "price": "¥7400" }, 
-      { "type": "デスクトップとモバイル表示のあるページ", "price": "¥11000" }, 
-      { "type": "機関/ビジネスサイト", "price": "¥14700" }, 
-      { "type": "月次メンテナンス", "price": "2,200円 / 月" }
+      {
+        "type": "ランディングページ / シンプルなサイト",
+        "price": "¥53578"
+      },
+      {
+        "type": "アーティスト向けサイト (ポートフォリオ)",
+        "price": "¥68886"
+      },
+      {
+        "type": "フルサイト (EC/システム)",
+        "price": "¥107156"
+      },
+      {
+        "type": "月次メンテナンス",
+        "price": "¥6123 / 月"
+      }
     ],
     "commissions_tos_subtitle": "利用規約",
     "tos_list": [
-      "支払い：前金50％、作業完了後50％。", 
-      "修正：3回までの軽微な修正が含まれます。大幅な変更には追加料金が発生する場合があります。", 
+      "支払い：前金50％、作業完了後50％。",
+      "修正：3回までの軽微な修正が含まれます。大幅な変更には追加料金が発生する場合があります。",
       "返金：全額返金は作業開始前にのみ可能です。開始後は、進捗に応じて一部返金が検討される場合があります。"
     ],
     "sites_tos_list": [
-      "ホスティングとドメイン：作業を行うために、クライアントはアクセス資格情報を提供する必要があります。", 
-      "更新：各更新で行う必要があることを説明するドキュメントが提供されます。", 
+      "ホスティングとドメイン：作業を行うために、クライアントはアクセス資格情報を提供する必要があります。",
+      "更新：各更新で行う必要があることを説明するドキュメントが提供されます。",
       "修正：5回までの軽微な修正が含まれます。大幅な変更には追加料金が発生する場合があります。"
     ],
     "queue_title": "作業キュー",
@@ -776,48 +1030,48 @@
     "about_p2": "デジタルアートの制作を学んでおり、その進捗を皆さんと共有できることを楽しみにしています。私の目標は、デジタルアートを通じて活気あるキャラクターや魅力的な物語を創造することです。",
     "about_setup_title": "私のセットアップ",
     "about_setup_content": [
-      "ペンタブレット: Tomate MTM-1106 11.6\"", 
-      "ソフトウェア: Adobe Photoshop", 
-      "CPU: Intel Core i3 10100f", 
-      "GPU: NVIDIA GeForce RTX 3060ti", 
-      "RAM: DDR4 64GB 2666MHz", 
-      "PSU: Cooler Master MWE Gold v2 1050W", 
-      "冷却システム: 水冷クーラー Mancer Mystic G1 360mm", 
-      "SSD 1: XPG Spectrix S20 500GB", 
-      "SSD 2: Husky 500GB", 
-      "HDD 1: WDC WD30PURX 3TB", 
-      "HDD 2: ST2000DM008 2TB", 
-      "ヘッドセット: Havit Fuxi H3 / Redragon Zeus X", 
-      "マイク: Meanton ME6S", 
-      "マウス: Redragon Cobra Lunar White", 
+      "ペンタブレット: Tomate MTM-1106 11.6\"",
+      "ソフトウェア: Adobe Photoshop",
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "PSU: Cooler Master MWE Gold v2 1050W",
+      "冷却システム: 水冷クーラー Mancer Mystic G1 360mm",
+      "SSD 1: XPG Spectrix S20 500GB",
+      "SSD 2: Husky 500GB",
+      "HDD 1: WDC WD30PURX 3TB",
+      "HDD 2: ST2000DM008 2TB",
+      "ヘッドセット: Havit Fuxi H3 / Redragon Zeus X",
+      "マイク: Meanton ME6S",
+      "マウス: Redragon Cobra Lunar White",
       "キーボード: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "ライブスケジュール",
     "about_schedule_list": [
-      "月曜日と火曜日：16時からいくつかのコミッションを18時まで、そして20時30分から22時までゲーム", 
-      "水曜日：8時から15時まで、そして20時30分からいくつかのゲーム", 
-      "木曜日：12時30分から15時まで、そして20時30分から映画", 
-      "金曜日：20時30分からゲームのみ", 
+      "月曜日と火曜日：16時からいくつかのコミッションを18時まで、そして20時30分から22時までゲーム",
+      "水曜日：8時から15時まで、そして20時30分からいくつかのゲーム",
+      "木曜日：12時30分から15時まで、そして20時30分から映画",
+      "金曜日：20時30分からゲームのみ",
       "土曜日と日曜日：9時からいくつかのゲームとコミッションで始まり、23時に映画で終わる"
     ],
     "about_programming_skills_title": "プログラミングスキル",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "アートスキル",
     "about_arts_skills_list": [
-      "アニメ", 
-      "セミリアリズム", 
-      "チビ", 
+      "アニメ",
+      "セミリアリズム",
+      "チビ",
       "VTuberリギング"
     ],
     "contact_title": "連絡先",
@@ -845,7 +1099,8 @@
     "age_gate_title": "コンテンツに関する警告",
     "age_gate_text": "アクセスしようとしているコンテンツは18歳以上の方のみを対象としています。続行する年齢であることを確認しますか？",
     "age_gate_enter": "入る",
-    "age_gate_leave": "出る"
+    "age_gate_leave": "出る",
+    "hub_tab_prices_terms": "価格と規約"
   },
   "zh": {
     "artist_name": "Ganert",
@@ -876,33 +1131,74 @@
     "price_type": "类型",
     "price_base": "基本价格",
     "price_table": [
-      { "type": "头像", "price": "¥145" }, 
-      { "type": "半身像", "price": "¥285" }, 
-      { "type": "膝上像", "price": "¥430" }, 
-      { "type": "全身像", "price": "¥570" }, 
-      { "type": "赤壁", "price": "¥215" }, 
-      { "type": "参考图", "price": "¥645" }, 
-      { "type": "VTuber", "price": "¥715" }, 
-      { "type": "VTuber绑定", "price": "¥860" }, 
-      { "type": "半写实头像", "price": "¥215" }, 
-      { "type": "NSFW", "price": "¥605" }
+      {
+        "type": "头像",
+        "price": "¥174"
+      },
+      {
+        "type": "半身像",
+        "price": "¥313"
+      },
+      {
+        "type": "膝上像",
+        "price": "¥486"
+      },
+      {
+        "type": "全身像",
+        "price": "¥626"
+      },
+      {
+        "type": "赤壁",
+        "price": "¥243"
+      },
+      {
+        "type": "参考图",
+        "price": "¥764"
+      },
+      {
+        "type": "VTuber",
+        "price": "¥869"
+      },
+      {
+        "type": "VTuber绑定",
+        "price": "¥1042"
+      },
+      {
+        "type": "半写实头像",
+        "price": "¥278"
+      },
+      {
+        "type": "NSFW",
+        "price": "¥695"
+      }
     ],
     "sites_price_table": [
-      { "type": "艺术家网站", "price": "¥215" }, 
-      { "type": "简单的桌面页面", "price": "¥355" }, 
-      { "type": "带有桌面和移动视图的页面", "price": "¥535" }, 
-      { "type": "机构/商业网站", "price": "¥715" }, 
-      { "type": "每月维护", "price": "¥105 / 月" }
+      {
+        "type": "落地页 / 简单网站",
+        "price": "¥2432"
+      },
+      {
+        "type": "艺术家网站 (作品集)",
+        "price": "¥3128"
+      },
+      {
+        "type": "完整网站 (电子商务/系统)",
+        "price": "¥4865"
+      },
+      {
+        "type": "每月维护",
+        "price": "¥278 / 月"
+      }
     ],
     "commissions_tos_subtitle": "服务条款",
     "tos_list": [
-      "付款：预付50％，工作完成后付50％。", 
-      "修改：包括最多3次小修改。重大更改可能会产生额外费用。", 
+      "付款：预付50％，工作完成后付50％。",
+      "修改：包括最多3次小修改。重大更改可能会产生额外费用。",
       "退款：只有在工作开始前才可能全额退款。开始后，可根据进度考虑部分退款。"
     ],
     "sites_tos_list": [
-      "托管和域名：客户必须提供访问凭据才能进行工作。", 
-      "更新：将提供一份文件，说明每次更新需要做什么。", 
+      "托管和域名：客户必须提供访问凭据才能进行工作。",
+      "更新：将提供一份文件，说明每次更新需要做什么。",
       "修改：包括最多5次小修改。重大更改可能会产生额外费用。"
     ],
     "queue_title": "工作队列",
@@ -917,48 +1213,48 @@
     "about_p2": "我正在学习创作数字艺术，很高兴能与大家分享我的进步。我的目标是通过数字艺术创作充满活力的角色和引人入胜的故事。",
     "about_setup_title": "我的设备",
     "about_setup_content": [
-      "数位板: Tomate MTM-1106 11.6\"", 
-      "软件: Adobe Photoshop", 
-      "CPU: Intel Core i3 10100f", 
-      "GPU: NVIDIA GeForce RTX 3060ti", 
-      "内存: DDR4 64GB 2666MHz", 
-      "电源: Cooler Master MWE Gold v2 1050W", 
-      "散热系统: Mancer Mystic G1 360mm 水冷散热器", 
-      "固态硬盘 1: XPG Spectrix S20 500GB", 
-      "固态硬盘 2: Husky 500GB", 
-      "机械硬盘 1: WDC WD30PURX 3TB", 
-      "机械硬盘 2: ST2000DM008 2TB", 
-      "耳机: Havit Fuxi H3 / Redragon Zeus X", 
-      "麦克风: Meanton ME6S", 
-      "鼠标: Redragon Cobra Lunar White", 
+      "数位板: Tomate MTM-1106 11.6\"",
+      "软件: Adobe Photoshop",
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "内存: DDR4 64GB 2666MHz",
+      "电源: Cooler Master MWE Gold v2 1050W",
+      "散热系统: Mancer Mystic G1 360mm 水冷散热器",
+      "固态硬盘 1: XPG Spectrix S20 500GB",
+      "固态硬盘 2: Husky 500GB",
+      "机械硬盘 1: WDC WD30PURX 3TB",
+      "机械硬盘 2: ST2000DM008 2TB",
+      "耳机: Havit Fuxi H3 / Redragon Zeus X",
+      "麦克风: Meanton ME6S",
+      "鼠标: Redragon Cobra Lunar White",
       "键盘: Redragon Kala V2 K557-RGB"
     ],
     "about_schedule_title": "直播时间表",
     "about_schedule_list": [
-      "周一和周二：从16点开始处理一些委托直到18点，然后在20:30到22点玩游戏", 
-      "周三：从8点开始直到15点，然后在20:30玩一些游戏", 
-      "周四：从12:30到15点，然后在20:30看电影", 
-      "周五：从20:30开始只有游戏", 
+      "周一和周二：从16点开始处理一些委托直到18点，然后在20:30到22点玩游戏",
+      "周三：从8点开始直到15点，然后在20:30玩一些游戏",
+      "周四：从12:30到15点，然后在20:30看电影",
+      "周五：从20:30开始只有游戏",
       "周六和周日：从9点开始玩一些游戏和处理委托，直到23点以一部电影结束"
     ],
     "about_programming_skills_title": "编程技能",
     "about_programming_skills_list": [
-      "HTML", 
-      "CSS", 
-      "JavaScript", 
-      " ",
-      "Python", 
-      "C", 
-      "C++", 
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "C",
+      "C++",
       "C#",
       "Java",
       "Kotlin"
     ],
     "about_arts_skills_title": "艺术技能",
     "about_arts_skills_list": [
-      "动漫", 
-      "半写实", 
-      "Chibi", 
+      "动漫",
+      "半写实",
+      "Chibi",
       "VTuber绑定"
     ],
     "contact_title": "联系方式",
@@ -986,6 +1282,7 @@
     "age_gate_title": "内容警告",
     "age_gate_text": "您尝试访问的内容仅供18岁及以上观众观看。您确认已达到继续操作的年龄吗？",
     "age_gate_enter": "进入",
-    "age_gate_leave": "离开"
+    "age_gate_leave": "离开",
+    "hub_tab_prices_terms": "价格与条款"
   }
 }
