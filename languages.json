@@ -35,61 +35,61 @@
     "price_table": [
       {
         "type": "Headshot",
-        "price": "R$ 130"
+        "price": "R$ 156"
       },
       {
         "type": "Halfbody",
-        "price": "R$ 234"
+        "price": "R$ 286"
       },
       {
         "type": "Knee-Up",
-        "price": "R$ 363"
+        "price": "R$ 416"
       },
       {
         "type": "FullBody",
-        "price": "R$ 467"
+        "price": "R$ 520"
       },
       {
         "type": "Chibi",
-        "price": "R$ 182"
-      },
-      {
-        "type": "Ref. Sheet",
-        "price": "R$ 571"
-      },
-      {
-        "type": "VTuber",
-        "price": "R$ 649"
-      },
-      {
-        "type": "VTuber Rig",
-        "price": "R$ 779"
-      },
-      {
-        "type": "Semi-Realista Headshot",
         "price": "R$ 208"
       },
       {
+        "type": "Ref. Sheet",
+        "price": "R$ 676"
+      },
+      {
+        "type": "VTuber",
+        "price": "R$ 780"
+      },
+      {
+        "type": "VTuber Rig",
+        "price": "R$ 1560"
+      },
+      {
+        "type": "Semi-Realista Headshot",
+        "price": "R$ 234"
+      },
+      {
         "type": "NSFW",
-        "price": "R$ 519"
+        "price": "R$ 624"
       }
     ],
     "sites_price_table": [
       {
         "type": "Landing Page / Site Simples",
-        "price": "R$ 1817"
+        "price": "R$ 1976"
       },
       {
         "type": "Site para Artistas (Portfólio)",
-        "price": "R$ 2336"
+        "price": "R$ 3016"
       },
       {
         "type": "Site Completo (E-commerce/Sistemas)",
-        "price": "R$ 3633"
+        "price": "R$ 4940"
       },
       {
         "type": "Manutenção Mensal",
-        "price": "R$ 208 / mês"
+        "price": "R$ 260 / mês"
       }
     ],
     "commissions_tos_subtitle": "Termos de Serviço",
@@ -141,16 +141,22 @@
     ],
     "about_programming_skills_title": "Habilidades em Programação",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 FRONTEND & UI",
+      "Angular (Principal)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
-      "Python",
-      "C",
-      "C++",
-      "C#",
+      " ",
+      "⚙️ BACKEND & API",
+      "C# (.NET Core)",
+      "Python (Django/Flask)",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ TOOLS & DB",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "Habilidades artisticas",
     "about_arts_skills_list": [
@@ -218,43 +224,43 @@
     "price_table": [
       {
         "type": "Headshot",
-        "price": "$25"
+        "price": "$30"
       },
       {
         "type": "Halfbody",
-        "price": "$45"
+        "price": "$55"
       },
       {
         "type": "Knee-Up",
-        "price": "$70"
+        "price": "$80"
       },
       {
         "type": "FullBody",
-        "price": "$90"
+        "price": "$100"
       },
       {
         "type": "Chibi",
-        "price": "$35"
-      },
-      {
-        "type": "Ref. Sheet",
-        "price": "$110"
-      },
-      {
-        "type": "VTuber",
-        "price": "$125"
-      },
-      {
-        "type": "VTuber Rig",
-        "price": "$150"
-      },
-      {
-        "type": "Semi-Realistic Headshot",
         "price": "$40"
       },
       {
+        "type": "Ref. Sheet",
+        "price": "$130"
+      },
+      {
+        "type": "VTuber",
+        "price": "$150"
+      },
+      {
+        "type": "VTuber Rig",
+        "price": "$300"
+      },
+      {
+        "type": "Semi-Realistic Headshot",
+        "price": "$45"
+      },
+      {
         "type": "NSFW",
-        "price": "$100"
+        "price": "$120"
       }
     ],
     "sites_price_table": [
@@ -264,15 +270,15 @@
       },
       {
         "type": "Artist Site (Portfolio)",
-        "price": "$450"
+        "price": "$500"
       },
       {
         "type": "Full Site (E-commerce/Systems)",
-        "price": "$700"
+        "price": "$1000"
       },
       {
         "type": "Monthly Maintenance",
-        "price": "$40 / month"
+        "price": "$50 / month"
       }
     ],
     "commissions_tos_subtitle": "Terms of Service",
@@ -324,16 +330,22 @@
     ],
     "about_programming_skills_title": "Programming Skills",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 FRONTEND & UI",
+      "Angular (Main)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
-      "Python",
-      "C",
-      "C++",
-      "C#",
+      " ",
+      "⚙️ BACKEND & API",
+      "C# (.NET Core)",
+      "Python (Django/Flask)",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ TOOLS & DB",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "Art Skills",
     "about_arts_skills_list": [
@@ -401,61 +413,61 @@
     "price_table": [
       {
         "type": "Portrait",
-        "price": "21 €"
+        "price": "28 €"
       },
       {
         "type": "Buste",
-        "price": "38 €"
+        "price": "51 €"
       },
       {
         "type": "Plan Américain",
-        "price": "59 €"
+        "price": "74 €"
       },
       {
         "type": "Corps Entier",
-        "price": "76 €"
+        "price": "93 €"
       },
       {
         "type": "Fiche de Réf.",
-        "price": "29 €"
+        "price": "37 €"
       },
       {
         "type": "Chibi",
-        "price": "92 €"
+        "price": "121 €"
       },
       {
         "type": "VTuber",
-        "price": "105 €"
+        "price": "140 €"
       },
       {
         "type": "Rig VTuber",
-        "price": "126 €"
+        "price": "279 €"
       },
       {
         "type": "Portrait Semi-Réaliste",
-        "price": "34 €"
+        "price": "42 €"
       },
       {
         "type": "NSFW",
-        "price": "84 €"
+        "price": "112 €"
       }
     ],
     "sites_price_table": [
       {
         "type": "Page de Destination / Site Simple",
-        "price": "294 €"
+        "price": "353 €"
       },
       {
         "type": "Site d'Artiste (Portfolio)",
-        "price": "378 €"
+        "price": "539 €"
       },
       {
         "type": "Site Complet (E-commerce/Systèmes)",
-        "price": "588 €"
+        "price": "884 €"
       },
       {
         "type": "Maintenance Mensuelle",
-        "price": "34 € / mois"
+        "price": "46 € / mois"
       }
     ],
     "commissions_tos_subtitle": "Conditions d'Utilisation",
@@ -507,16 +519,22 @@
     ],
     "about_programming_skills_title": "Compétences en Programmation",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 FRONTEND & UI",
+      "Angular (Principal)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
+      " ",
+      "⚙️ BACKEND & API",
+      "C# (.NET Core)",
       "Python",
-      "C",
-      "C++",
-      "C#",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ OUTILS & DB",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "Compétences artistiques",
     "about_arts_skills_list": [
@@ -584,61 +602,61 @@
     "price_table": [
       {
         "type": "Retrato",
-        "price": "21 €"
+        "price": "28 €"
       },
       {
         "type": "Medio Cuerpo",
-        "price": "38 €"
+        "price": "51 €"
       },
       {
         "type": "Plano Americano",
-        "price": "59 €"
+        "price": "74 €"
       },
       {
         "type": "Cuerpo Completo",
-        "price": "76 €"
+        "price": "93 €"
       },
       {
         "type": "Hoja de Ref.",
-        "price": "29 €"
+        "price": "37 €"
       },
       {
         "type": "Chibi",
-        "price": "92 €"
+        "price": "121 €"
       },
       {
         "type": "VTuber",
-        "price": "105 €"
+        "price": "140 €"
       },
       {
         "type": "Rig VTuber",
-        "price": "126 €"
+        "price": "279 €"
       },
       {
         "type": "Retrato Semi-Realista",
-        "price": "34 €"
+        "price": "42 €"
       },
       {
         "type": "NSFW",
-        "price": "84 €"
+        "price": "112 €"
       }
     ],
     "sites_price_table": [
       {
         "type": "Landing Page / Sitio Simple",
-        "price": "294 €"
+        "price": "353 €"
       },
       {
         "type": "Sitio para Artistas (Portafolio)",
-        "price": "378 €"
+        "price": "539 €"
       },
       {
         "type": "Sitio Completo (E-commerce/Sistemas)",
-        "price": "588 €"
+        "price": "884 €"
       },
       {
         "type": "Mantenimiento Mensual",
-        "price": "34 € / mes"
+        "price": "46 € / mes"
       }
     ],
     "commissions_tos_subtitle": "Términos de Servicio",
@@ -690,16 +708,22 @@
     ],
     "about_programming_skills_title": "Habilidades en Programación",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 FRONTEND & UI",
+      "Angular (Principal)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
+      " ",
+      "⚙️ BACKEND & API",
+      "C# (.NET Core)",
       "Python",
-      "C",
-      "C++",
-      "C#",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ HERRAMIENTAS & DB",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "Habilidades Artísticas",
     "about_arts_skills_list": [
@@ -767,61 +791,61 @@
     "price_table": [
       {
         "type": "Портрет",
-        "price": "1907 ₽"
+        "price": "2740 ₽"
       },
       {
         "type": "Половина тела",
-        "price": "3432 ₽"
+        "price": "5030 ₽"
       },
       {
         "type": "До колен",
-        "price": "5339 ₽"
+        "price": "7320 ₽"
       },
       {
         "type": "Полное тело",
-        "price": "6864 ₽"
+        "price": "9150 ₽"
       },
       {
         "type": "Референс",
-        "price": "2669 ₽"
+        "price": "3660 ₽"
       },
       {
         "type": "Чиби",
-        "price": "8390 ₽"
+        "price": "11900 ₽"
       },
       {
         "type": "VTuber",
-        "price": "9534 ₽"
+        "price": "13720 ₽"
       },
       {
         "type": "Риггинг VTuber",
-        "price": "11440 ₽"
+        "price": "27450 ₽"
       },
       {
         "type": "Полуреалистичный портрет",
-        "price": "3051 ₽"
+        "price": "4120 ₽"
       },
       {
         "type": "NSFW",
-        "price": "7627 ₽"
+        "price": "10980 ₽"
       }
     ],
     "sites_price_table": [
       {
         "type": "Лендинг / Простой сайт",
-        "price": "26694 ₽"
+        "price": "34770 ₽"
       },
       {
         "type": "Сайт для художников (Портфолио)",
-        "price": "34322 ₽"
+        "price": "53070 ₽"
       },
       {
         "type": "Полный сайт (E-commerce/Системы)",
-        "price": "53389 ₽"
+        "price": "86920 ₽"
       },
       {
         "type": "Ежемесячное обслуживание",
-        "price": "3051 ₽ / мес."
+        "price": "4580 ₽ / мес."
       }
     ],
     "commissions_tos_subtitle": "Условия обслуживания",
@@ -873,16 +897,22 @@
     ],
     "about_programming_skills_title": "Навыки программирования",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 ФРОНТЕНД & UI",
+      "Angular (Основной)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
+      " ",
+      "⚙️ БЭКЕНД & API",
+      "C# (.NET Core)",
       "Python",
-      "C",
-      "C++",
-      "C#",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ ИНСТРУМЕНТЫ & БД",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "Навыки искусства",
     "about_arts_skills_list": [
@@ -950,61 +980,61 @@
     "price_table": [
       {
         "type": "ヘッドショット",
-        "price": "¥3827"
+        "price": "¥4500"
       },
       {
         "type": "半身",
-        "price": "¥6889"
+        "price": "¥8250"
       },
       {
         "type": "膝上",
-        "price": "¥10716"
+        "price": "¥12000"
       },
       {
         "type": "全身",
-        "price": "¥13777"
+        "price": "¥15000"
       },
       {
         "type": "チビ",
-        "price": "¥5358"
+        "price": "¥6000"
       },
       {
         "type": "参照シート",
-        "price": "¥16839"
+        "price": "¥19500"
       },
       {
         "type": "VTuber",
-        "price": "¥19135"
+        "price": "¥22500"
       },
       {
         "type": "VTuberリギング",
-        "price": "¥22962"
+        "price": "¥45000"
       },
       {
         "type": "セミリアリスティックヘッドショット",
-        "price": "¥6123"
+        "price": "¥6750"
       },
       {
         "type": "NSFW",
-        "price": "¥15308"
+        "price": "¥18000"
       }
     ],
     "sites_price_table": [
       {
         "type": "ランディングページ / シンプルなサイト",
-        "price": "¥53578"
+        "price": "¥57000"
       },
       {
         "type": "アーティスト向けサイト (ポートフォリオ)",
-        "price": "¥68886"
+        "price": "¥87000"
       },
       {
         "type": "フルサイト (EC/システム)",
-        "price": "¥107156"
+        "price": "¥142500"
       },
       {
         "type": "月次メンテナンス",
-        "price": "¥6123 / 月"
+        "price": "¥7500 / 月"
       }
     ],
     "commissions_tos_subtitle": "利用規約",
@@ -1056,16 +1086,22 @@
     ],
     "about_programming_skills_title": "プログラミングスキル",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 フロントエンド & UI",
+      "Angular (メイン)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
+      " ",
+      "⚙️ バックエンド & API",
+      "C# (.NET Core)",
       "Python",
-      "C",
-      "C++",
-      "C#",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ ツール & DB",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "アートスキル",
     "about_arts_skills_list": [
@@ -1133,61 +1169,61 @@
     "price_table": [
       {
         "type": "头像",
-        "price": "¥174"
+        "price": "¥216"
       },
       {
         "type": "半身像",
-        "price": "¥313"
+        "price": "¥396"
       },
       {
         "type": "膝上像",
-        "price": "¥486"
+        "price": "¥576"
       },
       {
         "type": "全身像",
-        "price": "¥626"
+        "price": "¥720"
       },
       {
         "type": "赤壁",
-        "price": "¥243"
+        "price": "¥288"
       },
       {
         "type": "参考图",
-        "price": "¥764"
+        "price": "¥936"
       },
       {
         "type": "VTuber",
-        "price": "¥869"
+        "price": "¥1080"
       },
       {
         "type": "VTuber绑定",
-        "price": "¥1042"
+        "price": "¥2160"
       },
       {
         "type": "半写实头像",
-        "price": "¥278"
+        "price": "¥324"
       },
       {
         "type": "NSFW",
-        "price": "¥695"
+        "price": "¥864"
       }
     ],
     "sites_price_table": [
       {
         "type": "落地页 / 简单网站",
-        "price": "¥2432"
+        "price": "¥2736"
       },
       {
         "type": "艺术家网站 (作品集)",
-        "price": "¥3128"
+        "price": "¥4176"
       },
       {
         "type": "完整网站 (电子商务/系统)",
-        "price": "¥4865"
+        "price": "¥6840"
       },
       {
         "type": "每月维护",
-        "price": "¥278 / 月"
+        "price": "¥360 / 月"
       }
     ],
     "commissions_tos_subtitle": "服务条款",
@@ -1239,16 +1275,22 @@
     ],
     "about_programming_skills_title": "编程技能",
     "about_programming_skills_list": [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "🎨 前端 & UI",
+      "Angular (主要)",
+      "Vue.js",
+      "HTML5 / CSS3 / SCSS",
       "TypeScript",
+      " ",
+      "⚙️ 后端 & API",
+      "C# (.NET Core)",
       "Python",
-      "C",
-      "C++",
-      "C#",
       "Java",
-      "Kotlin"
+      "Node.js",
+      " ",
+      "🛠️ 工具 & 数据库",
+      "SQL Server / PostgreSQL",
+      "Git / GitHub",
+      "Docker / WSL"
     ],
     "about_arts_skills_title": "艺术技能",
     "about_arts_skills_list": [
