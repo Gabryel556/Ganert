@@ -25,7 +25,7 @@
           </div>
           <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
           
-          <input type="hidden" name="_next" value="https://gabryel556.github.io/AGStudio/">
+          <input type="hidden" name="_next" value="https://ganert.com/">
           <input type="hidden" name="_captcha" value="false">
 
           <button type="submit" class="submit-btn">Enviar Mensagem</button>
@@ -33,17 +33,35 @@
       </div>
 
     </div>
+
+    <div class="info-container payment-section">
+      <h3 class="payment-title"><i class="fa-solid fa-wallet"></i> {{ getText('payment_title') !== 'payment_title' ? getText('payment_title') : 'Métodos de Pagamento Aceitos' }}</h3>
+      
+      <div class="payment-grid">
+        <div class="payment-card" v-for="(method, index) in paymentMethods" :key="index">
+          <div class="icon-wrapper" :style="{ backgroundColor: method.color + '20' }">
+            <i :class="method.icon" :style="{ color: method.color }"></i>
+          </div>
+          <span class="payment-name">{{ method.name }}</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue';
 import { useLanguage } from '../composables/useLanguage';
 
-const { getText } = useLanguage();
+const { getText, getData } = useLanguage();
+
+// Trazendo os dados de pagamento do languages.json
+const paymentMethods = computed(() => getData('payment_methods') || []);
 </script>
 
 <style scoped>
-.page-fade-in { animation: fadeIn 0.5s ease-in-out; max-width: 1200px; margin: 0 auto; }
+.page-fade-in { animation: fadeIn 0.5s ease-in-out; max-width: 1200px; margin: 0 auto; padding-bottom: 2rem; }
 .page-title { font-size: 2.2rem; color: var(--brand-color); margin-bottom: 2rem; text-align: center; }
 
 .about-grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
@@ -68,5 +86,38 @@ const { getText } = useLanguage();
 .submit-btn { background-color: var(--brand-color); color: #fff; border: none; border-radius: 50px; padding: 1rem 1.5rem; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
 .submit-btn:hover { filter: brightness(1.1); transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
 
-@media (max-width: 768px) { .about-grid-container { grid-template-columns: 1fr; } .form-row { flex-direction: column; } }
+/* ESTILOS DA NOVA SEÇÃO DE PAGAMENTOS */
+.payment-section { margin-top: 2rem; }
+.payment-title { text-align: center; border-bottom: none !important; justify-content: center; display: flex; align-items: center; gap: 10px; }
+.payment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+
+.payment-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 1.5rem;
+  background: var(--surface-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.payment-card:hover { transform: translateY(-5px); border-color: var(--brand-color); }
+
+.icon-wrapper {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+.payment-card:hover .icon-wrapper { transform: scale(1.1); }
+.icon-wrapper i { font-size: 1.8rem; }
+.payment-name { font-size: 1rem; font-weight: 500; color: var(--text-primary); }
+
+@media (max-width: 768px) { 
+  .about-grid-container { grid-template-columns: 1fr; } 
+  .form-row { flex-direction: column; } 
+  .payment-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .payment-grid { grid-template-columns: 1fr; }
+}
 </style>

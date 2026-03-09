@@ -97,6 +97,14 @@
       "Passo 3: Desmarque a opção 'Arquivo Local', diminua o Buffering de rede para 0, adicione em 'Entrada' o Endereço IP que aparece na aplicação mobile e clique em OK.",
       "Passo 4: Abra a aplicação Webcam Desktop e digite o endereço IP.",
       "Passo 5: A sua câmera estará funcionando corretamente."
+    ],
+    "payment_title": "Métodos de Pagamento Aceitos",
+    "payment_methods": [
+      { "name": "PIX & Transferência Bancária", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal & Cartões", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (Internacional)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (Transferência Rápida)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "Criptomoedas (USDT / BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "en": {
@@ -197,6 +205,14 @@
       "Step 3: Uncheck 'Local File', lower Network Buffering to 0, and enter the IP shown in the mobile app.",
       "Step 4: Open the Desktop application and enter the IP address.",
       "Step 5: Your camera will now be working correctly."
+    ],
+    "payment_title": "Accepted Payment Methods",
+    "payment_methods": [
+      { "name": "PIX & Bank Transfer", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal & Credit Cards", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (International)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (Instant Transfer)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "Cryptocurrency (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "fr": {
@@ -297,6 +313,14 @@
       "Étape 3 : Décochez 'Fichier local', réduisez la mise en mémoire tampon à 0 et entrez l'IP affichée dans l'app mobile.",
       "Étape 4 : Ouvrez l'application Bureau et entrez la même adresse IP.",
       "Étape 5 : Votre caméra sera active."
+    ],
+    "payment_title": "Méthodes de Paiement Acceptées",
+    "payment_methods": [
+      { "name": "PIX & Virement Bancaire", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal & Cartes", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (International)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (Transfert Rapide)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "Cryptomonnaies (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "es": {
@@ -397,6 +421,14 @@
       "Paso 3: Desmarca 'Archivo local', baja el búfer a 0 e ingresa la IP de la app móvil.",
       "Paso 4: Abre el software en el escritorio e ingresa la misma IP.",
       "Paso 5: Tu cámara estará activa y funcionando."
+    ],
+    "payment_title": "Métodos de Pago Aceptados",
+    "payment_methods": [
+      { "name": "PIX y Transferencia Bancaria", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal y Tarjetas", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (Internacional)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (Transferencia Rápida)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "Criptomonedas (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "ru": {
@@ -497,6 +529,14 @@
       "Шаг 3: Снимите галочку 'Локальный файл', уменьшите сетевую буферизацию до 0 и введите IP из мобильного приложения.",
       "Шаг 4: Откройте приложение для ПК и введите тот же IP-адрес.",
       "Шаг 5: Ваша камера будет активна и готова к работе."
+    ],
+    "payment_title": "Принимаемые способы оплаты",
+    "payment_methods": [
+      { "name": "PIX и Банковский перевод", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal и Карты", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (Международный)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (Быстрый перевод)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "Криптовалюты (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "ja": {
@@ -597,6 +637,14 @@
       "ステップ 3: 「ローカルファイル」のチェックを外し、ネットワークバッファリングを0に下げ、「入力」にモバイルアプリに表示されるIPアドレスを追加します。",
       "ステップ 4: デスクトップアプリを開き、同じIPアドレスを入力します。",
       "ステップ 5: これでカメラが正常に機能します。"
+    ],
+    "payment_title": "利用可能な決済方法",
+    "payment_methods": [
+      { "name": "PIX＆銀行振込", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal＆クレジットカード", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (国際送金)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (即時送金)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "暗号資産 (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   },
   "zh": {
@@ -697,6 +745,14 @@
       "步骤 3：取消选中“本地文件”，将网络缓冲降至0，并输入移动应用中显示的IP地址。",
       "步骤 4：打开桌面应用程序并输入相同的IP地址。",
       "步骤 5：您的摄像头将启动并正常工作。"
+    ],
+    "payment_title": "接受的付款方式",
+    "payment_methods": [
+      { "name": "PIX与银行转账", "icon": "fa-solid fa-qrcode", "color": "#32BCAD" },
+      { "name": "PayPal与信用卡", "icon": "fa-brands fa-paypal", "color": "#009cde" },
+      { "name": "Wise (国际汇款)", "icon": "fa-solid fa-building-columns", "color": "#9FE870" },
+      { "name": "Remitly (快速转账)", "icon": "fa-solid fa-money-bill-transfer", "color": "#0052cc" },
+      { "name": "加密货币 (USDT/BTC)", "icon": "fa-brands fa-bitcoin", "color": "#F7931A" }
     ]
   }
 }
