@@ -63,7 +63,7 @@
     "tos_backend_title": "Termos de Sistemas & APIs",
     "tos_backend_list": [
       "Código-Fonte: A propriedade intelectual e o código-fonte são entregues integralmente ao cliente após a quitação final.",
-      "Documentação: Entrega inclusa de documentação técnica (Swagger/Postman) para facilitar integrações futuras.",
+      "Documentação: Entrega inclusa de documentação técnica para facilitar integrações futuras.",
       "Escalabilidade: Projetos estruturados com foco em performance para suportar alta demanda de requisições.",
       "Suporte: 30 dias de garantia técnica contra bugs críticos após o deploy em ambiente de produção."
     ],
@@ -163,7 +163,7 @@
     "tos_backend_title": "Systems & APIs Terms",
     "tos_backend_list": [
       "Source Code: Intellectual property and source code are fully delivered after final payment.",
-      "Documentation: Includes professional technical documentation (Swagger/Postman).",
+      "Documentation: Includes professional technical documentation.",
       "Scalability: Systems structured with a focus on high-traffic performance.",
       "Support: 30-day technical warranty against bugs after production deployment."
     ],
@@ -263,7 +263,7 @@
     "tos_backend_title": "Conditions des Systèmes & APIs",
     "tos_backend_list": [
       "Code Source : La propriété intellectuelle et le code source sont intégralement remis après le paiement final.",
-      "Documentation : Inclut la documentation technique professionnelle (Swagger/Postman).",
+      "Documentation : Inclut la documentation technique professionnelle.",
       "Évolutivité : Systèmes structurés pour supporter une forte demande de trafic.",
       "Support : 30 jours de garantie technique contre les bugs critiques après le déploiement en production."
     ],
@@ -363,7 +363,7 @@
     "tos_backend_title": "Términos de Sistemas y APIs",
     "tos_backend_list": [
       "Código Fuente: La propiedad intelectual y el código se entregan íntegramente tras el pago final.",
-      "Documentación: Incluye documentación técnica profesional (Swagger/Postman).",
+      "Documentación: Incluye documentación técnica profesional.",
       "Escalabilidad: Proyectos estructurados para soportar alta demanda de tráfico.",
       "Soporte: 30 días de garantía técnica contra errores tras el despliegue en producción."
     ],
@@ -463,7 +463,7 @@
     "tos_backend_title": "Условия для систем и API",
     "tos_backend_list": [
       "Исходный код: Интеллектуальная собственность и исходный код полностью передаются клиенту после окончательной оплаты.",
-      "Документация: Включает профессиональную техническую документацию (Swagger/Postman).",
+      "Документация: Включает профессиональную техническую документацию.",
       "Масштабируемость: Системы структурированы с учетом высокой нагрузки и трафика.",
       "Поддержка: 30 дней технической гарантии на критические ошибки после развертывания в рабочей среде."
     ],
@@ -563,7 +563,7 @@
     "tos_backend_title": "システムとAPIの利用規約",
     "tos_backend_list": [
       "ソースコード: 最終支払い後、知的財産権とソースコードは完全に引き渡されます。",
-      "ドキュメント: プロ仕様の技術ドキュメント（Swagger/Postman）が含まれます。",
+      "ドキュメント: プロ仕様の技術ドキュメント が含まれます。",
       "スケーラビリティ: 高トラフィックな要求に耐えうるパフォーマンスを重視したシステム構築。",
       "サポート: 本番環境デプロイ後、致命的なバグに対する30日間の技術保証。"
     ],
@@ -663,7 +663,7 @@
     "tos_backend_title": "系统与API服务条款",
     "tos_backend_list": [
       "源代码：最终付款后，知识产权和源代码将完全移交给客户。",
-      "文档：包含专业的系统技术文档（Swagger/Postman）。",
+      "文档：包含专业的系统技术文档。",
       "可扩展性：系统架构以支持高流量需求为导向。",
       "支持：在生产环境部署后，针对严重错误提供30天的技术保修。"
     ],
