@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Sites from '../views/Sites.vue';
 import Apps from '../views/Apps.vue';
@@ -14,7 +14,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/Ganert/'), 
+  history: createWebHashHistory(), 
   routes,
 });
 
