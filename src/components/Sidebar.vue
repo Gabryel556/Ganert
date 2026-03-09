@@ -63,7 +63,6 @@ onMounted(() => document.body.setAttribute('data-theme', theme.value));
 .theme-toggle-mini:hover { background: var(--brand-color); color: #fff; }
 
 .lang-selector-mini { flex-grow: 1; background: var(--surface-hover); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; font-weight: bold; cursor: pointer; text-align: center; height: 45px; }
-/* FIX DA CAIXA BRANCA */
 .lang-selector-mini option { background: var(--sidebar-bg); color: var(--text-primary); }
 
 .copyright { font-size: 0.7rem; text-align: center; opacity: 0.5; margin-top: 10px; }

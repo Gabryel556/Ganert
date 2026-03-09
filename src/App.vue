@@ -44,7 +44,6 @@ const particlesOptions = {
 </script>
 
 <style>
-/* VARIÁVEIS GLOBAIS (Tema Escuro Padrão) */
 :root {
   --bg-color: #121212;
   --surface-color: rgba(255, 255, 255, 0.03);
@@ -56,7 +55,6 @@ const particlesOptions = {
   --sidebar-bg: #1e1e1e;
 }
 
-/* TEMA CLARO */
 [data-theme="light"] {
   --bg-color: #f4f6f8;
   --surface-color: #ffffff;
@@ -84,12 +82,10 @@ body {
 .app-container { display: flex; position: relative; z-index: 1; }
 .main-content { flex-grow: 1; margin-left: 250px; min-height: 100vh; padding: 2rem; }
 
-/* ANIMAÇÕES DA PÁGINA */
 .fade-enter-active, .fade-leave-active { transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
 .fade-enter-from { opacity: 0; transform: translateY(15px); }
 .fade-leave-to { opacity: 0; transform: translateY(-15px); }
 
-/* BOTÕES PREMIUM GLOBAIS */
 .btn-premium {
   background: linear-gradient(135deg, var(--brand-color), #ff4500);
   background-size: 200% 200%;
