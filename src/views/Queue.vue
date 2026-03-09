@@ -169,7 +169,7 @@ onMounted(async () => {
 }
 
 .status-dot.done { 
-    background-color: #2ecc71; 
+    background-color: #23b861; 
     box-shadow: 0 0 8px rgba(46, 204, 113, 0.5); 
 }
 

@@ -31,8 +31,8 @@ const particlesOptions = {
     },
   },
   particles: {
-    color: { value: ["#ff8c00", "#888888"] }, 
-    links: { color: "#ff8c00", distance: 150, enable: true, opacity: 0.2, width: 1 },
+    color: { value: ["#00eeff", "#888888"] }, 
+    links: { color: "#00eeff", distance: 150, enable: true, opacity: 0.2, width: 1 },
     move: { direction: "none", enable: true, outModes: { default: "bounce" }, random: false, speed: 1.5, straight: false },
     number: { density: { enable: true, area: 800 }, value: 50 },
     opacity: { value: 0.5 },
@@ -45,14 +45,15 @@ const particlesOptions = {
 
 <style>
 :root {
-  --bg-color: #121212;
+  --bg-color: #020308;
   --surface-color: rgba(255, 255, 255, 0.03);
   --surface-hover: rgba(255, 255, 255, 0.08);
   --border-color: rgba(255, 255, 255, 0.05);
   --text-primary: #f5f5f5;
   --text-secondary: #e0e0e0;
-  --brand-color: #ff8c00;
-  --sidebar-bg: #1e1e1e;
+  --brand-color: #70c5c1;
+  --sidebar-bg: #00040c;
+  --bt-color: #2f3479;
 }
 
 [data-theme="light"] {
@@ -62,7 +63,7 @@ const particlesOptions = {
   --border-color: rgba(0, 0, 0, 0.1);
   --text-primary: #2c3e50;
   --text-secondary: #555555;
-  --brand-color: #e67e22;
+  --brand-color: #102272;
   --sidebar-bg: #ffffff;
 }
 
@@ -78,16 +79,44 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-#tsparticles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-.app-container { display: flex; position: relative; z-index: 1; }
-.main-content { flex-grow: 1; margin-left: 250px; min-height: 100vh; padding: 2rem; }
+#tsparticles { 
+  position: fixed; 
+  top: 0; left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -1; 
+}
 
-.fade-enter-active, .fade-leave-active { transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
-.fade-enter-from { opacity: 0; transform: translateY(15px); }
-.fade-leave-to { opacity: 0; transform: translateY(-15px); }
+.app-container { 
+  display: flex; 
+  position: relative;
+  z-index: 1; 
+}
+
+.main-content { 
+  flex-grow: 1; 
+  margin-left: 250px; 
+  min-height: 100vh; 
+  padding: 2rem; 
+}
+
+.fade-enter-active, 
+.fade-leave-active { 
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); 
+}
+
+.fade-enter-from { 
+  opacity: 0; 
+  transform: translateY(15px); 
+}
+
+.fade-leave-to { 
+  opacity: 0; 
+  transform: translateY(-15px); 
+}
 
 .btn-premium {
-  background: linear-gradient(135deg, var(--brand-color), #ff4500);
+  background: linear-gradient(135deg, var(--brand-color), #8400ff);
   background-size: 200% 200%;
   color: #fff !important;
   font-weight: 600;
@@ -127,7 +156,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .app-container { display: block; }
-  .main-content { margin-left: 0; padding: 1rem; }
+  .app-container { 
+    display: block; 
+  }
+
+  .main-content { 
+    margin-left: 0; 
+    padding: 1rem; 
+  }
+  
 }
 </style>

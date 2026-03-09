@@ -50,27 +50,131 @@ onMounted(() => document.body.setAttribute('data-theme', theme.value));
 </script>
 
 <style scoped>
-.sidebar { width: 250px; height: 100vh; position: fixed; left: 0; top: 0; background: var(--sidebar-bg); display: flex; flex-direction: column; padding: 2rem 1.5rem; transition: 0.3s; border-right: 1px solid var(--border-color); }
-.desktop-logo { text-align: center; color: var(--brand-color); margin-bottom: 2rem; font-size: 1.8rem; }
-.nav-links { list-style: none; padding: 0; flex-grow: 1; }
-.nav-link { display: flex; align-items: center; gap: 12px; padding: 0.8rem 1rem; color: var(--text-secondary); text-decoration: none; border-radius: 8px; transition: 0.3s; margin-bottom: 0.5rem; }
-.nav-link.active, .nav-link:hover { background: var(--brand-color); color: #fff; }
-.nav-link i { width: 20px; text-align: center; }
+.sidebar { 
+  width: 250px; 
+  height: 100vh; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  background: var(--sidebar-bg); 
+  display: flex; 
+  flex-direction: column; 
+  padding: 2rem 1.5rem; 
+  transition: 0.3s; 
+  border-right: 1px solid var(--border-color); 
+}
 
-.sidebar-footer { padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 12px; }
-.footer-controls { display: flex; gap: 8px; }
-.theme-toggle-mini { width: 45px; height: 45px; background: var(--surface-hover); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-primary); cursor: pointer; transition: 0.3s; }
-.theme-toggle-mini:hover { background: var(--brand-color); color: #fff; }
+.desktop-logo { 
+  text-align: center; 
+  color: var(--brand-color); 
+  margin-bottom: 2rem; 
+  font-size: 1.8rem; 
+}
 
-.lang-selector-mini { flex-grow: 1; background: var(--surface-hover); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; font-weight: bold; cursor: pointer; text-align: center; height: 45px; }
-.lang-selector-mini option { background: var(--sidebar-bg); color: var(--text-primary); }
+.nav-links { 
+  list-style: none; 
+  padding: 0; 
+  flex-grow: 1; 
+}
 
-.copyright { font-size: 0.7rem; text-align: center; opacity: 0.5; margin-top: 10px; }
+.nav-link { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  padding: 0.8rem 1rem; 
+  color: var(--text-secondary); 
+  text-decoration: none; 
+  border-radius: 8px; 
+  transition: 0.3s; 
+  margin-bottom: 0.5rem; 
+}
+
+.nav-link.active, .nav-link:hover { 
+  background: var(--bt-color); 
+  color: #fff;
+}
+
+.nav-link i { 
+  width: 20px; 
+  text-align: center; 
+}
+
+.sidebar-footer {
+  padding-top: 1rem; 
+  border-top: 1px solid var(--border-color); 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+}
+
+.footer-controls { 
+  display: flex; 
+  gap: 8px; 
+}
+
+.theme-toggle-mini { 
+  width: 45px; 
+  height: 45px; 
+  background: var(--surface-hover); 
+  border: 1px solid var(--border-color); 
+  border-radius: 8px; 
+  color: var(--text-primary); 
+  cursor: pointer; 
+  transition: 0.3s; 
+}
+
+.theme-toggle-mini:hover { 
+  background: var(--brand-color); 
+  color: #fff; 
+}
+
+.lang-selector-mini { 
+  flex-grow: 1; 
+  background: var(--surface-hover); 
+  color: var(--text-primary); 
+  border: 1px solid var(--border-color); 
+  border-radius: 8px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  text-align: center; 
+  height: 45px; 
+}
+
+.lang-selector-mini option { 
+  background: var(--sidebar-bg); 
+  color: var(--text-primary); 
+}
+
+.copyright { 
+  font-size: 0.7rem; 
+  text-align: center; 
+  opacity: 0.5; 
+  margin-top: 10px; 
+}
 
 @media (max-width: 768px) {
-  .sidebar { transform: translateX(-100%); }
-  .sidebar.open { transform: translateX(0); }
-  .mobile-header { display: flex; justify-content: space-between; padding: 1rem; background: var(--sidebar-bg); color: var(--text-primary); }
-  .hamburger-btn { background: none; border: none; font-size: 1.5rem; color: var(--text-primary); }
+  .sidebar { 
+    transform: translateX(-100%); 
+  }
+
+  .sidebar.open { 
+    transform: translateX(0); 
+  }
+
+  .mobile-header { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem; 
+    background: var(--sidebar-bg); 
+    color: var(--text-primary); 
+  }
+
+  .hamburger-btn { 
+    background: none; 
+    border: none; 
+    font-size: 1.5rem; 
+    color: var(--text-primary); 
+  }
+  
 }
 </style>

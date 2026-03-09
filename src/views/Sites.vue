@@ -60,7 +60,6 @@ const activeTab = ref('portfolio');
 const webPriceTable = computed(() => getData('web_price_table') || []);
 const tosWebList = computed(() => getData('tos_web_list') || []);
 
-// Os nomes dos teus sites mantêm-se estáticos pois são marcas (Brands)
 const mySites = [
   { title: 'AG Studio', image: imgAG, link: 'https://gabryel556.github.io/AGStudio/' },
   { title: 'Cosmic Fantasy Online', image: imgCF, link: 'https://cosmicfantasyonline.com' },
