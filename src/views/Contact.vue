@@ -12,7 +12,6 @@
           <a href="https://www.reddit.com/user/Gabryel556/" target="_blank" class="contact-btn reddit"><i class="fab fa-reddit"></i> Reddit</a>
           <a href="https://discord.gg/754716945944805427" target="_blank" class="contact-btn discord"><i class="fab fa-discord"></i> Discord</a>
           <a href="https://www.instagram.com/g.ganert/" target="_blank" class="contact-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href="https://www.twitch.tv/Ganert" target="_blank" class="contact-btn twitch"><i class="fab fa-twitch"></i> Twitch</a>
           <a href="https://www.github.com/Gabryel556" target="_blank" class="contact-btn github"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </div>
@@ -58,12 +57,9 @@ const { getText } = useLanguage();
 .contact-btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
 .contact-btn.reddit { background-color: #FF4500; }
-.contact-btn.x-twitter { background-color: #000000; border: 1px solid #333; }
 .contact-btn.discord { background-color: #5865F2; }
 .contact-btn.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
-.contact-btn.twitch { background-color: #9146FF; }
 .contact-btn.github { background-color: #333; }
-.contact-btn.vgen { background-color: #00ff15; color: #000; }
 
 .contact-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem; }
 .form-row { display: flex; gap: 1rem; }
