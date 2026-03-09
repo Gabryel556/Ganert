@@ -1,0 +1,709 @@
+{
+  "pt": {
+    "artist_name": "Ganert",
+    "nav_about": "Sobre Mim",
+    "nav_websites": "Sites",
+    "nav_apps": "Sistemas & Apps",
+    "nav_queue": "Fila de Trabalho",
+    "nav_contact": "Contato",
+    "about_title": "Sobre Mim",
+    "about_p1": "Olá! Meu nome é Ganert e sou um desenvolvedor focado em projetos de alta performance e segurança, automação e soluções em IA.",
+    "about_p2": "Busco sempre as melhores práticas de mercado para criar interfaces intuitivas e sistemas robustos e seguros.",
+    "about_programming_skills_title": "Stack Tecnológico",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "Meu Setup",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "Monitores: Setup Duplo (Produtividade)"
+    ],
+    "tab_portfolio_web": "Meus Sites",
+    "tab_portfolio_apps": "Minhas Aplicações",
+    "tab_pricing": "Preços e Termos",
+    "btn_visit_site": "Visitar Site",
+    "btn_download": "Download",
+    "btn_guide": "Guia",
+    "btn_close_guide": "Fechar Guia",
+    "pricing_title_web": "Desenvolvimento Web",
+    "pricing_title_apps": "Bots, Automação & IA",
+    "pricing_title_backend": "Sistemas & APIs (Backend)",
+    "tos_web_title": "Termos de Serviço (Web)",
+    "tos_web_list": [
+      "Valores Iniciais: Os preços são uma base. O custo final depende da complexidade do projeto.",
+      "Custos Externos: Domínios e hospedagem padrão são de total responsabilidade do cliente.",
+      "Pagamento: 50% adiantado para iniciar o desenvolvimento, 50% após aprovação final.",
+      "Revisões: Mudanças drásticas de escopo após a aprovação de uma etapa gerarão custos adicionais."
+    ],
+    "tos_apps_title": "Termos de Serviço (Bots & IA)",
+    "tos_apps_list": [
+      "Valores Iniciais: Preços baseados em funcionalidades padrão. Sistemas complexos serão orçados sob medida.",
+      "Custos de Terceiros: Servidores (VPS), bancos de dados em nuvem e tokens de IA (ex: OpenAI) são responsabilidade do cliente.",
+      "Garantia e APIs: Mudanças nas regras das APIs (Discord/Telegram) que quebrem o software após a entrega não são cobertas.",
+      "Pagamento: 50% adiantado para iniciar, 50% na entrega e deploy."
+    ],
+    "tos_backend_title": "Termos de Sistemas & APIs",
+    "tos_backend_list": [
+      "Código-Fonte: A propriedade intelectual e o código-fonte são entregues integralmente ao cliente após a quitação final.",
+      "Documentação: Entrega inclusa de documentação técnica (Swagger/Postman) para facilitar integrações futuras.",
+      "Escalabilidade: Projetos estruturados com foco em performance para suportar alta demanda de requisições.",
+      "Suporte: 30 dias de garantia técnica contra bugs críticos após o deploy em ambiente de produção."
+    ],
+    "queue_title": "Fila de Trabalho",
+    "queue_col_not_started": "Na Fila",
+    "queue_col_in_progress": "Em Desenvolvimento",
+    "queue_col_completed": "Concluídos",
+    "web_price_table": [
+      { "type": "Landing Page / Single Page", "price": "R$ 2080" },
+      { "type": "Site Institucional / Portfólio", "price": "R$ 3120" },
+      { "type": "Sistema Web Completo / E-commerce", "price": "R$ 5200" },
+      { "type": "Manutenção Mensal", "price": "R$ 260 / mês" }
+    ],
+    "app_price_table": [
+      { "type": "Bot Simples (Discord/Telegram)", "price": "R$ 520" },
+      { "type": "Bot Avançado (RPG/Economia)", "price": "R$ 2080" },
+      { "type": "Web Scraping & Automação", "price": "R$ 780" },
+      { "type": "Assistente de IA Integrado (Atendimento)", "price": "R$ 2600" }
+    ],
+    "backend_price_table": [
+      { "type": "Desenvolvimento de API Restful Customizada", "price": "R$ 1560" },
+      { "type": "Painel de Controle / Suporte (Admin)", "price": "R$ 2080" },
+      { "type": "Integração de Sistemas & Banco de Dados", "price": "R$ 1040" },
+      { "type": "Manutenção & Otimização de Servidores", "price": "R$ 350 / mês" }
+    ],
+    "app_portfolio_names": ["Chat com IA", "Gerador de modelos 3D", "Assistente de IA", "Webcam Mobile", "Webcam Desktop"],
+    "modal_guide_title": "Guia de Instalação - Webcam Desktop",
+    "modal_guide_steps": [
+      "Passo 1: Abra o seu OBS, procure a aba fontes e clique em +.",
+      "Passo 2: Selecione a opção 'Fonte de média'.",
+      "Passo 3: Desmarque a opção 'Arquivo Local', diminua o Buffering de rede para 0, adicione em 'Entrada' o Endereço IP que aparece na aplicação mobile e clique em OK.",
+      "Passo 4: Abra a aplicação Webcam Desktop e digite o endereço IP.",
+      "Passo 5: A sua câmera estará funcionando corretamente."
+    ]
+  },
+  "en": {
+    "artist_name": "Ganert",
+    "nav_about": "About Me",
+    "nav_websites": "Websites",
+    "nav_apps": "Systems & Apps",
+    "nav_queue": "Work Queue",
+    "nav_contact": "Contact",
+    "about_title": "About Me",
+    "about_p1": "Hello! I am Ganert, a developer focused on high-performance, secure projects, automation, and AI solutions.",
+    "about_p2": "I apply market best practices to create intuitive interfaces and robust, secure systems.",
+    "about_programming_skills_title": "Tech Stack",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "My Setup",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "Monitors: Dual Setup (Productivity)"
+    ],
+    "tab_portfolio_web": "My Websites",
+    "tab_portfolio_apps": "My Applications",
+    "tab_pricing": "Pricing & Terms",
+    "btn_visit_site": "Visit Site",
+    "btn_download": "Download",
+    "btn_guide": "Guide",
+    "btn_close_guide": "Close Guide",
+    "pricing_title_web": "Web Development",
+    "pricing_title_apps": "Bots, Automation & AI",
+    "pricing_title_backend": "Systems & APIs (Backend)",
+    "tos_web_title": "Terms of Service (Web)",
+    "tos_web_list": [
+      "Starting Prices: Prices are a baseline. Final cost depends on project complexity.",
+      "External Costs: Domains and standard hosting are the client's responsibility.",
+      "Payment: 50% upfront to start development, 50% upon final approval.",
+      "Revisions: Drastic scope changes after a stage's approval will incur additional costs."
+    ],
+    "tos_apps_title": "Terms of Service (Bots & AI)",
+    "tos_apps_list": [
+      "Starting Prices: Base prices for standard features. Complex systems will be quoted custom.",
+      "Third-Party Costs: Servers (VPS), cloud databases, and AI tokens are the client's responsibility.",
+      "Warranty & APIs: Rule changes in third-party APIs (Discord/Telegram) post-delivery are not covered.",
+      "Payment: 50% upfront to start, 50% upon delivery and deploy."
+    ],
+    "tos_backend_title": "Systems & APIs Terms",
+    "tos_backend_list": [
+      "Source Code: Intellectual property and source code are fully delivered after final payment.",
+      "Documentation: Includes professional technical documentation (Swagger/Postman).",
+      "Scalability: Systems structured with a focus on high-traffic performance.",
+      "Support: 30-day technical warranty against bugs after production deployment."
+    ],
+    "queue_title": "Work Queue",
+    "queue_col_not_started": "Queued",
+    "queue_col_in_progress": "In Development",
+    "queue_col_completed": "Completed",
+    "web_price_table": [
+      { "type": "Landing Page / Single Page", "price": "$450" },
+      { "type": "Institutional Site / Portfolio", "price": "$650" },
+      { "type": "Full Web System / E-commerce", "price": "$1,100" },
+      { "type": "Monthly Maintenance", "price": "$60 / month" }
+    ],
+    "app_price_table": [
+      { "type": "Simple Bot (Discord/Telegram)", "price": "$120" },
+      { "type": "Advanced Bot (RPG/Economy)", "price": "$450" },
+      { "type": "Web Scraping & Automation", "price": "$200" },
+      { "type": "Integrated AI Assistant (Support)", "price": "$600" }
+    ],
+    "backend_price_table": [
+      { "type": "Custom Restful API Development", "price": "$350" },
+      { "type": "Admin Control Panel / Support Tool", "price": "$450" },
+      { "type": "Systems Integration & Database", "price": "$250" },
+      { "type": "Server Maintenance & Optimization", "price": "$80 / month" }
+    ],
+    "app_portfolio_names": ["AI Chat", "3D Model Generator", "AI Assistant", "Mobile Webcam", "Desktop Webcam"],
+    "modal_guide_title": "Installation Guide - Desktop Webcam",
+    "modal_guide_steps": [
+      "Step 1: Open OBS, go to the sources tab and click +.",
+      "Step 2: Select 'Media Source'.",
+      "Step 3: Uncheck 'Local File', lower Network Buffering to 0, and enter the IP shown in the mobile app.",
+      "Step 4: Open the Desktop application and enter the IP address.",
+      "Step 5: Your camera will now be working correctly."
+    ]
+  },
+  "fr": {
+    "artist_name": "Ganert",
+    "nav_about": "À propos",
+    "nav_websites": "Sites Web",
+    "nav_apps": "Systèmes & Apps",
+    "nav_queue": "File d'attente",
+    "nav_contact": "Contact",
+    "about_title": "À propos de moi",
+    "about_p1": "Bonjour ! Je m'appelle Ganert et je suis un développeur spécialisé dans les projets haute performance et sécurisés, l'automatisation et les solutions IA.",
+    "about_p2": "J'applique les meilleures pratiques du marché pour créer des interfaces intuitives et des systèmes backend robustes et sécurisés.",
+    "about_programming_skills_title": "Stack Technologique",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "Mon Setup",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "Écrans: Configuration Double (Productivité)"
+    ],
+    "tab_portfolio_web": "Mes Sites",
+    "tab_portfolio_apps": "Mes Applications",
+    "tab_pricing": "Prix et Conditions",
+    "btn_visit_site": "Visiter le site",
+    "btn_download": "Télécharger",
+    "btn_guide": "Guide",
+    "btn_close_guide": "Fermer le guide",
+    "pricing_title_web": "Développement Web",
+    "pricing_title_apps": "Bots, Automatisation & IA",
+    "pricing_title_backend": "Systèmes & APIs (Backend)",
+    "tos_web_title": "Conditions d'utilisation (Web)",
+    "tos_web_list": [
+      "Prix Initiaux : Les valeurs sont une base. Le coût final dépend de la complexité du projet.",
+      "Coûts Externes : Les domaines et l'hébergement standard sont à la charge du client.",
+      "Paiement : 50% d'acompte pour commencer le développement, 50% après l'approbation finale.",
+      "Révisions : Des changements drastiques après l'approbation d'une étape entraîneront des coûts supplémentaires."
+    ],
+    "tos_apps_title": "Conditions d'utilisation (Bots & IA)",
+    "tos_apps_list": [
+      "Prix Initiaux : Basés sur des fonctionnalités standard. Les systèmes complexes seront sur devis.",
+      "Coûts Tiers : Serveurs (VPS), bases de données cloud et jetons IA (ex: OpenAI) sont à la charge du client.",
+      "Garantie et APIs : Les changements de règles d'APIs tierces (Discord/Telegram) après la livraison ne sont pas couverts.",
+      "Paiement : 50% d'acompte, 50% à la livraison et au déploiement."
+    ],
+    "tos_backend_title": "Conditions des Systèmes & APIs",
+    "tos_backend_list": [
+      "Code Source : La propriété intellectuelle et le code source sont intégralement remis après le paiement final.",
+      "Documentation : Inclut la documentation technique professionnelle (Swagger/Postman).",
+      "Évolutivité : Systèmes structurés pour supporter une forte demande de trafic.",
+      "Support : 30 jours de garantie technique contre les bugs critiques après le déploiement en production."
+    ],
+    "queue_title": "File d'attente",
+    "queue_col_not_started": "En attente",
+    "queue_col_in_progress": "En Développement",
+    "queue_col_completed": "Terminés",
+    "web_price_table": [
+      { "type": "Landing Page / Page Unique", "price": "420 €" },
+      { "type": "Site Institutionnel / Portfolio", "price": "600 €" },
+      { "type": "Système Web Complet / E-commerce", "price": "1020 €" },
+      { "type": "Maintenance Mensuelle", "price": "55 € / mois" }
+    ],
+    "app_price_table": [
+      { "type": "Bot Simple (Discord/Telegram)", "price": "110 €" },
+      { "type": "Bot Avancé (RPG/Économie)", "price": "420 €" },
+      { "type": "Web Scraping & Automatisation", "price": "185 €" },
+      { "type": "Assistant IA Intégré (Support)", "price": "560 €" }
+    ],
+    "backend_price_table": [
+      { "type": "Développement d'API Restful sur mesure", "price": "325 €" },
+      { "type": "Panneau de Contrôle / Outil de Support", "price": "420 €" },
+      { "type": "Intégration de Systèmes & Base de Données", "price": "230 €" },
+      { "type": "Maintenance & Optimisation de Serveurs", "price": "75 € / mois" }
+    ],
+    "app_portfolio_names": ["Chat IA", "Générateur 3D", "Assistant IA", "Webcam Mobile", "Webcam Bureau"],
+    "modal_guide_title": "Guide d'installation - Webcam Bureau",
+    "modal_guide_steps": [
+      "Étape 1 : Ouvrez OBS, allez dans l'onglet sources et cliquez sur +.",
+      "Étape 2 : Sélectionnez l'option 'Source média'.",
+      "Étape 3 : Décochez 'Fichier local', réduisez la mise en mémoire tampon à 0 et entrez l'IP affichée dans l'app mobile.",
+      "Étape 4 : Ouvrez l'application Bureau et entrez la même adresse IP.",
+      "Étape 5 : Votre caméra sera active."
+    ]
+  },
+  "es": {
+    "artist_name": "Ganert",
+    "nav_about": "Sobre Mí",
+    "nav_websites": "Sitios Web",
+    "nav_apps": "Sistemas y Apps",
+    "nav_queue": "Cola de Trabajo",
+    "nav_contact": "Contacto",
+    "about_title": "Sobre Mí",
+    "about_p1": "¡Hola! Soy Ganert, un desarrollador enfocado en proyectos de alto rendimiento, seguridad, automatización y soluciones de IA.",
+    "about_p2": "Aplico las mejores prácticas del mercado para crear interfaces intuitivas y sistemas de backend robustos y seguros.",
+    "about_programming_skills_title": "Stack Tecnológico",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "Mi Setup",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "Monitores: Configuración Dual (Productividad)"
+    ],
+    "tab_portfolio_web": "Mis Sitios",
+    "tab_portfolio_apps": "Mis Aplicaciones",
+    "tab_pricing": "Precios y Términos",
+    "btn_visit_site": "Visitar Sitio",
+    "btn_download": "Descargar",
+    "btn_guide": "Guía",
+    "btn_close_guide": "Cerrar Guía",
+    "pricing_title_web": "Desarrollo Web",
+    "pricing_title_apps": "Bots, Automatización e IA",
+    "pricing_title_backend": "Sistemas y APIs (Backend)",
+    "tos_web_title": "Términos de Servicio (Web)",
+    "tos_web_list": [
+      "Precios Iniciales: Los valores son una base. El costo final depende de la complejidad del proyecto.",
+      "Costos Externos: Los gastos de dominio y alojamiento estándar son responsabilidad del cliente.",
+      "Pago: 50% por adelantado para iniciar, 50% tras la aprobación final.",
+      "Revisiones: Cambios drásticos después de la aprobación de una etapa tendrán costos adicionales."
+    ],
+    "tos_apps_title": "Términos de Servicio (Bots e IA)",
+    "tos_apps_list": [
+      "Precios Iniciales: Basados en funciones estándar. Sistemas complejos bajo presupuesto personalizado.",
+      "Costos de Terceros: Servidores (VPS) y tokens de IA (ej. OpenAI) son responsabilidad del cliente.",
+      "Garantía y APIs: No se cubren cambios en las reglas de APIs externas tras la entrega.",
+      "Pago: 50% para iniciar, 50% en la entrega y despliegue."
+    ],
+    "tos_backend_title": "Términos de Sistemas y APIs",
+    "tos_backend_list": [
+      "Código Fuente: La propiedad intelectual y el código se entregan íntegramente tras el pago final.",
+      "Documentación: Incluye documentación técnica profesional (Swagger/Postman).",
+      "Escalabilidad: Proyectos estructurados para soportar alta demanda de tráfico.",
+      "Soporte: 30 días de garantía técnica contra errores tras el despliegue en producción."
+    ],
+    "queue_title": "Cola de Trabajo",
+    "queue_col_not_started": "En Cola",
+    "queue_col_in_progress": "En Desarrollo",
+    "queue_col_completed": "Completados",
+    "web_price_table": [
+      { "type": "Landing Page / Single Page", "price": "420 €" },
+      { "type": "Sitio Institucional / Portafolio", "price": "600 €" },
+      { "type": "Sistema Web Completo / E-commerce", "price": "1020 €" },
+      { "type": "Mantenimiento Mensual", "price": "55 € / mes" }
+    ],
+    "app_price_table": [
+      { "type": "Bot Simple (Discord/Telegram)", "price": "110 €" },
+      { "type": "Bot Avanzado (RPG/Economía)", "price": "420 €" },
+      { "type": "Web Scraping y Automatización", "price": "185 €" },
+      { "type": "Asistente de IA Integrado (Soporte)", "price": "560 €" }
+    ],
+    "backend_price_table": [
+      { "type": "Desarrollo de API Restful a Medida", "price": "325 €" },
+      { "type": "Panel de Control / Herramienta de Soporte", "price": "420 €" },
+      { "type": "Integración y Base de Datos", "price": "230 €" },
+      { "type": "Optimización de Servidores", "price": "75 € / mes" }
+    ],
+    "app_portfolio_names": ["Chat con IA", "Generador 3D", "Asistente de IA", "Webcam Móvil", "Webcam Escritorio"],
+    "modal_guide_title": "Guía de Instalación - Webcam Escritorio",
+    "modal_guide_steps": [
+      "Paso 1: Abre OBS, ve a la pestaña de fuentes y haz clic en +.",
+      "Paso 2: Selecciona la opción 'Fuente multimedia'.",
+      "Paso 3: Desmarca 'Archivo local', baja el búfer a 0 e ingresa la IP de la app móvil.",
+      "Paso 4: Abre el software en el escritorio e ingresa la misma IP.",
+      "Paso 5: Tu cámara estará activa y funcionando."
+    ]
+  },
+  "ru": {
+    "artist_name": "Ganert",
+    "nav_about": "Обо мне",
+    "nav_websites": "Веб-сайты",
+    "nav_apps": "Системы и Приложения",
+    "nav_queue": "Очередь работы",
+    "nav_contact": "Контакты",
+    "about_title": "Обо мне",
+    "about_p1": "Привет! Меня зовут Ganert, я разработчик, специализирующийся на высокопроизводительных и безопасных проектах, автоматизации и ИИ-решениях.",
+    "about_p2": "Я применяю лучшие рыночные практики для создания интуитивно понятных интерфейсов и надежных, безопасных backend-систем.",
+    "about_programming_skills_title": "Технологический стек",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "Мой Setup",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "Мониторы: Два монитора (Продуктивность)"
+    ],
+    "tab_portfolio_web": "Мои сайты",
+    "tab_portfolio_apps": "Мои приложения",
+    "tab_pricing": "Цены и условия",
+    "btn_visit_site": "Посетить сайт",
+    "btn_download": "Скачать",
+    "btn_guide": "Руководство",
+    "btn_close_guide": "Закрыть руководство",
+    "pricing_title_web": "Веб-разработка",
+    "pricing_title_apps": "Боты, автоматизация и ИИ",
+    "pricing_title_backend": "Системы и API (Backend)",
+    "tos_web_title": "Условия обслуживания (Web)",
+    "tos_web_list": [
+      "Начальные цены: Указанные значения являются базовыми. Окончательная стоимость зависит от сложности проекта.",
+      "Внешние расходы: Оплата доменов и стандартного хостинга является обязанностью клиента.",
+      "Оплата: 50% аванс для начала разработки, 50% после окончательного утверждения.",
+      "Правки: Кардинальные изменения после утверждения этапа потребуют дополнительной оплаты."
+    ],
+    "tos_apps_title": "Условия обслуживания (Боты и ИИ)",
+    "tos_apps_list": [
+      "Начальные цены: Основаны на стандартных функциях. Сложные системы оцениваются индивидуально.",
+      "Расходы третьих лиц: Серверы (VPS), облачные базы данных и токены ИИ (например, OpenAI) оплачиваются клиентом.",
+      "Гарантия и API: Изменения в правилах внешних API (Discord/Telegram) после сдачи проекта не покрываются гарантией.",
+      "Оплата: 50% аванс для начала, 50% при сдаче и развертывании."
+    ],
+    "tos_backend_title": "Условия для систем и API",
+    "tos_backend_list": [
+      "Исходный код: Интеллектуальная собственность и исходный код полностью передаются клиенту после окончательной оплаты.",
+      "Документация: Включает профессиональную техническую документацию (Swagger/Postman).",
+      "Масштабируемость: Системы структурированы с учетом высокой нагрузки и трафика.",
+      "Поддержка: 30 дней технической гарантии на критические ошибки после развертывания в рабочей среде."
+    ],
+    "queue_title": "Очередь работы",
+    "queue_col_not_started": "В очереди",
+    "queue_col_in_progress": "В разработке",
+    "queue_col_completed": "Завершено",
+    "web_price_table": [
+      { "type": "Landing Page / Одностраничный сайт", "price": "41 000 ₽" },
+      { "type": "Корпоративный сайт / Портфолио", "price": "60 000 ₽" },
+      { "type": "Полная веб-система / E-commerce", "price": "101 000 ₽" },
+      { "type": "Ежемесячное обслуживание", "price": "5 500 ₽ / мес" }
+    ],
+    "app_price_table": [
+      { "type": "Простой бот (Discord/Telegram)", "price": "11 000 ₽" },
+      { "type": "Продвинутый бот (RPG/Экономика)", "price": "41 000 ₽" },
+      { "type": "Веб-скрейпинг и Автоматизация", "price": "18 000 ₽" },
+      { "type": "Интегрированный ИИ-ассистент (Поддержка)", "price": "55 000 ₽" }
+    ],
+    "backend_price_table": [
+      { "type": "Разработка кастомного Restful API", "price": "32 000 ₽" },
+      { "type": "Панель управления / Инструмент поддержки", "price": "41 000 ₽" },
+      { "type": "Интеграция систем и Базы данных", "price": "23 000 ₽" },
+      { "type": "Обслуживание и оптимизация серверов", "price": "7 000 ₽ / мес" }
+    ],
+    "app_portfolio_names": ["Чат с ИИ", "Генератор 3D-моделей", "ИИ-ассистент", "Мобильная веб-камера", "Веб-камера для ПК"],
+    "modal_guide_title": "Руководство по установке - Веб-камера для ПК",
+    "modal_guide_steps": [
+      "Шаг 1: Откройте OBS, перейдите на вкладку источников и нажмите +.",
+      "Шаг 2: Выберите 'Медиаисточник'.",
+      "Шаг 3: Снимите галочку 'Локальный файл', уменьшите сетевую буферизацию до 0 и введите IP из мобильного приложения.",
+      "Шаг 4: Откройте приложение для ПК и введите тот же IP-адрес.",
+      "Шаг 5: Ваша камера будет активна и готова к работе."
+    ]
+  },
+  "ja": {
+    "artist_name": "Ganert",
+    "nav_about": "私について",
+    "nav_websites": "ウェブサイト",
+    "nav_apps": "システム＆アプリ",
+    "nav_queue": "作業キュー",
+    "nav_contact": "お問い合わせ",
+    "about_title": "私について",
+    "about_p1": "こんにちは！Ganertです。高性能で安全なプロジェクト、自動化、AIソリューションに焦点を当てた開発者です。",
+    "about_p2": "直感的なインターフェースと堅牢で安全なバックエンドシステムを構築するために、常に市場のベストプラクティスを追求しています。",
+    "about_programming_skills_title": "技術スタック",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "マイセットアップ",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "モニター: デュアルモニター（生産性）"
+    ],
+    "tab_portfolio_web": "マイサイト",
+    "tab_portfolio_apps": "マイアプリ",
+    "tab_pricing": "価格と規約",
+    "btn_visit_site": "サイトを見る",
+    "btn_download": "ダウンロード",
+    "btn_guide": "ガイド",
+    "btn_close_guide": "ガイドを閉じる",
+    "pricing_title_web": "ウェブ開発",
+    "pricing_title_apps": "ボット、自動化、AI",
+    "pricing_title_backend": "システムとAPI (バックエンド)",
+    "tos_web_title": "利用規約 (Web)",
+    "tos_web_list": [
+      "開始価格: 記載価格は基本料金です。最終費用はプロジェクトの複雑さによります。",
+      "外部コスト: ドメインと標準ホスティングはお客様の負担となります。",
+      "支払い: 開発開始時に50%、最終承認時に50%。",
+      "修正: 各段階の承認後の大幅な仕様変更は追加料金が発生します。"
+    ],
+    "tos_apps_title": "利用規約 (ボット＆AI)",
+    "tos_apps_list": [
+      "開始価格: 標準機能に基づいています。複雑なシステムは個別見積もりとなります。",
+      "サードパーティコスト: サーバー（VPS）、クラウドDB、AIトークン（例: OpenAI）はお客様の負担となります。",
+      "保証とAPI: 納品後の外部API（Discord/Telegram等）のルール変更による不具合は保証対象外です。",
+      "支払い: 開始時に50%、納品およびデプロイ時に50%。"
+    ],
+    "tos_backend_title": "システムとAPIの利用規約",
+    "tos_backend_list": [
+      "ソースコード: 最終支払い後、知的財産権とソースコードは完全に引き渡されます。",
+      "ドキュメント: プロ仕様の技術ドキュメント（Swagger/Postman）が含まれます。",
+      "スケーラビリティ: 高トラフィックな要求に耐えうるパフォーマンスを重視したシステム構築。",
+      "サポート: 本番環境デプロイ後、致命的なバグに対する30日間の技術保証。"
+    ],
+    "queue_title": "作業キュー",
+    "queue_col_not_started": "待機中",
+    "queue_col_in_progress": "開発中",
+    "queue_col_completed": "完了",
+    "web_price_table": [
+      { "type": "ランディングページ / シングルページ", "price": "65,000 ¥" },
+      { "type": "企業サイト / ポートフォリオ", "price": "95,000 ¥" },
+      { "type": "フルWebシステム / Eコマース", "price": "160,000 ¥" },
+      { "type": "月額保守", "price": "8,500 ¥ / 月" }
+    ],
+    "app_price_table": [
+      { "type": "シンプルボット (Discord/Telegram)", "price": "18,000 ¥" },
+      { "type": "高度なボット (RPG/経済)", "price": "65,000 ¥" },
+      { "type": "Webスクレイピング＆自動化", "price": "30,000 ¥" },
+      { "type": "統合AIアシスタント (サポート)", "price": "90,000 ¥" }
+    ],
+    "backend_price_table": [
+      { "type": "カスタムRestful API開発", "price": "50,000 ¥" },
+      { "type": "管理パネル / サポートツール", "price": "65,000 ¥" },
+      { "type": "システム統合＆データベース", "price": "35,000 ¥" },
+      { "type": "サーバーの保守と最適化", "price": "12,000 ¥ / 月" }
+    ],
+    "app_portfolio_names": ["AIチャット", "3Dモデルジェネレーター", "AIアシスタント", "モバイルウェブカメラ", "デスクトップウェブカメラ"],
+    "modal_guide_title": "インストールガイド - デスクトップウェブカメラ",
+    "modal_guide_steps": [
+      "ステップ 1: OBSを開き、ソースタブに移動して+をクリックします。",
+      "ステップ 2: 「メディアソース」を選択します。",
+      "ステップ 3: 「ローカルファイル」のチェックを外し、ネットワークバッファリングを0に下げ、「入力」にモバイルアプリに表示されるIPアドレスを追加します。",
+      "ステップ 4: デスクトップアプリを開き、同じIPアドレスを入力します。",
+      "ステップ 5: これでカメラが正常に機能します。"
+    ]
+  },
+  "zh": {
+    "artist_name": "Ganert",
+    "nav_about": "关于我",
+    "nav_websites": "网站",
+    "nav_apps": "系统与应用",
+    "nav_queue": "工作队列",
+    "nav_contact": "联系方式",
+    "about_title": "关于我",
+    "about_p1": "你好！我叫Ganert，是一名专注于高性能安全项目、自动化和AI解决方案的开发者。",
+    "about_p2": "我始终追求市场最佳实践，以创建直观的界面和稳健、安全的后端系统。",
+    "about_programming_skills_title": "技术栈",
+    "programming_categories": [
+      {
+        "title": "FRONTEND & UI",
+        "icon": "fa-solid fa-palette",
+        "color": "#ff9f43",
+        "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
+      },
+      {
+        "title": "BACKEND & API",
+        "icon": "fa-solid fa-server",
+        "color": "#5f27cd",
+        "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
+      },
+      {
+        "title": "TOOLS & DB",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "color": "#2e86de",
+        "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
+      }
+    ],
+    "about_setup_title": "我的配置",
+    "about_setup_content": [
+      "CPU: Intel Core i3 10100f",
+      "GPU: NVIDIA GeForce RTX 3060ti",
+      "RAM: DDR4 64GB 2666MHz",
+      "显示器: 双屏设置 (提高生产力)"
+    ],
+    "tab_portfolio_web": "我的网站",
+    "tab_portfolio_apps": "我的应用",
+    "tab_pricing": "价格与条款",
+    "btn_visit_site": "访问网站",
+    "btn_download": "下载",
+    "btn_guide": "指南",
+    "btn_close_guide": "关闭指南",
+    "pricing_title_web": "网站开发",
+    "pricing_title_apps": "机器人、自动化与AI",
+    "pricing_title_backend": "系统与API (后端)",
+    "tos_web_title": "服务条款 (Web)",
+    "tos_web_list": [
+      "起步价格：所列价格为基础价。最终成本取决于项目的复杂性。",
+      "外部成本：域名和服务器托管费用由客户承担。",
+      "付款方式：开始开发时预付50%，最终验收后支付剩余50%。",
+      "修改：阶段确认后若有大幅度修改，将产生额外费用。"
+    ],
+    "tos_apps_title": "服务条款 (机器人与AI)",
+    "tos_apps_list": [
+      "起步价格：基于标准功能的基础价格。复杂系统将进行定制报价。",
+      "第三方成本：服务器（VPS）、云数据库和AI令牌（如OpenAI）由客户承担。",
+      "保修与API：交付后因第三方API（Discord/Telegram）规则更改导致的问题不在保修范围内。",
+      "付款方式：开始时预付50%，交付和部署时支付50%。"
+    ],
+    "tos_backend_title": "系统与API服务条款",
+    "tos_backend_list": [
+      "源代码：最终付款后，知识产权和源代码将完全移交给客户。",
+      "文档：包含专业的系统技术文档（Swagger/Postman）。",
+      "可扩展性：系统架构以支持高流量需求为导向。",
+      "支持：在生产环境部署后，针对严重错误提供30天的技术保修。"
+    ],
+    "queue_title": "工作队列",
+    "queue_col_not_started": "排队中",
+    "queue_col_in_progress": "开发中",
+    "queue_col_completed": "已完成",
+    "web_price_table": [
+      { "type": "落地页 / 单页网站", "price": "3,200 ¥" },
+      { "type": "企业网站 / 个人作品集", "price": "4,600 ¥" },
+      { "type": "完整Web系统 / 电子商务", "price": "7,900 ¥" },
+      { "type": "月度维护", "price": "450 ¥ / 月" }
+    ],
+    "app_price_table": [
+      { "type": "简单机器人 (Discord/Telegram)", "price": "850 ¥" },
+      { "type": "高级机器人 (RPG/经济系统)", "price": "3,200 ¥" },
+      { "type": "网页抓取与自动化", "price": "1,400 ¥" },
+      { "type": "集成AI助手 (客服)", "price": "4,300 ¥" }
+    ],
+    "backend_price_table": [
+      { "type": "定制Restful API开发", "price": "2,500 ¥" },
+      { "type": "管理面板 / 客服工具", "price": "3,200 ¥" },
+      { "type": "系统集成与数据库", "price": "1,800 ¥" },
+      { "type": "服务器维护与优化", "price": "580 ¥ / 月" }
+    ],
+    "app_portfolio_names": ["AI聊天", "3D模型生成器", "AI助手", "移动摄像头", "桌面摄像头"],
+    "modal_guide_title": "安装指南 - 桌面摄像头",
+    "modal_guide_steps": [
+      "步骤 1：打开OBS，转到来源选项卡并点击+。",
+      "步骤 2：选择“媒体源”。",
+      "步骤 3：取消选中“本地文件”，将网络缓冲降至0，并输入移动应用中显示的IP地址。",
+      "步骤 4：打开桌面应用程序并输入相同的IP地址。",
+      "步骤 5：您的摄像头将启动并正常工作。"
+    ]
+  }
+}
