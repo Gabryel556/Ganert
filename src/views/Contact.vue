@@ -10,7 +10,7 @@
         
         <div class="contact-buttons">
           <a href="https://www.reddit.com/user/Gabryel556/" target="_blank" class="contact-btn reddit"><i class="fab fa-reddit"></i> Reddit</a>
-          <a href="https://discord.gg/754716945944805427" target="_blank" class="contact-btn discord"><i class="fab fa-discord"></i> Discord</a>
+          <a href="https://discordapp.com/users/754716945944805427" target="_blank" class="contact-btn discord"><i class="fab fa-discord"></i> Discord</a>
           <a href="https://www.instagram.com/g.ganert/" target="_blank" class="contact-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
           <a href="https://www.github.com/Gabryel556" target="_blank" class="contact-btn github"><i class="fab fa-github"></i> GitHub</a>
         </div>
@@ -56,7 +56,6 @@ import { useLanguage } from '../composables/useLanguage';
 
 const { getText, getData } = useLanguage();
 
-// Trazendo os dados de pagamento do languages.json
 const paymentMethods = computed(() => getData('payment_methods') || []);
 </script>
 
@@ -86,7 +85,6 @@ const paymentMethods = computed(() => getData('payment_methods') || []);
 .submit-btn { background-color: var(--brand-color); color: #fff; border: none; border-radius: 50px; padding: 1rem 1.5rem; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
 .submit-btn:hover { filter: brightness(1.1); transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
 
-/* ESTILOS DA NOVA SEÇÃO DE PAGAMENTOS */
 .payment-section { margin-top: 2rem; }
 .payment-title { text-align: center; border-bottom: none !important; justify-content: center; display: flex; align-items: center; gap: 10px; }
 .payment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
