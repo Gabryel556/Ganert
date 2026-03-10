@@ -69,11 +69,12 @@ const particlesOptions = {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { 
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Exo 2', sans-serif;
   background-color: var(--bg-color); 
   color: var(--text-primary); 
   transition: background-color 0.4s ease, color 0.4s ease;

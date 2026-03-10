@@ -66,9 +66,28 @@ onMounted(() => document.body.setAttribute('data-theme', theme.value));
 
 .desktop-logo { 
   text-align: center; 
-  color: var(--brand-color); 
   margin-bottom: 2rem; 
-  font-size: 1.8rem; 
+  font-size: 2.2rem; 
+  font-weight: 700;
+  letter-spacing: 2px;
+  
+  background: linear-gradient(
+    90deg, 
+    var(--brand-color) 0%, 
+    #ffffff 45%,
+    var(--brand-color) 80%, 
+    var(--brand-color) 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  animation: shine-hud 4s linear infinite;
+}
+
+@keyframes shine-hud {
+  to { background-position: 200% center; }
 }
 
 .nav-links { 

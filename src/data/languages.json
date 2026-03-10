@@ -14,19 +14,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -122,19 +122,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -230,19 +230,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -338,19 +338,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -446,19 +446,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -554,19 +554,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
@@ -662,19 +662,19 @@
       {
         "title": "FRONTEND & UI",
         "icon": "fa-solid fa-palette",
-        "color": "#ff9f43",
+        "color": "#00E676",
         "skills": ["Vue.js / Angular", "JavaScript", "TypeScript", "HTML5 / SCSS"]
       },
       {
         "title": "BACKEND & API",
         "icon": "fa-solid fa-server",
-        "color": "#5f27cd",
+        "color": "#007BFF",
         "skills": ["C, C++", "C# (.NET Core)", "Python (Django/Flask)", "Java", "Rust"]
       },
       {
         "title": "TOOLS & DB",
         "icon": "fa-solid fa-screwdriver-wrench",
-        "color": "#2e86de",
+        "color": "#9D00FF",
         "skills": ["SQL Server / PostgreSQL", "Git / GitHub", "Docker / WSL"]
       }
     ],
