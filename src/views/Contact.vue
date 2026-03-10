@@ -80,7 +80,7 @@ const paymentMethods = computed(() => getData('payment_methods') || []);
 
 .contact-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem; }
 .form-row { display: flex; gap: 1rem; }
-.contact-form input, .contact-form textarea { width: 100%; background-color: var(--surface-hover); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; font-family: 'Poppins', sans-serif; color: var(--text-primary); font-size: 1rem; transition: border-color 0.3s ease, background-color 0.4s ease; }
+.contact-form input, .contact-form textarea { width: 100%; background-color: var(--surface-hover); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; font-family: 'Rajdhani', sans-serif; color: var(--text-primary); font-size: 1rem; transition: border-color 0.3s ease, background-color 0.4s ease; }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--brand-color); background-color: var(--bg-color); }
 .submit-btn { background-color: var(--brand-color); color: #fff; border: none; border-radius: 50px; padding: 1rem 1.5rem; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
 .submit-btn:hover { filter: brightness(1.1); transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }

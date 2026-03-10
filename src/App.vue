@@ -67,17 +67,24 @@ const particlesOptions = {
   --sidebar-bg: #ffffff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
 
 body { 
   font-family: 'Exo 2', sans-serif;
   background-color: var(--bg-color); 
   color: var(--text-primary); 
   transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button, input, textarea, select, a {
+  font-family: inherit;
 }
 
 #tsparticles { 
@@ -117,25 +124,29 @@ body {
 }
 
 .btn-premium {
-  background: linear-gradient(135deg, var(--brand-color), #8400ff);
-  background-size: 200% 200%;
+  background: linear-gradient(75deg, var(--brand-color), #8400ff, var(--brand-color));
+  background-size: 200% auto;
   color: #fff !important;
   font-weight: 600;
   padding: 0.7rem 2rem;
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(132, 0, 255, 0.3);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s;
   text-decoration: none;
   display: inline-block;
   text-align: center;
+  animation: fluid-gradient 3s linear infinite;
 }
 
 .btn-premium:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.5);
-  background-position: 100% 0;
+  box-shadow: 0 8px 25px rgba(132, 0, 255, 0.5);
+}
+
+@keyframes fluid-gradient {
+  to { background-position: 200% center; }
 }
 
 .btn-outline {

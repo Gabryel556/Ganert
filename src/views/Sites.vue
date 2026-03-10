@@ -83,7 +83,7 @@ const mySites = [
 .tab-btn {
   background: transparent; color: var(--text-secondary); border: none;
   padding: 0.8rem 2.5rem; border-radius: 40px; cursor: pointer;
-  font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1rem;
   transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); position: relative; z-index: 1;
 }
 
